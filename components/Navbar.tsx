@@ -98,7 +98,7 @@ const Navbar = () => {
           ref={modalRef}
           className={`flex flex-col h-[80%]  w-[90%] mx-auto bg-dark rounded-lg border border-borderColor gap-5 p-4 relative ${
             mobileNav ? "top-16" : "-top-full"
-          } transition-all duration-300`}
+          } transition-all duration-500`}
         >
           <div className="w-full flex items-center justify-end">
             <span
