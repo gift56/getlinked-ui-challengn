@@ -10,7 +10,7 @@ const MainLayout = ({ children, pagetitle }: LayoutProps) => {
   return (
     <>
       <Head>
-        <title>{`getlinked ${pagetitle}`}</title>
+        <title>{`Getlinked - ${pagetitle}`}</title>
       </Head>
 
       <main>{children}</main>

@@ -19,6 +19,8 @@ export default function Document() {
           href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap"
           rel="stylesheet"
         />
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </Head>
       <body>
         <Main />

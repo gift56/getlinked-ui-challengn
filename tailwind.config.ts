@@ -18,6 +18,7 @@ const config: Config = {
       },
       backgroundImage: {
         btnlinear: "linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)",
+        bodybg: "url('/img/bodyBg.png')",
       },
       fontFamily: {
         clash: "'Clash Display', sans-serif",
