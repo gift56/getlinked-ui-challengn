@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Head from "next/head";
+import { Navbar } from "@/components";
 
 interface LayoutProps {
   children: ReactNode;
@@ -12,7 +13,7 @@ const MainLayout = ({ children, pagetitle }: LayoutProps) => {
       <Head>
         <title>{`Getlinked - ${pagetitle}`}</title>
       </Head>
-
+      <Navbar />
       <main>{children}</main>
     </>
   );
