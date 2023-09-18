@@ -14,7 +14,9 @@ const Hero = () => {
         </div>
         <div className="w-full flex items-center justify-between gap-6 flex-col md:flex-row">
           <div className="w-full md:flex-1 h-full flex flex-col items-start justify-start">
-            <h2 className="flex flex-col items-center text-center justify-center md:items-start md:justify-start"></h2>
+            <h2 className="flex flex-col items-center text-center justify-center md:items-start md:justify-start">
+              
+            </h2>
           </div>
           <div className="w-full md:flex-1 h-full flex items-center justify-start"></div>
         </div>
