@@ -32,6 +32,9 @@ const Navbar = () => {
           >
             get<span className="text-primary font-bold font-clash">linked</span>
           </Link>
+          <nav className="flex items-center justify-end gap-8">
+            
+          </nav>
         </div>
       </div>
     </header>
