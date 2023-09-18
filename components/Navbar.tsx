@@ -95,12 +95,13 @@ const Navbar = () => {
           className={`flex flex-col h-[80%] w-[90%] mx-auto bg-dark rounded-lg border border-borderColor gap-5 p-4 relative top-16`}
         >
           <div className="w-full flex items-center justify-end">
-            <span className="text-dark" onClick={() => setMobileNav(false)}>
+            <span className="w-7 h-7 bg-btnlinear rounded-full flex items-center relative justify-center before:absolute before:inset-[1px] before:bg-dark before:rounded-full before:transition-all before:duration-300 hover:before:opacity-90" onClick={() => setMobileNav(false)}>
               <Image
                 src="/icon/closeIcon.svg"
                 alt="bar-icon"
                 width={15}
                 height={15}
+                className="relative"
               />
             </span>
           </div>
