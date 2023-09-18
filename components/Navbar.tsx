@@ -48,7 +48,7 @@ const Navbar = () => {
           </Link>
           <nav className="flex items-center justify-end gap-8">
             {navLinks.map((item, i) => (
-              <Link href={item.href} key={i} className="text-base font-normal">
+              <Link href={item.href} key={i} className="text-base font-normal hover:text-primary transition-all">
                 {item.text}
               </Link>
             ))}
