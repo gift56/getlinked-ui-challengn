@@ -14,9 +14,14 @@ const config: Config = {
         primary: "#D434FE",
         dark: "#150E28",
         purple1: "#903AFF",
+        footerBg: "#100B20",
       },
       backgroundImage: {
         btnlinear: "linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)",
+      },
+      fontFamily: {
+        clash: "'Clash Display', sans-serif",
+        unica: "'Unica One', cursive",
       },
     },
   },
