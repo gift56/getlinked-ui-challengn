@@ -3,7 +3,7 @@ import { CustomizeButton } from "..";
 
 const Hero = () => {
   return (
-    <section className="w-full">
+    <section className="w-full  border-b border-borderColor">
       <div className="container">
         <div className="w-full flex justify-end items-end flex-col pt-4">
           <h2 className="text-sm phone:text-base font-bold md:text-2xl lg:text-3xl text-white">
@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
 
         <div className="w-full flex items-center justify-between gap-6 flex-col tab:flex-row">
-          <div className="w-full tab:flex-1 h-full flex flex-col gap-6 items-center justify-center tab:items-start tab:justify-start  py-10 md:py-28">
+          <div className="w-full tab:flex-1 h-full flex flex-col gap-6 items-center justify-center tab:items-start tab:justify-start  py-10 md:pt-28">
             <h2 className="flex flex-col items-center text-center tab:text-start gap-1 justify-center md:items-start md:justify-start w-full">
               <span className="relative font-bold text-3xl tab:text-5xl lg:text-6xl monitor:text-7xl font-clash">
                 getlinked Tech
