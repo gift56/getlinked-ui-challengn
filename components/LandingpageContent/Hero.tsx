@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="w-full h-screen lg:overflow-hidden">
       <div className="container">
         <div className="w-full flex items-center justify-center md:justify-end md:items-end flex-col pt-4">
-          <h2 className="text-base font-bold">
+          <h2 className="text-base font-bold md:text-2xl lg:text-3xl">
             <i>Igniting a Revolution in HR Innovation</i>
           </h2>
         </div>
