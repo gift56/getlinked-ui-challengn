@@ -6,3 +6,9 @@ export interface FormValue {
   category: String;
   size: String;
 }
+
+export interface ContactValue {
+  fullName: String;
+  email: String;
+  message: String;
+}
