@@ -74,12 +74,14 @@ const Navbar = () => {
             </Link>
           </nav>
           <span onClick={() => setMobileNav(true)} className="cursor-pointer">
-            <Image
-              src="/icon/barIcon.svg"
-              alt="bar-icon"
-              width={20}
-              height={20}
-            />
+            {mobileNav === false && (
+              <Image
+                src="/icon/barIcon.svg"
+                alt="bar-icon"
+                width={20}
+                height={20}
+              />
+            )}
           </span>
         </div>
       </div>
