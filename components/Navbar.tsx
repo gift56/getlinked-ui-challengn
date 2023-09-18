@@ -74,7 +74,12 @@ const Navbar = () => {
             </Link>
           </nav>
           <span className="cursor-pointer">
-            <Image src="" />
+            <Image
+              src="/icon/barIcon.svg"
+              alt="bar-icon"
+              width={20}
+              height={20}
+            />
           </span>
         </div>
       </div>
