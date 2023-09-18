@@ -91,13 +91,13 @@ const Navbar = () => {
       {/* MOBILE NAV */}
       <div
         className={`${
-          mobileNav ? "flex" : "hidden"
-        } md:hidden flex flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all duration-300}`}
+          mobileNav ? "top-0" : "-top-[100vh]"
+        } md:hidden flex flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all duration-300`}
       >
         <div
           ref={modalRef}
-          className={`flex flex-col h-[80%] w-[90%] mx-auto bg-dark rounded-lg border border-borderColor gap-5 p-4 relative ${
-            mobileNav ? "top-16" : "-top-[60%]"
+          className={`flex flex-col h-[80%]  w-[90%] mx-auto bg-dark rounded-lg border border-borderColor gap-5 p-4 relative ${
+            mobileNav ? "top-16" : "-top-full"
           } transition-all duration-300`}
         >
           <div className="w-full flex items-center justify-end">
