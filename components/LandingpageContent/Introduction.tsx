@@ -6,7 +6,15 @@ const Introduction = () => {
       <div className="container">
         <div className="flex items-center justify-center tab:justify-between w-full gap-6 flex-col tab:flex-row">
           <div className="w-full tab:flex-1">
-            <img src="/img/ideaImg.png" alt="ideaImg" className="tab:w-[490px] w-[264px] mx-auto" />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/img/ideaImg.png"
+              alt="ideaImg"
+              className="tab:w-[490px] w-[264px] mx-auto"
+            />
           </div>
           <div className="w-full tab:flex-1 flex flex-col gap-1">
             <h2 className="text-xl font-bold md:text-2xl text-center tab:text-start tab:text-3xl font-clash">
