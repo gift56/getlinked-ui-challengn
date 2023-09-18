@@ -1,18 +1,24 @@
-export const navLinks = [
+export const footerLinks = [
   {
-    href: "timeline",
-    text: "Timeline",
-  },
-  {
-    href: "overview",
-    text: "Overview",
-  },
-  {
-    href: "faq",
-    text: "FAQs",
-  },
-  {
-    href: "/contact",
-    text: "Contact",
+    title: "Useful Links",
+    shortcutlinks: [
+      {
+        href: "overview",
+        text: "Overview",
+      },
+      {
+        href: "timeline",
+        text: "Timeline",
+      },
+
+      {
+        href: "faq",
+        text: "FAQs",
+      },
+      {
+        href: "/register",
+        text: "Register",
+      },
+    ],
   },
 ];
