@@ -49,7 +49,9 @@ const Hero = () => {
                 type="button"
               />
             </Link>
-            <div className="flex items-center justify-start gap-6"></div>
+            <div className="flex items-center tab:justify-start gap-6">
+              
+            </div>
           </div>
           <div className="w-full tab:flex-1 h-full flex items-center justify-start"></div>
         </div>
