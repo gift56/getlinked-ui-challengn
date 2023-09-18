@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { CustomizeButton } from ".";
+import Image from "next/image";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -72,6 +73,9 @@ const Navbar = () => {
               />
             </Link>
           </nav>
+          <span className="cursor-pointer">
+            <Image src="" />
+          </span>
         </div>
       </div>
     </header>
