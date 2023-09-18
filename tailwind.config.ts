@@ -10,8 +10,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#D434FE",
+        dark: "#150E28",
+        purple1: "#903AFF",
+      },
       backgroundImage: {
-        "btnlinear": "",
+        btnlinear: "linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)",
       },
     },
   },

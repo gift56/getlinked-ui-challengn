@@ -10,8 +10,10 @@ const MainLayout = ({ children, pagetitle }: LayoutProps) => {
   return (
     <>
       <Head>
-        <title>getlinked</title>
+        <title>{`getlinked ${pagetitle}`}</title>
       </Head>
+
+      <main>{children}</main>
     </>
   );
 };
