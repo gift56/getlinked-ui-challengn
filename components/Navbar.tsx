@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { CustomizeButton } from ".";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -37,6 +38,11 @@ const Navbar = () => {
       text: "FAQs",
     },
   ];
+
+  const variants = {
+    open: { top: "64px", scale: 1, transition: { duration: 0.6 } },
+    closed: { top: "-100%", scale: 0, transition: { duration: 0.6 } },
+  };
 
   return (
     <header className="w-full sticky bg-transparent border-b border-borderColor py-5 top-0 z-50">
@@ -89,13 +95,24 @@ const Navbar = () => {
         </div>
       </div>
       {/* MOBILE NAV */}
-      <div className="md:hidden flex flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all duration-300">
-        <div
+      <div
+        className={`${
+          mobileNav ? "flex" : "hidden"
+        } md:hidden flex flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all duration-300}`}
+      >
+        <motion.div
           ref={modalRef}
-          className={`flex flex-col h-[80%] w-[90%] mx-auto bg-dark rounded-lg border border-borderColor gap-5 p-4 relative top-16`}
+          whileInView={mobileNav ? "open" : "closed"}
+          variants={variants}
+          className={`flex flex-col h-[80%] w-[90%] mx-auto bg-dark rounded-lg border border-borderColor gap-5 p-4 relative ${
+            mobileNav ? "top-16" : "-top-full"
+          } transition-all duration-300`}
         >
           <div className="w-full flex items-center justify-end">
-            <span className="w-7 h-7 bg-btnlinear rounded-full flex items-center relative justify-center before:absolute before:inset-[1px] before:bg-dark before:rounded-full before:transition-all before:duration-300 hover:before:opacity-90" onClick={() => setMobileNav(false)}>
+            <span
+              className="w-7 h-7 bg-btnlinear rounded-full flex items-center relative justify-center before:absolute before:inset-[1px] before:bg-dark before:rounded-full before:transition-all before:duration-300 hover:before:opacity-90"
+              onClick={() => setMobileNav(false)}
+            >
               <Image
                 src="/icon/closeIcon.svg"
                 alt="bar-icon"
@@ -131,7 +148,7 @@ const Navbar = () => {
               />
             </Link>
           </nav>
-        </div>
+        </motion.div>
       </div>
     </header>
   );
