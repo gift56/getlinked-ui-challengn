@@ -26,6 +26,9 @@ const config: Config = {
         clash: "'Clash Display', sans-serif",
         unica: "'Unica One', cursive",
       },
+      screens: {
+        phone: "400px",
+      },
     },
   },
   plugins: [],
