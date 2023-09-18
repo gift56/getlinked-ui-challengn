@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
@@ -23,7 +24,16 @@ const Navbar = () => {
 
   return (
     <header className="w-full sticky bg-transparent border-b border-borderColor py-5 top-0 z-50">
-      Navbar
+      <div className="container">
+        <div className="flex items-center justify-between w-full">
+          <Link
+            href="/"
+            className="text-base md:text-2xl lg:text-3xl font-clash font-bold text-white"
+          >
+            get<span className="text-primary font-bold font-clash">linked</span>
+          </Link>
+        </div>
+      </div>
     </header>
   );
 };
