@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
-
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -22,6 +21,21 @@ const Navbar = () => {
     };
   }, []);
 
+  const navLinks = [
+    {
+      href: "timeline",
+      text: "Timeline",
+    },
+    {
+      href: "overview",
+      text: "Overview",
+    },
+    {
+      href: "faqs",
+      text: "FAQs",
+    },
+  ];
+
   return (
     <header className="w-full sticky bg-transparent border-b border-borderColor py-5 top-0 z-50">
       <div className="container">
@@ -33,7 +47,11 @@ const Navbar = () => {
             get<span className="text-primary font-bold font-clash">linked</span>
           </Link>
           <nav className="flex items-center justify-end gap-8">
-            
+            {navLinks.map((item, i) => (
+              <Link href={item.href} key={i} className="text-base font-normal">
+                {item.text}
+              </Link>
+            ))}
           </nav>
         </div>
       </div>
