@@ -92,7 +92,7 @@ const Navbar = () => {
       <div
         className={`${
           mobileNav ? "top-0" : "-top-[100vh]"
-        } md:hidden flex flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all duration-300`}
+        } md:hidden flex flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all`}
       >
         <div
           ref={modalRef}
