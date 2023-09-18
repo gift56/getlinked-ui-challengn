@@ -1,5 +1,10 @@
+import { motion } from "framer-motion";
+
+
 const Introduction = () => {
-  return <div>Introduction</div>;
+  return <section className="w-full py-16">
+    
+  </section>;
 };
 
 export default Introduction;
