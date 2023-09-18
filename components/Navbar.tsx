@@ -21,7 +21,11 @@ const Navbar = () => {
     };
   }, []);
 
-  return <header className="w-full sticky bg-transparent border-b py-5 top-0 z-50">Navbar</header>;
+  return (
+    <header className="w-full sticky bg-transparent border-b border-borderColor py-5 top-0 z-50">
+      Navbar
+    </header>
+  );
 };
 
 export default Navbar;
