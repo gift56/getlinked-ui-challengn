@@ -7,5 +7,5 @@
 }
 
 body {
-  @apply bg-dark text-white;
+  @apply bg-dark text-white bg-bodybg bg-no-repeat bg-local;
 }
