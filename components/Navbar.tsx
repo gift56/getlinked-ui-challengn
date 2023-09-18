@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between w-full">
           <Link
             href="/"
-            className="text-base md:text-2xl lg:text-3xl font-clash font-bold text-white"
+            className="text-xl md:text-2xl lg:text-3xl font-clash font-bold text-white"
           >
             get<span className="text-primary font-bold font-clash">linked</span>
           </Link>
