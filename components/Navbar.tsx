@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import { CustomizeButton } from ".";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -61,6 +62,10 @@ const Navbar = () => {
               className="text-base font-normal hover:text-primary transition-all"
             >
               Contact
+            </Link>
+
+            <Link href="/register" className="w-fit">
+              <CustomizeButton text="Register" className="bg-btnlinear" type="button" />
             </Link>
           </nav>
         </div>
