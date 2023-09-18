@@ -9,3 +9,12 @@
 body {
   @apply bg-dark text-white bg-bodybg bg-no-repeat bg-local;
 }
+
+.container {
+  @apply w-[80%] mx-auto;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
