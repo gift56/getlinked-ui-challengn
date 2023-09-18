@@ -24,15 +24,15 @@ const Navbar = () => {
 
   const navLinks = [
     {
-      href: "timeline",
+      href: "#timeline",
       text: "Timeline",
     },
     {
-      href: "overview",
+      href: "#overview",
       text: "Overview",
     },
     {
-      href: "faqs",
+      href: "#faqs",
       text: "FAQs",
     },
   ];
@@ -65,7 +65,11 @@ const Navbar = () => {
             </Link>
 
             <Link href="/register" className="w-fit">
-              <CustomizeButton text="Register" className="bg-btnlinear border-none rounded !px-8" type="button" />
+              <CustomizeButton
+                text="Register"
+                className="bg-btnlinear border-none rounded !px-8"
+                type="button"
+              />
             </Link>
           </nav>
         </div>
