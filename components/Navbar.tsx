@@ -73,7 +73,10 @@ const Navbar = () => {
               />
             </Link>
           </nav>
-          <span onClick={() => setMobileNav(true)} className="cursor-pointer md:hidden">
+          <span
+            onClick={() => setMobileNav(true)}
+            className="cursor-pointer md:hidden"
+          >
             {mobileNav === false && (
               <Image
                 src="/icon/barIcon.svg"
@@ -83,6 +86,50 @@ const Navbar = () => {
               />
             )}
           </span>
+        </div>
+      </div>
+      {/* MOBILE NAV */}
+      <div className="md:hidden flex flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all duration-300">
+        <div
+          ref={modalRef}
+          className={`flex flex-col h-[80%] w-[90%] mx-auto bg-dark rounded-lg border border-borderColor gap-5 p-4 relative top-16`}
+        >
+          <div className="w-full flex items-center justify-end">
+            <span className="text-dark" onClick={() => setMobileNav(false)}>
+              <Image
+                src="/icon/closeIcon.svg"
+                alt="bar-icon"
+                width={15}
+                height={15}
+              />
+            </span>
+          </div>
+
+          <nav className="flex flex-col items-start justify-start gap-6 w-full">
+            {navLinks.map((item, index) => (
+              <Link
+                href={item.href}
+                key={index}
+                onClick={() => setMobileNav(false)}
+                className="text-base font-medium text-gray1 hover:text-primary transition-all w-full"
+              >
+                {item.text}
+              </Link>
+            ))}
+            <Link
+              href="/contact"
+              className="text-base font-normal hover:text-primary transition-all"
+            >
+              Contact
+            </Link>
+            <Link href="/register" className="w-fit">
+              <CustomizeButton
+                text="Register"
+                className="bg-btnlinear border-none rounded !px-10 !py-3"
+                type="button"
+              />
+            </Link>
+          </nav>
         </div>
       </div>
     </header>
