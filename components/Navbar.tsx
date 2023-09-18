@@ -72,6 +72,7 @@ const Navbar = () => {
                 type="button"
               />
             </Link>
+            
           </nav>
           <span
             onClick={() => setMobileNav(true)}

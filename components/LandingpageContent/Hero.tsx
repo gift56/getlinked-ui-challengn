@@ -16,9 +16,9 @@ const Hero = () => {
           />
         </div>
 
-        <div className="w-full flex items-center justify-between gap-6 flex-col md:flex-row">
-          <div className="w-full md:flex-1 h-full flex flex-col gap-6 items-start justify-start  py-10 md:py-28">
-            <h2 className="flex flex-col items-center text-center gap-1 justify-center md:items-start md:justify-start w-full">
+        <div className="w-full flex items-center justify-between gap-6 flex-col tab:flex-row">
+          <div className="w-full tab:flex-1 h-full flex flex-col gap-6 items-center justify-center tab:items-start tab:justify-start  py-10 md:py-28">
+            <h2 className="flex flex-col items-center text-center tab:text-start gap-1 justify-center md:items-start md:justify-start w-full">
               <span className="relative font-bold text-3xl tab:text-5xl lg:text-6xl monitor:text-7xl font-clash">
                 getlinked Tech
                 <img
@@ -38,9 +38,9 @@ const Hero = () => {
                 />
               </span>
             </h2>
-            <p className="text-sm text-center md:text-base lg:text-xl lg:text-start font-normal">
+            <p className="text-sm text-center md:text-base lg:text-xl tab:text-start font-normal">
               Participate in getlinked tech Hackathon 2023 stand{" "}
-              <br className="hidden lg:block" /> a chance to win a Big prize
+              <br className="hidden xl:block" /> a chance to win a Big prize
             </p>
             <Link href="/register" className="w-fit">
               <CustomizeButton
@@ -49,8 +49,9 @@ const Hero = () => {
                 type="button"
               />
             </Link>
+            <div className="flex items-center justify-start gap-6"></div>
           </div>
-          <div className="w-full md:flex-1 h-full flex items-center justify-start"></div>
+          <div className="w-full tab:flex-1 h-full flex items-center justify-start"></div>
         </div>
       </div>
     </section>
