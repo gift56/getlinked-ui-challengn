@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { CustomizeButton } from ".";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -38,11 +37,6 @@ const Navbar = () => {
       text: "FAQs",
     },
   ];
-
-  const variants = {
-    open: { top: "64px", scale: 1, transition: { duration: 0.6 } },
-    closed: { top: "-100%", scale: 0, transition: { duration: 0.6 } },
-  };
 
   return (
     <header className="w-full sticky bg-transparent border-b border-borderColor py-5 top-0 z-50">
@@ -100,12 +94,10 @@ const Navbar = () => {
           mobileNav ? "flex" : "hidden"
         } md:hidden flex flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all duration-300}`}
       >
-        <motion.div
+        <div
           ref={modalRef}
-          whileInView={mobileNav ? "open" : "closed"}
-          variants={variants}
           className={`flex flex-col h-[80%] w-[90%] mx-auto bg-dark rounded-lg border border-borderColor gap-5 p-4 relative ${
-            mobileNav ? "top-16" : "-top-full"
+            mobileNav ? "top-16" : "-top-[60%]"
           } transition-all duration-300`}
         >
           <div className="w-full flex items-center justify-end">
@@ -148,7 +140,7 @@ const Navbar = () => {
               />
             </Link>
           </nav>
-        </motion.div>
+        </div>
       </div>
     </header>
   );
