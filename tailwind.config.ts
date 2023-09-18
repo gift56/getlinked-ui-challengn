@@ -28,6 +28,7 @@ const config: Config = {
       },
       screens: {
         phone: "400px",
+        tab: "800px",
         monitor: "1380px",
       },
     },

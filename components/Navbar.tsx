@@ -68,7 +68,7 @@ const Navbar = () => {
             <Link href="/register" className="w-fit">
               <CustomizeButton
                 text="Register"
-                className="bg-btnlinear border-none rounded !px-8"
+                className="bg-btnlinear border-none rounded !px-10 !py-3 ml-10"
                 type="button"
               />
             </Link>

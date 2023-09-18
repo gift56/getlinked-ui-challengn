@@ -7,11 +7,11 @@
 }
 
 body {
-  @apply bg-dark text-white bg-bodybg bg-no-repeat bg-local;
+  @apply bg-dark text-white bg-bodybg bg-no-repeat;
 }
 
 .container {
-  @apply lg:w-[80%] mx-auto w-[90%];
+  @apply mx-auto w-[90%];
 }
 
 img {
