@@ -61,7 +61,10 @@ const Hero = () => {
               </span>
             </div>
           </div>
-          <div className="w-full tab:flex-1 h-full flex items-center justify-start"></div>
+          <div className="w-full tab:flex-1 h-full flex relative items-center justify-center">
+            <img src="/img/heroBall.png" alt="ball" className="absolute z-10" />
+            <img src="/img/heroBg.png" alt="heroImg" className="relative z-10 grayscale" />
+          </div>
         </div>
       </div>
     </section>
