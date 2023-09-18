@@ -18,11 +18,17 @@ const Hero = () => {
             <h2 className="flex flex-col items-center text-center justify-center md:items-start md:justify-start w-full">
               <span className="relative font-bold text-3xl md:text-5xl lg:text-6xl monitor:text-7xl font-clash">
                 getlinked Tech
-                <img src="/icon/lightbulbIcon.png" alt="bulb" className="w-5 h-5 absolute -top-3 right-3 md:w-14 md:h-[73px] z-10 md:-top-16" />
+                <img
+                  src="/icon/lightbulbIcon.png"
+                  alt="bulb"
+                  className="w-5 h-5 absolute -top-3 right-3 md:w-14 md:h-[73px] z-10 md:-top-16"
+                />
               </span>
-              <span>
-                Hackathon <span>1.0</span>{" "}
-                <img src="/icon/heroIcon.png" alt="hero-chanin" />
+              <span className="flex items-center">
+                <span className="font-bold text-3xl md:text-5xl lg:text-6xl monitor:text-7xl font-clash">
+                  Hackathon <span>1.0</span>
+                </span>
+                <img src="/icon/heroIcon.png" alt="hero-chanin" className="w-16 md:w-28 h-auto" />
               </span>
             </h2>
           </div>
