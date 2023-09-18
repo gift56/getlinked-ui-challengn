@@ -73,7 +73,7 @@ const Navbar = () => {
               />
             </Link>
           </nav>
-          <span onClick={() => setMobileNav(true)} className="cursor-pointer">
+          <span onClick={() => setMobileNav(true)} className="cursor-pointer md:hidden">
             {mobileNav === false && (
               <Image
                 src="/icon/barIcon.svg"
