@@ -28,6 +28,7 @@ const config: Config = {
       },
       screens: {
         phone: "400px",
+        monitor: "1380px",
       },
     },
   },
