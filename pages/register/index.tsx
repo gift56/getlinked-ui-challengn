@@ -123,6 +123,13 @@ const Registerpage = () => {
                 alt="registration_avatar"
                 className="lg:h-[650px] object-cover relative"
               />
+              <img
+                src="/icon/purplestarIcon.png"
+                alt="star"
+                className="absolute top-[8%] left-[10%] z-40"
+                width={20}
+                height={20}
+              />
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
