@@ -31,6 +31,9 @@ const config: Config = {
         monitor: "1380px",
         minlp: "1300px",
       },
+      boxShadow: {
+        registerShad: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+      },
     },
   },
   plugins: [],

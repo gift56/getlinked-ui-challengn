@@ -71,7 +71,7 @@ const Registerpage = () => {
             <div className="w-full">
               <img src="/img/registerImg.png" alt="registration_avatar" className="tab:h-[650px] object-cover" />
             </div>
-            <div className="w-full"></div>
+            <div className="w-full tab:bg-[#ffffff08] tab:shadow-registerShad tab:rounded-xl"></div>
           </div>
         </div>
       </section>
