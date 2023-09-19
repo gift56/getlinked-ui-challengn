@@ -23,9 +23,9 @@ const Footer = () => {
             </p>
 
             <p className="text-sm font-normal flex items-center gap-4 mt-10 tab:mt-20">
-              Terms of Use{" "}
+              <Link href="#privacy">Terms of Use</Link>
               <span className="w-[2px] h-6 bg-primary rounded-lg"></span>{" "}
-              Privacy Policy
+              <Link href="#privacy">Privacy Policy</Link>
             </p>
           </div>
           <div className="w-full  md:w-[50%] flex flex-col items-start justify-start gap-2">

@@ -5,7 +5,7 @@ import { CustomizeButton } from "..";
 
 const Privacy = () => {
   return (
-    <section id="overview" className="w-full py-14">
+    <section id="privacy" className="w-full py-14">
       <div className="container">
         <div className="w-full flex flex-col items-center justify-center gap-8 tab:flex-row tab:justify-between tab:items-start">
           <div className="w-full flex flex-col items-center tab:items-start tab:justify-start gap-6">
