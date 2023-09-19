@@ -32,8 +32,8 @@ const Timeline = () => {
                 <h2 className="text-sm font-bold text-primary md:text-lg tab:text-2xl">
                   Hackathon Announcement
                 </h2>
-                <p className="">
-                  The getlinked tech hackathon 1.0 is formally announced to the
+                <p className="text-sm font-normal text-right">
+                  The getlinked tech hackathon 1.0 is formally announced <br className="hidden tab:blockb" /> to the
                   general public and teams begin to get ready to register
                 </p>
               </div>
