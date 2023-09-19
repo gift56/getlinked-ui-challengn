@@ -126,7 +126,21 @@ const Registerpage = () => {
               <img
                 src="/icon/purplestarIcon.png"
                 alt="star"
-                className="absolute top-[8%] left-[10%] z-40"
+                className="absolute tab:top-[5%] tab:left-[10%] z-40"
+                width={20}
+                height={20}
+              />
+              <img
+                src="/icon/purplestarIcon.png"
+                alt="star"
+                className="absolute tab:bottom-[20%] tab:right-[10%] z-40"
+                width={20}
+                height={20}
+              />
+              <img
+                src="/icon/graystar.png"
+                alt="star"
+                className="absolute bottom-[2%] left-20"
                 width={20}
                 height={20}
               />
