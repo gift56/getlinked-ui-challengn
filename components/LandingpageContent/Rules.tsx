@@ -12,7 +12,7 @@ const Rules = () => {
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
               src="/img/rulesImg.png"
-              alt="ideaImg"
+              alt="ruleImg"
               className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
             <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-14 xl:top-[15%] right-14 xl:right-[25%] p-5"></div>

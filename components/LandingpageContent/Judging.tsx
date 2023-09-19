@@ -36,7 +36,7 @@ const Judging = () => {
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
               src="/img/judgingCriteriaImg.png"
-              alt="ideaImg"
+              alt="judginimg"
               className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
             <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute -top-5 left-14 xl:left-[20%] p-5"></div>
