@@ -32,12 +32,12 @@ const Timeline = () => {
             {timelineData.map((item, i) => (
               <div
                 key={i}
-                className={`hidden tab:flex items-end justify-center -translate-x-16 gap-20 w-full ${
+                className={`hidden tab:flex items-end justify-center gap-20 w-full ${
                   item.row === false ? "flex-row-reverse" : "flex-row"
                 }`}
               >
                 <div
-                  className={`flex flex-col gap-2 ${
+                  className={`flex flex-col gap-2 w-full ${
                     item.row === false
                       ? "items-start justify-start"
                       : "items-end justify-end"
@@ -70,7 +70,11 @@ const Timeline = () => {
                     {i + 1}
                   </span>
                 </div>
-                <p className="flex items-start justify-start text-sm font-bold text-primary md:text-lg lg:text-2xl">
+                <p
+                  className={`flex font-bold text-primary text-lg lg:text-2xl w-full ${
+                    item.row === false ? "text-left items-end justify-end" : "text-right items-start justify-start "
+                  }`}
+                >
                   November 18, 2023
                 </p>
               </div>
