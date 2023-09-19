@@ -9,6 +9,6 @@ export const registerSchema = yup.object().shape({
   group_size: yup.string().required("Required"),
   privacy_poclicy_accepted: yup
     .boolean()
-    .oneOf([true], "Required")
-    .required("Required"),
+    .oneOf([true], "Terms and condition is Required!")
+    .required("Terms and condition is Required!"),
 });

@@ -134,7 +134,10 @@ const Registerpage = () => {
                   CREATE YOUR ACCOUNT
                 </h3>
               </div>
-              <form className="w-full flex flex-col items-start justify-start gap-4">
+              <form
+                onSubmit={handleSubmit}
+                className="w-full flex flex-col items-start justify-start gap-4"
+              >
                 <div className="w-full flex flex-col tab:flex-row items-start justify-between gap-3">
                   <CustomizeInput
                     showLabel={false}
@@ -257,32 +260,43 @@ const Registerpage = () => {
                   </i>
                 </p>
                 <div className="flex items-center justify-start gap-2">
-                  <input
-                    type="checkbox"
-                    name="privacy_poclicy_accepted"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    id="privacy_poclicy_accepted"
-                    className="bg-red-500 outline-none border border-white"
-                  />
+                  <div
+                    className={`bg-transparent w-4 h-4 flex items-center justify-center rounded ${
+                      errors.privacy_poclicy_accepted && "border border-red-500"
+                    }`}
+                  >
+                    <input
+                      type="checkbox"
+                      name="privacy_poclicy_accepted"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      id="privacy_poclicy_accepted"
+                      className="outline-none border rounded w-full h-full"
+                    />
+                  </div>
                   <label
                     htmlFor="privacy_poclicy_accepted"
-                    className="text-sm font-normal cursor-pointer"
+                    className={`text-sm font-normal cursor-pointer ${
+                      errors.privacy_poclicy_accepted && "text-red-500"
+                    }`}
                   >
-                    I agreed with the every terms and conditions and privacy
-                    policy
+                    {errors.privacy_poclicy_accepted
+                      ? errors.privacy_poclicy_accepted
+                      : "  I agreed with the every terms and conditions and privacy policy"}
                   </label>
                 </div>
                 <CustomizeButton
                   text="Register"
                   className="bg-btnlinear border-none rounded !px-10 !py-3 w-full my-4 hidden tab:flex"
                   type="submit"
+                  disabled={isSubmitting}
                 />
                 <div className="w-full flex tab:hidden items-center justify-center">
                   <CustomizeButton
                     text="Submit"
                     className="bg-btnlinear border-none rounded !px-10 w-fit my-4 flex"
                     type="submit"
+                    disabled={isSubmitting}
                   />
                 </div>
               </form>
