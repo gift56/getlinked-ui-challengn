@@ -5,7 +5,7 @@ const Rules = () => {
     <section className="w-full py-10 border-b border-borderColor">
       <div className="container overflow-hidden">
         <div className="flex items-center justify-center tab:justify-between w-full gap-6 flex-col tab:flex-row-reverse">
-          <div className="w-full tab:flex-1">
+          <div className="w-full tab:flex-1 relative">
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -13,8 +13,9 @@ const Rules = () => {
               viewport={{ once: true }}
               src="/img/rulesImg.png"
               alt="ideaImg"
-              className="tab:w-[490px] w-[264px] mx-auto"
+              className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
+            <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-20 right-40 p-5"></div>
           </div>
           <div className="w-full tab:flex-1 flex flex-col gap-1">
             <motion.h2
