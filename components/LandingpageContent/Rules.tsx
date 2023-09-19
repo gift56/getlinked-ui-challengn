@@ -11,7 +11,7 @@ const Rules = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
-              src="/img/ideaImg.png"
+              src="/img/rulesImg.png"
               alt="ideaImg"
               className="tab:w-[490px] w-[264px] mx-auto"
             />
