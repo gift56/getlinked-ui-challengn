@@ -15,7 +15,7 @@ const Rules = () => {
               alt="ideaImg"
               className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
-            <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-20 right-40 p-5"></div>
+            <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-14 xl:top-[15%] right-14 xl:right-[25%] p-5"></div>
           </div>
           <div className="w-full tab:flex-1 flex flex-col gap-1">
             <motion.h2
