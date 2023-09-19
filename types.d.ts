@@ -1,14 +1,15 @@
 export interface FormValue {
-  teamName: String;
-  phone: String;
+  team_name: String;
+  phone_number: String;
   email: String;
-  topic: String;
+  project_topic: String;
   category: String;
-  size: String;
+  group_size: String;
 }
 
 export interface ContactValue {
-  fullName: String;
+  first_name: String;
   email: String;
   message: String;
+  phone_number: String;
 }
