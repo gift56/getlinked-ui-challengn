@@ -5,7 +5,7 @@ const Introduction = () => {
     <section id="overview" className="w-full py-10 border-b border-borderColor">
       <div className="container overflow-hidden">
         <div className="flex items-center justify-center tab:justify-between w-full gap-6 flex-col tab:flex-row">
-          <div className="w-full tab:flex-1">
+          <div className="w-full tab:flex-1 relative">
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -15,8 +15,26 @@ const Introduction = () => {
               alt="ideaImg"
               className="tab:w-[490px] w-[264px] mx-auto"
             />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/purplestarIcon.png"
+              alt="star"
+              className="absolute hidden tab:flex left-[5%] top-[25%] tab:w-5 tab:h-5 w-3"
+            />
           </div>
           <div className="w-full relative tab:flex-1 flex flex-col gap-5">
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/purplestarIcon.png"
+              alt="star"
+              className="absolute hidden tab:flex right-[15%] top-[5%] tab:w-5 tab:h-5 w-3"
+            />
             <motion.h2
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
