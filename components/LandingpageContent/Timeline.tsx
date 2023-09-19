@@ -1,3 +1,4 @@
+import { timelineData } from "@/utils/constant";
 import { motion } from "framer-motion";
 
 const Timeline = () => {
@@ -28,32 +29,52 @@ const Timeline = () => {
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-3">
             {/* DESKTOP */}
-            
-            <div className="hidden tab:flex items-end justify-center -translate-x-16 gap-20 w-full">
-              <div className="flex items-start justify-start tab:items-end tab:justify-end flex-col gap-2">
-                <h2 className="text-sm font-bold text-primary md:text-lg lg:text-2xl tab:text-right">
-                  Hackathon Announcement
-                </h2>
-                <p className="text-sm font-normal tab:text-right">
-                  The getlinked tech hackathon 1.0 is formally announced{" "}
-                  <br className="hidden tab:block" /> to the general public and
-                  teams begin to get ready to register
+            {timelineData.map((item, i) => (
+              <div
+                key={i}
+                className={`hidden tab:flex items-end justify-center -translate-x-16 gap-20 w-full ${
+                  item.row === false ? "flex-row-reverse" : "flex-row"
+                }`}
+              >
+                <div
+                  className={`flex flex-col gap-2 ${
+                    item.row === false
+                      ? "items-start justify-start"
+                      : "items-end justify-end"
+                  }`}
+                >
+                  <h2
+                    className={`font-bold text-primary text-lg lg:text-2xl  ${
+                      item.row === false ? "text-left" : "text-right"
+                    }`}
+                  >
+                    Hackathon Announcement
+                  </h2>
+                  <p
+                    className={`text-sm font-normal ${
+                      item.row === false ? "text-left" : "text-right"
+                    }`}
+                  >
+                    The getlinked tech hackathon 1.0 is formally announced{" "}
+                    <br className="hidden tab:block" /> to the general public
+                    and teams begin to get ready to register
+                  </p>
+                </div>
+                <div className="flex flex-col items-center justify-center gap-1">
+                  <img
+                    src="/icon/lineIcon.svg"
+                    alt="line_icon"
+                    className="h-[77px] tab:h-[137px] object-contain"
+                  />
+                  <span className="w-14 h-14 flex items-center justify-center rounded-full bg-btnlinear font-bold text-lg tab:text-2xl">
+                    {i + 1}
+                  </span>
+                </div>
+                <p className="flex items-start justify-start text-sm font-bold text-primary md:text-lg lg:text-2xl">
+                  November 18, 2023
                 </p>
               </div>
-              <div className="flex flex-col items-center justify-center gap-1">
-                <img
-                  src="/icon/lineIcon.svg"
-                  alt="line_icon"
-                  className="h-[77px] tab:h-[137px] object-contain"
-                />
-                <span className="w-5 h-5 tab:w-14 tab:h-14 flex items-center justify-center rounded-full bg-btnlinear text-sm font-bold md:text-lg tab:text-2xl">
-                  1
-                </span>
-              </div>
-              <p className="flex items-start justify-start text-sm font-bold text-primary md:text-lg lg:text-2xl">
-                November 18, 2023
-              </p>
-            </div>
+            ))}
             {/* MOBILE */}
             <div className="tab:hidden flex items-start justify-start w-full gap-4">
               <div className="flex flex-col items-center justify-center gap-1">

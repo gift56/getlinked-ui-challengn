@@ -116,7 +116,7 @@ export const faqData = [
   },
 ];
 
-export const timeline = [
+export const timelineData = [
   {
     topic: "Hackathon Announcement",
     content:
