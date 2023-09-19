@@ -1,3 +1,4 @@
+import { footerLinks, socialIcons } from "@/utils/constant";
 import Link from "next/link";
 
 const Footer = () => {
@@ -19,6 +20,35 @@ const Footer = () => {
               young and talented individuals in the field of technology
             </p>
           </div>
+          <div className="w-full flex flex-col items-start justify-start gap-2">
+            <h2 className="text-primary text-sm md:text-base font-semibold">
+              Useful Links
+            </h2>
+            <nav
+              aria-label="footer_nav"
+              className="flex flex-col items-start justify-start gap-4"
+            >
+              {footerLinks.map((item, i) => (
+                <Link href={item.href} key={i} className="text-sm font-normal hover:text-primary transition-all duration-200">
+                  {item.text}
+                </Link>
+              ))}
+              <div className="flex items-center justify-start gap-3">
+                <p className="text-primary text-sm font-normal">Follow us</p>
+                <nav
+                  aria-label="footer_social"
+                  className="flex items-center justify-start gap-3"
+                >
+                  {socialIcons.map((item, i) => (
+                    <Link key={i} href={item.href}>
+                      <img src={item.icon} alt={item.href} />
+                    </Link>
+                  ))}
+                </nav>
+              </div>
+            </nav>
+          </div>
+          <div></div>
         </div>
       </div>
     </footer>
