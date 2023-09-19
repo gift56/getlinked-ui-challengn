@@ -1,5 +1,7 @@
 import { policyData } from "@/utils/constant";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { CustomizeButton } from "..";
 
 const Privacy = () => {
   return (
@@ -55,16 +57,36 @@ const Privacy = () => {
                 <h4 className="text-sm md:text-base tab:text-lg font-bold text-primary">
                   Licensing Policy
                 </h4>
-                <p className="text-start text-sm font-bold leading-[216p%]">
+                <p className="text-start text-sm font-bold">
                   Here are terms of our Standard License:
                 </p>
-                <ul className="w-full flex flex-col gap-2 mt-4 items-start justify-start">
+                <ul className="w-full flex flex-col gap-6 mt-4 items-start justify-start">
                   {policyData.map((item, i) => (
-                    <li key={i} className="flex items-start justify-start gap-2">
-                      
+                    <li
+                      key={i}
+                      className="flex items-start justify-start gap-2 text-start text-sm font-normal"
+                    >
+                      <img src="/icon/checkIcon.svg" alt="check_icon" />
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
+              </div>
+              <div className="w-full flex items-center justify-center">
+                <Link href="/" className="w-fit">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ type: "spring", duration: 2 }}
+                    viewport={{ once: true }}
+                  >
+                    <CustomizeButton
+                      text="Read More"
+                      className="bg-btnlinear border-none rounded !px-14 !py-3"
+                      type="button"
+                    />
+                  </motion.div>
+                </Link>
               </div>
             </div>
           </div>
