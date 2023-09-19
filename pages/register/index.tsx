@@ -67,7 +67,12 @@ const Registerpage = () => {
       </header>
       <section className="w-full tab:h-screen tab:overflow-hidden">
         <div className="container h-full">
-          <div className="w-full flex flex-col"></div>
+          <div className="w-full flex flex-col items-center justify-between tab:justify-start gap-6">
+            <div className="w-full">
+              <img src="/img/registerImg.png" alt="registration_avatar" className="tab:h-[650px] object-cover" />
+            </div>
+            <div className="w-full"></div>
+          </div>
         </div>
       </section>
     </>
