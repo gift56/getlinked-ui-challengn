@@ -22,7 +22,16 @@ const Introduction = () => {
               viewport={{ once: true }}
               src="/icon/purplestarIcon.png"
               alt="star"
-              className="absolute hidden tab:flex left-[5%] top-[25%] tab:w-5 tab:h-5 w-3"
+              className="absolute flex left-[5%] top-[25%] tab:w-5 tab:h-5 w-3"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/arrowicon.png"
+              alt="arrow"
+              className="absolute tab:flex left-[50%] bottom-[-3%] tab:bottom-[10%] tab:left-[85%] tab:w-16 w-6"
             />
           </div>
           <div className="w-full relative tab:flex-1 flex flex-col gap-5">
