@@ -26,17 +26,17 @@ const Privacy = () => {
               >
                 Last updated on September 12, 2023
               </motion.p>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ type: "spring", duration: 2 }}
-                viewport={{ once: true }}
-                className="text-center tab:text-start text-sm font-normal"
-              >
-                {`Below are our privacy & policy, which outline a lot of goodies.
-                it’s our aim to always take of our participant`}
-              </motion.p>
             </div>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              className="text-center tab:text-start text-sm font-normal mt-5"
+            >
+              {`Below are our privacy & policy, which outline a lot of goodies.
+                it’s our aim to always take of our participant`}
+            </motion.p>
           </div>
           <div className="w-full">
             <motion.img
