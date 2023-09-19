@@ -1,4 +1,4 @@
-import { Hero, Introduction } from "@/components";
+import { Hero, Introduction, Rules } from "@/components";
 import MainLayout from "@/layout/MainLayout";
 
 const Homepage = () => {
@@ -6,6 +6,7 @@ const Homepage = () => {
     <MainLayout pagetitle="Hackathon 1.0">
       <Hero />
       <Introduction />
+      <Rules />
     </MainLayout>
   );
 };
