@@ -10,6 +10,8 @@ import Rules from "./LandingpageContent/Rules";
 import Sponsors from "./LandingpageContent/Sponsors";
 import Timeline from "./LandingpageContent/Timeline";
 import Navbar from "./Navbar";
+import CustomizeInput from "./form/CustomizeInput";
+import CustomizeSelect from "./form/CustomizeSelect";
 
 export {
   CustomizeButton,
@@ -24,4 +26,6 @@ export {
   Price,
   Sponsors,
   Privacy,
+  CustomizeInput,
+  CustomizeSelect,
 };
