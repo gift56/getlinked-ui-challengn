@@ -5,6 +5,7 @@ import { Footer, Navbar } from "@/components";
 interface LayoutProps {
   children: ReactNode;
   pagetitle: String;
+  showFooter?: Boolean;
 }
 
 const MainLayout = ({ children, pagetitle }: LayoutProps) => {
