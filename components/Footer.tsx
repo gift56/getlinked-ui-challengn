@@ -1,4 +1,6 @@
 import { footerLinks, socialIcons } from "@/utils/constant";
+import { CgPhone } from "react-icons/cg";
+import { HiLocationMarker } from "react-icons/hi";
 import Link from "next/link";
 
 const Footer = () => {
@@ -56,6 +58,28 @@ const Footer = () => {
             <h2 className="text-primary text-sm md:text-base font-semibold">
               Contact Us
             </h2>
+            <nav
+              aria-label="fooret_contact"
+              className="flex flex-col items-start justify-start gap-4"
+            >
+              <Link
+                href="tel:+23467981819"
+                className="text-sm font-normal flex items-center justify-start gap-2 hover:text-primary transition-all duration-200"
+              >
+                <CgPhone size={18} />
+                <span>+234 679 81819</span>
+              </Link>
+              <Link
+                href=""
+                className="text-sm font-normal flex items-center justify-start gap-2 hover:text-primary transition-all duration-200"
+              >
+                <HiLocationMarker size={20} />
+                <span>
+                  27,Alara Street <br /> Yaba 100012
+                  <br /> Lagos State
+                </span>
+              </Link>
+            </nav>
           </div>
         </div>
       </div>
