@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Faqs = () => {
+  const [opened, setOpened] = useState<String | null>(null);
+
+  const toggle = (id: String) => {
+    setOpened(opened !== id ? id : null);
+  };
+
   return (
     <section className="w-full py-10 border-b border-borderColor">
       <div className="container overflow-hidden">
@@ -15,7 +22,6 @@ const Faqs = () => {
               alt="faq"
               className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
-            <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-14 xl:top-[15%] right-14 xl:right-[25%] p-5"></div>
           </div>
           <div className="w-full tab:flex-1 flex flex-col gap-5">
             <motion.h2
@@ -35,8 +41,9 @@ const Faqs = () => {
               viewport={{ once: true }}
               className="text-center text-sm font-normal tab:text-start"
             >
-              We got answers to the questions that you might want to ask about
-              getlinked Hackathon 1.0
+              We got answers to the questions that you might{" "}
+              <br className="hidden tab:block" /> want to ask about{" "}
+              <b>getlinked Hackathon 1.0</b>
             </motion.p>
           </div>
         </div>
