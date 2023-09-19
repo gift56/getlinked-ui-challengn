@@ -28,6 +28,7 @@ const Timeline = () => {
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-3">
             {/* DESKTOP */}
+            
             <div className="hidden tab:flex items-end justify-center -translate-x-16 gap-20 w-full">
               <div className="flex items-start justify-start tab:items-end tab:justify-end flex-col gap-2">
                 <h2 className="text-sm font-bold text-primary md:text-lg lg:text-2xl tab:text-right">
