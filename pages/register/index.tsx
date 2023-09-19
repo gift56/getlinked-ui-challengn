@@ -1,4 +1,10 @@
-import { CustomizeButton, CustomizeInput, CustomizeSelect } from "@/components";
+import { useState } from "react";
+import {
+  CustomizeButton,
+  CustomizeInput,
+  CustomizeSelect,
+  SuccessfulModal,
+} from "@/components";
 import Head from "next/head";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -7,6 +13,7 @@ import { FormValue } from "@/types";
 import { registerSchema } from "@/schema";
 
 const Registerpage = () => {
+  const [success, setSuccess] = useState(false);
   const navLinks = [
     {
       href: "/#timeline",
@@ -34,6 +41,7 @@ const Registerpage = () => {
 
   const onSubmit = async (payload: FormValue, actions: any) => {
     console.log(payload);
+    setSuccess(true);
     await new Promise((res) => setTimeout(res, 1000));
     actions.resetForm();
   };
@@ -313,6 +321,7 @@ const Registerpage = () => {
           </div>
         </div>
       </section>
+      <SuccessfulModal show={success} setShow={setSuccess} />
     </>
   );
 };
