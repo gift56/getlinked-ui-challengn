@@ -19,7 +19,7 @@ const Timeline = () => {
     visible: {
       opacity: 1,
       y: 0,
-      duration: 0.5,
+      duration: 0.9,
     },
   };
 
@@ -108,30 +108,32 @@ const Timeline = () => {
               </motion.div>
             ))}
             {/* MOBILE */}
-            <div className="tab:hidden flex items-start justify-start w-full gap-4">
-              <div className="flex flex-col items-center justify-center gap-1">
-                <img
-                  src="/icon/lineIcon.svg"
-                  alt="line_icon"
-                  className="h-[115px] tab:h-[137px] object-contain"
-                />
-                <span className="w-5 h-5 flex items-center justify-center rounded-full bg-btnlinear text-sm font-bold md:text-lg">
-                  1
-                </span>
+            {timelineData.map((item, i) => (
+              <div
+                key={i}
+                className="tab:hidden flex items-start justify-start w-full gap-4"
+              >
+                <div className="flex flex-col items-center justify-center gap-1">
+                  <img
+                    src="/icon/lineIcon.svg"
+                    alt="line_icon"
+                    className="h-[115px] tab:h-[137px] object-contain"
+                  />
+                  <span className="w-5 h-5 flex items-center justify-center rounded-full bg-btnlinear text-sm font-bold md:text-lg">
+                    {i + 1}
+                  </span>
+                </div>
+                <div className="flex items-start justify-start flex-col gap-2">
+                  <h2 className="text-sm font-bold text-primary sm:text-lg">
+                    {item.topic}
+                  </h2>
+                  <p className="text-sm font-normal">{item.content}</p>
+                  <p className="flex items-start justify-start text-sm font-bold text-primary sm:text-lg">
+                    {item.date}
+                  </p>
+                </div>
               </div>
-              <div className="flex items-start justify-start flex-col gap-2">
-                <h2 className="text-sm font-bold text-primary sm:text-lg">
-                  Hackathon Announcement
-                </h2>
-                <p className="text-sm font-normal">
-                  The getlinked tech hackathon 1.0 is formally announced to the
-                  general public and teams begin to get ready to register
-                </p>
-                <p className="flex items-start justify-start text-sm font-bold text-primary sm:text-lg">
-                  November 18, 2023
-                </p>
-              </div>
-            </div>
+            ))}
           </motion.div>
         </div>
       </div>
