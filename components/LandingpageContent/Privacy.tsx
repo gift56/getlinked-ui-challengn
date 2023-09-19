@@ -90,7 +90,7 @@ const Privacy = () => {
               </div>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-full flex items-start justify-end">
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -98,7 +98,7 @@ const Privacy = () => {
               viewport={{ once: true }}
               src="/img/privacyImg.png"
               alt="sponsors"
-              className="w-full tab:w-[549px] object-contain"
+              className="w-full tab:w-[485px]"
             />
           </div>
         </div>
