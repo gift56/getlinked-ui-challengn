@@ -23,12 +23,17 @@ const Price = () => {
               viewport={{ once: true }}
               className="text-center text-sm font-normal tab:text-start"
             >
-              Highlight of the prizes or rewards for winners and <br className="hidden tab:block" /> for
-              participants.
+              Highlight of the prizes or rewards for winners and{" "}
+              <br className="hidden tab:block" /> for participants.
             </motion.p>
           </div>
-          <div className="flex items-center justify-center gap-9 tab:items-start tab:justify-between w-full">
-            
+          <div className="flex items-center justify-center gap-6 tab:items-start tab:justify-between w-full">
+            <div className="w-full lg:flex-1">
+              <img src="/img/priceImg.png" alt="price_rewardImg" />
+            </div>
+            <div className="w-full lg:flex-1 grid grid-cols-3 gap-1 items-start justify-start">
+              
+            </div>
           </div>
         </div>
       </div>
