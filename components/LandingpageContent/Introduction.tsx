@@ -16,7 +16,7 @@ const Introduction = () => {
               className="tab:w-[490px] w-[264px] mx-auto"
             />
           </div>
-          <div className="w-full tab:flex-1 flex flex-col gap-1">
+          <div className="w-full tab:flex-1 flex flex-col gap-5">
             <motion.h2
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}

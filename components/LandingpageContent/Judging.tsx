@@ -39,7 +39,7 @@ const Judging = () => {
             />
             <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-14 xl:top-[15%] right-14 xl:right-[25%] p-5"></div>
           </div>
-          <div className="w-full tab:flex-1 flex flex-col gap-1">
+          <div className="w-full tab:flex-1 flex flex-col gap-5">
             <motion.h2
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -57,7 +57,7 @@ const Judging = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="flex tab:items-start flex-col items-center justify-center text-center tab:text-start tab:justify-start w-full"
+              className="flex tab:items-start flex-col items-center justify-center text-center tab:text-start tab:justify-start w-full gap-3"
             >
               {judgingCriteria.map((item, i) => (
                 <motion.li

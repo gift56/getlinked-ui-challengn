@@ -17,7 +17,7 @@ const Rules = () => {
             />
             <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-14 xl:top-[15%] right-14 xl:right-[25%] p-5"></div>
           </div>
-          <div className="w-full tab:flex-1 flex flex-col gap-1">
+          <div className="w-full tab:flex-1 flex flex-col gap-5">
             <motion.h2
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
