@@ -153,6 +153,13 @@ const Registerpage = () => {
               ></motion.div>
             </div>
             <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[620px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
+              <img
+                src="/icon/graystar.png"
+                alt="star"
+                className="absolute right-0 tab:top-[2%] tab:right-[20%]"
+                width={20}
+                height={20}
+              />
               <h2 className="hidden lg:block text-3xl font-semibold font-clash text-primary">
                 Register
               </h2>
