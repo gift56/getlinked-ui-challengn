@@ -104,8 +104,4 @@ export const faqData = [
     question: "What happens after the hackathon ends",
     answer: "You can, if only the company name and brand is been promoted.",
   },
-  {
-    question: "Can I work on a project I started before the hackathon?",
-    answer: "You can, if only the company name and brand is been promoted.",
-  },
 ];

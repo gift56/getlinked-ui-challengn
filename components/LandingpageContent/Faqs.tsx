@@ -47,7 +47,7 @@ const Faqs = () => {
               <br className="hidden tab:block" /> want to ask about{" "}
               <b>getlinked Hackathon 1.0</b>
             </motion.p>
-            <div className="w-full flex items-start flex-col gap-5">
+            <div className="w-full flex items-start flex-col gap-5 mt-6">
               {faqData.map((item) => (
                 <div
                   key={item.question}
@@ -59,20 +59,22 @@ const Faqs = () => {
                       {item.question}
                     </h2>
                     <span className=" text-primary">
-                      {item.question === opened
-                        ? "-"
-                        : // `<FiMinus size={18} className="transition-all duration-300"
-                          // />`
-                          // `<FiPlus
-                          //   size={18}
-                          //   className="transition-all duration-300"
-                          // />`
-                          "+"}
+                      {
+                        item.question === opened
+                          ? "-"
+                          : // `<FiMinus size={18} className="transition-all duration-300"
+                            // />`
+                            "+"
+                        //  `<FiPlus
+                        //   size={18}
+                        //   className="transition-all duration-300"
+                        // />`
+                      }
                     </span>
                   </div>
                   <div
-                    className={`w-full transition-all py-2 block duration-300 ${
-                      item.question === opened ? "" : ""
+                    className={`w-full transition-all duration-300 ${
+                      item.question === opened ? "block" : "hidden"
                     }`}
                   >
                     {item.answer}
