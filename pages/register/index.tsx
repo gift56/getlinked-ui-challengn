@@ -69,10 +69,14 @@ const Registerpage = () => {
         <div className="container h-full">
           <div className="w-full flex flex-col items-center justify-between tab:flex-row tab:justify-start gap-6">
             <div className="w-full">
-              <img src="/img/registerImg.png" alt="registration_avatar" className="tab:h-[650px] object-cover" />
+              <img
+                src="/img/registerImg.png"
+                alt="registration_avatar"
+                className="tab:h-[650px] object-cover"
+              />
             </div>
             <div className="w-full tab:bg-[#ffffff08] tab:shadow-registerShad tab:rounded-xl tab:p-10 text-white tab:h-[500px] tab:overflow-y-auto flex flex-col items-start justify-start gap-5">
-
+              <h2 className="hidden tab:block text-3xl font-semibold font-clash">Register</h2>
             </div>
           </div>
         </div>
