@@ -13,7 +13,7 @@ import MainLayout from "@/layout/MainLayout";
 
 const Homepage = () => {
   return (
-    <MainLayout pagetitle="Hackathon 1.0">
+    <MainLayout pagetitle="Hackathon 1.0" showFooter={true}>
       <Hero />
       <Introduction />
       <Rules />

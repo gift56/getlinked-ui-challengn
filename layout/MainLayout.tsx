@@ -8,7 +8,7 @@ interface LayoutProps {
   showFooter?: Boolean;
 }
 
-const MainLayout = ({ children, pagetitle }: LayoutProps) => {
+const MainLayout = ({ children, pagetitle, showFooter }: LayoutProps) => {
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ const MainLayout = ({ children, pagetitle }: LayoutProps) => {
       </Head>
       <Navbar />
       <main>{children}</main>
-      <Footer />
+      {showFooter === true && <Footer />}
     </>
   );
 };
