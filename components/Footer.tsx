@@ -70,7 +70,9 @@ const Footer = () => {
                 <span>+234 679 81819</span>
               </Link>
               <Link
-                href=""
+                href="https://maps.app.goo.gl/gwLdUkkomW9wVB9G9"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm font-normal flex items-center justify-start gap-2 hover:text-primary transition-all duration-200"
               >
                 <HiLocationMarker size={20} />
