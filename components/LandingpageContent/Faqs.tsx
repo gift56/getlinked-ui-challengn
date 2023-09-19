@@ -73,7 +73,7 @@ const Faqs = () => {
                     </span>
                   </div>
                   <div
-                    className={`w-full text-sm font-normal ${
+                    className={`w-full pt-4 text-sm font-normal ${
                       item.id === opened ? "block" : "hidden"
                     } transition-all duration-300`}
                   >
