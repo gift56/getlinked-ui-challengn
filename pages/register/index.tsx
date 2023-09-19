@@ -88,7 +88,7 @@ const Registerpage = () => {
                   CREATE YOUR ACCOUNT
                 </h3>
               </div>
-              <form className="w-full flex flex-col items-start justify-start gap-2">
+              <form className="w-full flex flex-col items-start justify-start gap-4">
                 <div className="w-full flex flex-col tab:flex-row items-start justify-between gap-3">
                   <CustomizeInput
                     showLabel={false}
@@ -218,15 +218,26 @@ const Registerpage = () => {
                     // onChange={handleChange}
                     // onBlur={handleBlur}
                     id="privacy_poclicy_accepted"
+                    className="bg-red-500 outline-none border border-white"
                   />
                   <label
                     htmlFor="privacy_poclicy_accepted"
-                    className="text-sm font-normal"
+                    className="text-sm font-normal cursor-pointer"
                   >
                     I agreed with the every terms and conditions and privacy
                     policy
                   </label>
                 </div>
+                <CustomizeButton
+                  text="Register"
+                  className="bg-btnlinear border-none rounded !px-10 w-full my-4 hidden tab:flex"
+                  type="submit"
+                />
+                <CustomizeButton
+                  text="Register"
+                  className="bg-btnlinear border-none rounded !px-10 w-full my-4 flex tab:hidden"
+                  type="submit"
+                />
               </form>
             </div>
           </div>
