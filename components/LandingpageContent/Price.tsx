@@ -43,7 +43,7 @@ const Price = () => {
               <motion.img
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ type: "spring", duration: 5 }}
+                transition={{ type: "spring", duration: 2 }}
                 viewport={{ once: true }}
                 src="/img/rewardIcons.png"
                 alt="reward_Img"
