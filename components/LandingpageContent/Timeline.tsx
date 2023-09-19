@@ -28,7 +28,10 @@ const Timeline = () => {
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-3">
             <div className="flex items-center justify-between gap-2 w-full">
-              <div className="flex "></div>
+              <div className="flex items-start justify-start tab:justify-end flex-col gap-2">
+                <h2 className="text-sm font-bold text-primary">Hackathon Announcement</h2>
+              </div>
+              <div className="flex items-start justify-start "></div>
             </div>
           </div>
         </div>
