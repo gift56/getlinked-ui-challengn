@@ -20,7 +20,7 @@ const Footer = () => {
               young and talented individuals in the field of technology
             </p>
           </div>
-          <div className="w-full flex flex-col items-start justify-start gap-2">
+          <div className="w-full  tab:w-[50%] flex flex-col items-start justify-start gap-2">
             <h2 className="text-primary text-sm md:text-base font-semibold">
               Useful Links
             </h2>
@@ -29,7 +29,11 @@ const Footer = () => {
               className="flex flex-col items-start justify-start gap-4"
             >
               {footerLinks.map((item, i) => (
-                <Link href={item.href} key={i} className="text-sm font-normal hover:text-primary transition-all duration-200">
+                <Link
+                  href={item.href}
+                  key={i}
+                  className="text-sm font-normal hover:text-primary transition-all duration-200"
+                >
                   {item.text}
                 </Link>
               ))}
@@ -48,7 +52,11 @@ const Footer = () => {
               </div>
             </nav>
           </div>
-          <div></div>
+          <div className="w-full tab:w-[30%] flex flex-col items-start justify-start gap-2">
+            <h2 className="text-primary text-sm md:text-base font-semibold">
+              Contact Us
+            </h2>
+          </div>
         </div>
       </div>
     </footer>

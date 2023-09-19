@@ -12,6 +12,10 @@ const MainLayout = ({ children, pagetitle }: LayoutProps) => {
     <>
       <Head>
         <title>{`Getlinked - ${pagetitle}`}</title>
+        <meta
+          name="description"
+          content="Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize"
+        />
       </Head>
       <Navbar />
       <main>{children}</main>
