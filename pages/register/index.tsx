@@ -1,4 +1,4 @@
-import { CustomizeButton } from "@/components";
+import { CustomizeButton, CustomizeInput } from "@/components";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -84,10 +84,79 @@ const Registerpage = () => {
                   <span>Be part of this movement!</span>
                   <img src="" alt="walking_image" />
                 </p>
-                <h3 className="text-lg md:text-xl font-normal uppercase tab:text-2xl">CREATE YOUR ACCOUNT</h3>
+                <h3 className="text-lg md:text-xl font-normal uppercase tab:text-2xl">
+                  CREATE YOUR ACCOUNT
+                </h3>
               </div>
               <form className="w-full flex flex-col items-start justify-start gap-2">
-                
+                <div className="w-full flex flex-col tab:flex-row items-start justify-between gap-3">
+                  <CustomizeInput
+                    showLabel={false}
+                    label="Team’s Name"
+                    htmlFor="team_name"
+                    labelClassName="text-sm font-normal"
+                    type="text"
+                    name="team_name"
+                    // value={values.team_name}
+                    // onChange={handleChange}
+                    // onBlur={handleBlur}
+                    // error={getError("team_name")}
+                    id="team_name"
+                    placeholder="Enter the name of your group"
+                    errorClass="hidden"
+                    className="bg-borderColor border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor"
+                  />
+                  <CustomizeInput
+                    showLabel={false}
+                    label="Phone"
+                    htmlFor="phone_number"
+                    labelClassName="text-sm font-normal"
+                    type="text"
+                    name="phone_number"
+                    // value={values.phone_number}
+                    // onChange={handleChange}
+                    // onBlur={handleBlur}
+                    // error={getError("phone_number")}
+                    id="phone_number"
+                    placeholder="Enter your phone number"
+                    errorClass="hidden"
+                    className="bg-borderColor border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor"
+                  />
+                </div>
+                <div className="w-full flex flex-col tab:flex-row items-start justify-between gap-3">
+                  <CustomizeInput
+                    showLabel={false}
+                    label="Email"
+                    htmlFor="email"
+                    labelClassName="text-sm font-normal"
+                    type="email"
+                    name="email"
+                    // value={values.email}
+                    // onChange={handleChange}
+                    // onBlur={handleBlur}
+                    // error={getError("email")}
+                    id="email"
+                    placeholder="Enter your email address"
+                    errorClass="hidden"
+                    className="bg-borderColor border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor"
+                  />
+                  <CustomizeInput
+                    showLabel={false}
+                    label="Project Topic"
+                    htmlFor="project_topic"
+                    labelClassName="text-sm font-normal"
+                    type="text"
+                    name="project_topic"
+                    // value={values.project_topic}
+                    // onChange={handleChange}
+                    // onBlur={handleBlur}
+                    // error={getError("project_topic")}
+                    id="project_topic"
+                    placeholder="What is your group project topic"
+                    errorClass="hidden"
+                    className="bg-borderColor border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor"
+                  />
+                </div>
               </form>
             </div>
           </div>
