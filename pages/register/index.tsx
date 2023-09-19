@@ -5,15 +5,15 @@ import Link from "next/link";
 const Registerpage = () => {
   const navLinks = [
     {
-      href: "#timeline",
+      href: "/#timeline",
       text: "Timeline",
     },
     {
-      href: "#overview",
+      href: "/#overview",
       text: "Overview",
     },
     {
-      href: "#faqs",
+      href: "/#faqs",
       text: "FAQs",
     },
   ];
@@ -49,7 +49,7 @@ const Registerpage = () => {
               ))}
               <Link
                 href="/contact"
-                className="text-base font-normal hover:text-primary transition-all"
+                className="text-base font-normal bg-clip-text text-transparent bg-textgradient transition-all"
               >
                 Contact
               </Link>

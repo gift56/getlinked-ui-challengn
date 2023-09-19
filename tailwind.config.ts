@@ -19,6 +19,7 @@ const config: Config = {
       },
       backgroundImage: {
         btnlinear: "linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)",
+        textgradient: "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
       },
       fontFamily: {
         clash: "'Clash Display', sans-serif",
