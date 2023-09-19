@@ -4,6 +4,7 @@ import {
   Introduction,
   Judging,
   Price,
+  Privacy,
   Rules,
   Sponsors,
   Timeline,
@@ -21,6 +22,7 @@ const Homepage = () => {
       <Timeline />
       <Price />
       <Sponsors />
+      <Privacy />
     </MainLayout>
   );
 };
