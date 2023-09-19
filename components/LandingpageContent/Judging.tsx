@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Judging = () => {
   const container = {
-    hidden: { opacity: 1 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
@@ -14,13 +14,11 @@ const Judging = () => {
   };
 
   const itemdisplay = {
-    hidden: { opacity: 0, y: 60, scale: 0.5 },
+    hidden: { opacity: 0, y: 60 },
     visible: {
       opacity: 1,
       y: 0,
-      scale: 1,
-      duration: 5,
-      type: "spring",
+      duration: 0.5,
     },
   };
 
