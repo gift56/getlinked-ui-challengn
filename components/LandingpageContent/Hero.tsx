@@ -43,12 +43,20 @@ const Hero = () => {
                   className="w-16 tab:w-24 h-auto"
                 />
               </span>
-              <img
+              <motion.img
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", duration: 2 }}
+                viewport={{ once: true }}
                 src="/icon/lightstarIcon.png"
                 alt="star"
                 className="absolute left-[25%] top-[2%] tab:left-[8%] tab:w-5 tab:h-5 w-3"
               />
-              <img
+              <motion.img
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", duration: 2 }}
+                viewport={{ once: true }}
                 src="/icon/graystar.png"
                 alt="star"
                 className="absolute left-[65%] bottom-[20%] tab:w-5 tab:h-5 w-3"
@@ -91,6 +99,15 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-full tab:flex-1 h-full flex relative items-center justify-center">
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/graystar.png"
+              alt="star"
+              className="absolute hidden tab:flex left-[15%] top-[5%] tab:w-5 tab:h-5 w-3"
+            />
             <img
               src="/img/heroBall.png"
               alt="ball"
