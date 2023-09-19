@@ -11,7 +11,7 @@ const Faqs = () => {
   };
 
   return (
-    <section className="w-full py-10 border-b border-borderColor">
+    <section id="faqs" className="w-full py-10 border-b border-borderColor">
       <div className="container overflow-hidden">
         <div className="flex items-center justify-center tab:justify-between w-full gap-6 flex-col tab:flex-row-reverse">
           <div className="w-full tab:flex-1 relative">

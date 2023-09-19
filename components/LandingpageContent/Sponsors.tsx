@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 const Sponsors = () => {
   return (
     <section className="w-full py-10 border-b border-borderColor">
-      <div className="container overflow-hidden">
-        <div className="w-full flex flex-col items-center justify-center gap-5">
+      <div className="container">
+        <div className="w-full flex flex-col items-center justify-center gap-8">
           <div className="flex items-center justify-center flex-col">
             <motion.h2
               initial={{ opacity: 0, y: -30 }}
