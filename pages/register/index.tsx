@@ -174,8 +174,12 @@ const Registerpage = () => {
                     <option id="category" value="" className="bg-black/50">
                       Select your category
                     </option>
-                    <option value="1" className="bg-black/50">1</option>
-                    <option value="2" className="bg-black/50">2</option>
+                    <option value="1" className="bg-black/50">
+                      1
+                    </option>
+                    <option value="2" className="bg-black/50">
+                      2
+                    </option>
                   </CustomizeSelect>
                   <CustomizeSelect
                     showLabel={false}
@@ -193,9 +197,25 @@ const Registerpage = () => {
                     <option id="group_size" value="" className="bg-black/50">
                       Select
                     </option>
-                    <option value="10" className="bg-black/50">10</option>
-                    <option value="20" className="bg-black/50">20</option>
+                    <option value="10" className="bg-black/50">
+                      10
+                    </option>
+                    <option value="20" className="bg-black/50">
+                      20
+                    </option>
                   </CustomizeSelect>
+                </div>
+                <p className="text-sm font-normal text-primary">
+                  <i>
+                    Please review your registration details before submitting
+                  </i>
+                </p>
+                <div className="flex items-center justify-start gap-2">
+                  <input type="text" />
+                  <span>
+                    I agreed with the every terms and conditions and privacy
+                    policy
+                  </span>
                 </div>
               </form>
             </div>
