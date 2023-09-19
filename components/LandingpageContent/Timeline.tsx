@@ -109,7 +109,8 @@ const Timeline = () => {
             ))}
             {/* MOBILE */}
             {timelineData.map((item, i) => (
-              <div
+              <motion.div
+                variants={itemdisplay}
                 key={i}
                 className="tab:hidden flex items-start justify-start w-full gap-4"
               >
@@ -132,7 +133,7 @@ const Timeline = () => {
                     {item.date}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>
