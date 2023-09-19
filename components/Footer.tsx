@@ -21,6 +21,12 @@ const Footer = () => {
               established by a group of organizations with the aim of showcasing
               young and talented individuals in the field of technology
             </p>
+
+            <p className="text-sm font-normal flex items-center gap-4 mt-10 tab:mt-20">
+              Terms of Use{" "}
+              <span className="w-[2px] h-6 bg-primary rounded-lg"></span>{" "}
+              Privacy Policy
+            </p>
           </div>
           <div className="w-full  md:w-[50%] flex flex-col items-start justify-start gap-2">
             <h2 className="text-primary text-sm md:text-base font-semibold">
@@ -84,6 +90,9 @@ const Footer = () => {
             </nav>
           </div>
         </div>
+        <p className="w-full text-center font-normal text-sm mt-8">
+          All rights reserved. © getlinked Ltd.
+        </p>
       </div>
     </footer>
   );
