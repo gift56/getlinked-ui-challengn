@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Price = () => {
   return (
-    <section className="w-full py-10 bg-gray-600">
+    <section className="w-full py-10">
       <div className="container overflow-hidden">
         <div className="w-full flex flex-col items-center justify-center gap-8">
           <div className="flex items-center justify-center tab:items-start tab:justify-start flex-col gap-3 tab:w-[45%] tab:ml-auto">
@@ -26,6 +26,9 @@ const Price = () => {
               Highlight of the prizes or rewards for winners and <br className="hidden tab:block" /> for
               participants.
             </motion.p>
+          </div>
+          <div className="flex items-center justify-center gap-9 tab:items-start tab:justify-between w-full">
+            
           </div>
         </div>
       </div>
