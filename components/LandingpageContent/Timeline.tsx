@@ -26,8 +26,10 @@ const Timeline = () => {
               <br className="hidden tab:block" /> using for the upcoming event.
             </motion.p>
           </div>
-          <div className="w-full flex flex-col items-start justify-start gap-5">
-            <div></div>
+          <div className="w-full flex flex-col items-center justify-center gap-3">
+            <div className="flex items-center justify-between gap-2 w-full">
+              <div className="flex "></div>
+            </div>
           </div>
         </div>
       </div>
