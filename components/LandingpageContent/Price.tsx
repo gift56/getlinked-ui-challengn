@@ -30,7 +30,7 @@ const Price = () => {
           <div className="flex items-center flex-col tab:flex-row justify-center gap-6 tab:items-end tab:justify-between w-full">
             <div className="w-full">
               <motion.img
-                initial={{ opacity: 0, x: -50 }}
+                initial={{ opacity: 0, x: -60 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ type: "spring", duration: 2 }}
                 viewport={{ once: true }}

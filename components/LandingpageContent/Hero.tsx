@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CustomizeButton } from "..";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -18,7 +19,13 @@ const Hero = () => {
 
         <div className="w-full flex items-center justify-between gap-6 flex-col tab:flex-row">
           <div className="w-full tab:flex-1 h-full flex flex-col gap-6 items-center justify-center tab:items-start tab:justify-start  py-10 md:pt-28">
-            <h2 className="flex flex-col items-center text-center tab:text-start gap-1 justify-center md:items-start md:justify-start w-full">
+            <motion.h2
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              className="flex flex-col items-center text-center tab:text-start gap-1 justify-center md:items-start md:justify-start w-full"
+            >
               <span className="relative font-bold text-3xl tab:text-5xl lg:text-6xl monitor:text-7xl font-clash">
                 getlinked Tech
                 <img
@@ -37,17 +44,30 @@ const Hero = () => {
                   className="w-16 tab:w-24 h-auto"
                 />
               </span>
-            </h2>
-            <p className="text-sm text-center md:text-base lg:text-xl tab:text-start font-normal">
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              className="text-sm text-center md:text-base lg:text-xl tab:text-start font-normal"
+            >
               Participate in getlinked tech Hackathon 2023 stand{" "}
               <br className="hidden xl:block" /> a chance to win a Big prize
-            </p>
+            </motion.p>
             <Link href="/register" className="w-fit">
-              <CustomizeButton
-                text="Register"
-                className="bg-btnlinear border-none rounded !px-14 !py-3"
-                type="button"
-              />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", duration: 2 }}
+                viewport={{ once: true }}
+              >
+                <CustomizeButton
+                  text="Register"
+                  className="bg-btnlinear border-none rounded !px-14 !py-3"
+                  type="button"
+                />
+              </motion.div>
             </Link>
             <div className="flex items-center tab:justify-start gap-6">
               <span className="font-unica text-3xl font-normal md:text-4xl uppercase">
@@ -62,7 +82,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-full tab:flex-1 h-full flex relative items-center justify-center">
-            <img src="/img/heroBall.png" alt="ball" className="absolute z-40 animate-pulse duration-300" />
+            <img
+              src="/img/heroBall.png"
+              alt="ball"
+              className="absolute z-40 animate-pulse duration-300"
+            />
             <img src="/img/heroBg.png" alt="heroImg" className="grayscale" />
           </div>
         </div>
