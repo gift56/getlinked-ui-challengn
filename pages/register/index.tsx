@@ -62,21 +62,24 @@ const Registerpage = () => {
                 />
               </Link>
             </nav>
+            <h2 className="tab:hidden text-lg font-semibold font-clash text-primary">
+              Register
+            </h2>
           </div>
         </div>
       </header>
-      <section className="w-full pb-8 tab:pb-0 tab:h-screen tab:overflow-hidden">
+      <section className="w-full pb-8 lg:pb-0 lg:h-screen lg:overflow-hidden">
         <div className="container h-full">
-          <div className="w-full flex flex-col items-center justify-between tab:flex-row tab:justify-start gap-6">
+          <div className="w-full flex flex-col items-center justify-between lg:flex-row lg:justify-start gap-6">
             <div className="w-full">
               <img
                 src="/img/registerImg.png"
                 alt="registration_avatar"
-                className="tab:h-[650px] object-cover"
+                className="lg:h-[650px] object-cover"
               />
             </div>
-            <div className="w-full tab:bg-[#ffffff08] tab:shadow-registerShad tab:rounded-xl tab:p-10 text-white tab:h-[500px] tab:overflow-y-auto flex flex-col items-start justify-start gap-5">
-              <h2 className="hidden tab:block text-3xl font-semibold font-clash text-primary">
+            <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[500px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5">
+              <h2 className="hidden lg:block text-3xl font-semibold font-clash text-primary">
                 Register
               </h2>
               <div className="flex flex-col items-start w-full gap-1">
@@ -104,7 +107,7 @@ const Registerpage = () => {
                     id="team_name"
                     placeholder="Enter the name of your group"
                     errorClass="hidden"
-                    className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
+                    className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-[#ffffff40] focus:border-primary transition-all duration-300"
                   />
                   <CustomizeInput
                     showLabel={false}
@@ -120,7 +123,7 @@ const Registerpage = () => {
                     id="phone_number"
                     placeholder="Enter your phone number"
                     errorClass="hidden"
-                    className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
+                    className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-[#ffffff40] focus:border-primary transition-all duration-300"
                   />
                 </div>
                 <div className="w-full flex flex-col tab:flex-row items-start justify-between gap-3">
@@ -138,7 +141,7 @@ const Registerpage = () => {
                     id="email"
                     placeholder="Enter your email address"
                     errorClass="hidden"
-                    className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
+                    className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-[#ffffff40] focus:border-primary transition-all duration-300"
                   />
                   <CustomizeInput
                     showLabel={false}
@@ -154,7 +157,7 @@ const Registerpage = () => {
                     id="project_topic"
                     placeholder="What is your group project topic"
                     errorClass="hidden"
-                    className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
+                    className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-[#ffffff40] focus:border-primary transition-all duration-300"
                   />
                 </div>
                 <div className="w-full flex flex-col tab:flex-row items-start justify-between gap-3">
@@ -230,14 +233,16 @@ const Registerpage = () => {
                 </div>
                 <CustomizeButton
                   text="Register"
-                  className="bg-btnlinear border-none rounded !px-10 w-full my-4 hidden tab:flex"
+                  className="bg-btnlinear border-none rounded !px-10 !py-3 w-full my-4 hidden tab:flex"
                   type="submit"
                 />
-                <CustomizeButton
-                  text="Register"
-                  className="bg-btnlinear border-none rounded !px-10 w-full my-4 flex tab:hidden"
-                  type="submit"
-                />
+                <div className="w-full flex tab:hidden items-center justify-center">
+                  <CustomizeButton
+                    text="Submit"
+                    className="bg-btnlinear border-none rounded !px-10 w-fit my-4 flex"
+                    type="submit"
+                  />
+                </div>
               </form>
             </div>
           </div>
