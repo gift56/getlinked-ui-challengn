@@ -1,5 +1,7 @@
+import { faqData } from "@/utils/constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FiMinus, FiPlus } from "react-icons/fi";
 
 const Faqs = () => {
   const [opened, setOpened] = useState<String | null>(null);
@@ -45,6 +47,39 @@ const Faqs = () => {
               <br className="hidden tab:block" /> want to ask about{" "}
               <b>getlinked Hackathon 1.0</b>
             </motion.p>
+            <div className="w-full flex items-start flex-col gap-5">
+              {faqData.map((item) => (
+                <div
+                  key={item.question}
+                  onClick={() => toggle(item.question)}
+                  className="flex flex-col items-start justify-start w-full border-b border-primary cursor-pointer pb-2"
+                >
+                  <div className="w-full flex items-center justify-between">
+                    <h2 className="text-sm font-normal text-white">
+                      {item.question}
+                    </h2>
+                    <span className=" text-primary">
+                      {item.question === opened
+                        ? "-"
+                        : // `<FiMinus size={18} className="transition-all duration-300"
+                          // />`
+                          // `<FiPlus
+                          //   size={18}
+                          //   className="transition-all duration-300"
+                          // />`
+                          "+"}
+                    </span>
+                  </div>
+                  <div
+                    className={`w-full transition-all py-2 block duration-300 ${
+                      item.question === opened ? "" : ""
+                    }`}
+                  >
+                    {item.answer}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
