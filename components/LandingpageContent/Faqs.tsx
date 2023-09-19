@@ -25,8 +25,8 @@ const Faqs = () => {
               viewport={{ once: true }}
               className="text-xl font-bold md:text-2xl text-center tab:text-start tab:text-3xl font-clash"
             >
-              Rules and
-              <span className="font-clash text-primary block">Guidelines</span>
+              Frequently Ask
+              <span className="font-clash text-primary block">Question</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 50 }}
@@ -35,13 +35,8 @@ const Faqs = () => {
               viewport={{ once: true }}
               className="text-center text-sm font-normal tab:text-start"
             >
-              Our tech hackathon is a melting pot of visionaries, and its
-              purpose is as clear as day: to shape the future. Whether you're a
-              coding genius, a design maverick, or a concept wizard, you'll have
-              the chance to transform your ideas into reality. Solving
-              real-world problems, pushing the boundaries of technology, and
-              creating solutions that can change the world, that's what we're
-              all about!
+              We got answers to the questions that you might want to ask about
+              getlinked Hackathon 1.0
             </motion.p>
           </div>
         </div>
