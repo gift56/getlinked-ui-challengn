@@ -44,20 +44,18 @@ const Timeline = () => {
                   }`}
                 >
                   <h2
-                    className={`font-bold text-primary text-lg lg:text-2xl  ${
+                    className={`font-bold text-primary text-lg lg:text-2xl lg:max-w-[450px] ${
                       item.row === false ? "text-left" : "text-right"
                     }`}
                   >
-                    Hackathon Announcement
+                    {item.topic}
                   </h2>
                   <p
-                    className={`text-sm font-normal ${
+                    className={`text-sm font-normal lg:max-w-[500px] ${
                       item.row === false ? "text-left" : "text-right"
                     }`}
                   >
-                    The getlinked tech hackathon 1.0 is formally announced{" "}
-                    <br className="hidden tab:block" /> to the general public
-                    and teams begin to get ready to register
+                    {item.content}
                   </p>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-1">
@@ -72,10 +70,12 @@ const Timeline = () => {
                 </div>
                 <p
                   className={`flex font-bold text-primary text-lg lg:text-2xl w-full ${
-                    item.row === false ? "text-left items-end justify-end" : "text-right items-start justify-start "
+                    item.row === false
+                      ? "text-left items-end justify-end"
+                      : "text-right items-start justify-start "
                   }`}
                 >
-                  November 18, 2023
+                  {item.date}
                 </p>
               </div>
             ))}
