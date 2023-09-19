@@ -211,11 +211,21 @@ const Registerpage = () => {
                   </i>
                 </p>
                 <div className="flex items-center justify-start gap-2">
-                  <input type="text" />
-                  <span>
+                  <input
+                    type="checkbox"
+                    name="privacy_poclicy_accepted"
+                    // value={values.privacy_poclicy_accepted}
+                    // onChange={handleChange}
+                    // onBlur={handleBlur}
+                    id="privacy_poclicy_accepted"
+                  />
+                  <label
+                    htmlFor="privacy_poclicy_accepted"
+                    className="text-sm font-normal"
+                  >
                     I agreed with the every terms and conditions and privacy
                     policy
-                  </span>
+                  </label>
                 </div>
               </form>
             </div>
