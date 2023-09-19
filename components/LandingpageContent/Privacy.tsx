@@ -40,7 +40,7 @@ const Privacy = () => {
               {`Below are our privacy & policy, which outline a lot of goodies.
                 it’s our aim to always take of our participant`}
             </motion.p>
-            <div className="w-full border border-primary bg-[#d9d9d908] rounded-[5px] flex flex-col items-center justify-center gap-6 tab:items-start tab:justify-start p-4 tab:p-12">
+            <div className="w-full border border-primary bg-[#d9d9d908] rounded-[5px] flex flex-col items-center justify-center gap-6 tab:items-start tab:justify-start px-4 py-6 tab:p-12">
               <p className="text-center tab:text-start text-sm md:text-base font-normal">
                 At getlinked tech Hackathon 1.0, we value your privacy{" "}
                 <br className="hidden tab:block" /> and are committed to
@@ -57,7 +57,7 @@ const Privacy = () => {
                 <h4 className="text-sm md:text-base tab:text-lg font-bold text-primary">
                   Licensing Policy
                 </h4>
-                <p className="text-start text-sm font-bold">
+                <p className="text-start text-xs md:text-sm font-bold">
                   Here are terms of our Standard License:
                 </p>
                 <ul className="w-full flex flex-col gap-6 mt-4 items-start justify-start">
@@ -82,7 +82,7 @@ const Privacy = () => {
                   >
                     <CustomizeButton
                       text="Read More"
-                      className="bg-btnlinear border-none rounded !px-14 !py-3"
+                      className="bg-btnlinear border-none rounded !px-6 md:!px-14 py-3"
                       type="button"
                     />
                   </motion.div>
@@ -90,7 +90,7 @@ const Privacy = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex items-start justify-end">
+          <div className="w-full flex items-start justify-center">
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
