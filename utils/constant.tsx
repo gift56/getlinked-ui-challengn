@@ -86,5 +86,26 @@ export const judgingCriteria = [
 export const faqData = [
   {
     question: "Can I work on a project I started before the hackathon?",
+    answer: "You can, if only the company name and brand is been promoted.",
+  },
+  {
+    question: "What happens if I need help during the hackathon?",
+    answer: "You can, if only the company name and brand is been promoted.",
+  },
+  {
+    question: "What happens if I don't have an idea for a project?",
+    answer: "You can, if only the company name and brand is been promoted.",
+  },
+  {
+    question: "Can I join a team or do I have to come with one?",
+    answer: "You can, if only the company name and brand is been promoted.",
+  },
+  {
+    question: "What happens after the hackathon ends",
+    answer: "You can, if only the company name and brand is been promoted.",
+  },
+  {
+    question: "Can I work on a project I started before the hackathon?",
+    answer: "You can, if only the company name and brand is been promoted.",
   },
 ];
