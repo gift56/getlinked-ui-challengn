@@ -1,5 +1,7 @@
 import { judgingCriteria } from "@/utils/constant";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { CustomizeButton } from "..";
 
 const Judging = () => {
   const container = {
@@ -33,13 +35,13 @@ const Judging = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
-              src="/img/rulesImg.png"
+              src="/img/judgingCriteriaImg.png"
               alt="ideaImg"
               className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
-            <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-14 xl:top-[15%] right-14 xl:right-[25%] p-5"></div>
+            <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute -top-5 left-14 xl:left-[20%] p-5"></div>
           </div>
-          <div className="w-full tab:flex-1 flex flex-col gap-5">
+          <div className="w-full tab:flex-1 flex flex-col items-center justify-center tab:items-start tab:justify-start gap-5">
             <motion.h2
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -72,6 +74,13 @@ const Judging = () => {
                 </motion.li>
               ))}
             </motion.ul>
+            <Link href="/" className="w-fit mt-5">
+              <CustomizeButton
+                text="Read More"
+                className="bg-btnlinear border-none rounded !px-10 tab:!px-14 tab:!py-3"
+                type="button"
+              />
+            </Link>
           </div>
         </div>
       </div>
