@@ -52,7 +52,7 @@ const Faqs = () => {
                 <div
                   key={item.question}
                   onClick={() => toggle(item.id)}
-                  className="flex flex-col items-start justify-start w-full border-b border-primary cursor-pointer pb-2"
+                  className="flex flex-col items-start justify-start w-full border-b border-primary cursor-pointer pb-2 transition-all duration-300"
                 >
                   <div className="w-full flex items-center justify-between">
                     <h2 className="text-sm font-normal">
