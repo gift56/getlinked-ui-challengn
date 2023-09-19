@@ -35,7 +35,7 @@ const Sponsors = () => {
               viewport={{ once: true }}
               src="/img/sponsorsImg.png"
               alt="sponsors"
-              className="w-full tab:w-[500px] object-contain"
+              className="w-full tab:h-[500px] object-contain"
             />
           </div>
         </div>
