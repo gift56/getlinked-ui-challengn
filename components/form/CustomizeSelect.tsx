@@ -42,7 +42,7 @@ const CustomizeSelect = ({
       <div className={`flex flex-col gap-1 w-full h-full ${inputClassName}`}>
         <select
           {...props}
-          className={`${className} ${error ? "border border-red-400" : ""}`}
+          className={`${className} ${error ? "border !border-red-400" : ""}`}
           id={id}
           onBlur={onBlur}
           onChange={onChange}

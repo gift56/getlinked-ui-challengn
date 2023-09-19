@@ -32,8 +32,10 @@ const Registerpage = () => {
     privacy_poclicy_accepted: false,
   };
 
-  const onSubmit = async (payload: FormValue) => {
+  const onSubmit = async (payload: FormValue, actions: any) => {
     console.log(payload);
+    await new Promise((res) => setTimeout(res, 1000));
+    actions.resetForm();
   };
 
   const {
