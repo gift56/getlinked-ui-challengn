@@ -50,6 +50,7 @@ const Privacy = () => {
                 <br className="hidden tab:block" /> to the practices described
                 in this policy.
               </p>
+              <div className=""></div>
             </div>
           </div>
           <div className="w-full">
