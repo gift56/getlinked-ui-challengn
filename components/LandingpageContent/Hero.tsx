@@ -17,7 +17,7 @@ const Hero = () => {
           />
         </div>
         <div className="w-full flex items-center justify-between gap-6 flex-col tab:flex-row">
-          <div className="w-full tab:flex-1 h-full flex flex-col gap-6 items-center justify-center tab:items-start tab:justify-start  py-10 md:pt-28">
+          <div className="w-full relative tab:flex-1 h-full flex flex-col gap-6 items-center justify-center tab:items-start tab:justify-start  py-10 md:pt-28">
             <motion.h2
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -43,6 +43,16 @@ const Hero = () => {
                   className="w-16 tab:w-24 h-auto"
                 />
               </span>
+              <img
+                src="/icon/lightstarIcon.png"
+                alt="star"
+                className="absolute left-[25%] top-[2%] tab:left-[8%] tab:w-5 tab:h-5 w-3"
+              />
+              <img
+                src="/icon/graystar.png"
+                alt="star"
+                className="absolute left-[65%] bottom-[20%] tab:w-5 tab:h-5 w-3"
+              />
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: -20 }}
@@ -79,20 +89,6 @@ const Hero = () => {
                 00<span className="text-sm font-normal">s</span>
               </span>
             </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-              className="bg-btnlinear hidden lg:flex md:w-[200px] h-[200px]  blur-[150px]  rounded-[50%] right-[15%] top-[30%] absolute z-[-2]"
-            ></motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-              className="bg-btnlinear flex w-[200px] h-[200px] left-[5%] blur-[150px]  rounded-[50%] tab:left-[20%] top-[20%] absolute z-[-2]"
-            ></motion.div>
           </div>
           <div className="w-full tab:flex-1 h-full flex relative items-center justify-center">
             <img
@@ -103,6 +99,20 @@ const Hero = () => {
             <img src="/img/heroBg.png" alt="heroImg" className="grayscale" />
           </div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="bg-btnlinear hidden lg:flex md:w-[200px] h-[200px]  blur-[150px]  rounded-[50%] right-[15%] top-[30%] absolute z-[-2]"
+        ></motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="bg-btnlinear flex w-[200px] h-[200px] left-[5%] blur-[150px]  rounded-[50%] tab:left-[20%] top-[20%] absolute z-[-2]"
+        ></motion.div>
       </div>
     </section>
   );
