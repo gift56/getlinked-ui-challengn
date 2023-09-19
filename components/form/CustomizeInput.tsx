@@ -14,6 +14,7 @@ interface CustomizeInputProps extends InputHTMLAttributes<HTMLInputElement> {
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
   onBlur: (event: FocusEvent<HTMLInputElement>) => void;
   containerClass?: string;
+  value: String | Boolean | any;
 }
 
 const CustomizeInput = ({
@@ -31,6 +32,7 @@ const CustomizeInput = ({
   accept,
   containerClass,
   defaultChecked,
+  value,
   ...props
 }: CustomizeInputProps) => {
   return (
@@ -48,6 +50,7 @@ const CustomizeInput = ({
           onBlur={onBlur}
           onChange={onChange}
           accept={accept}
+          value={value}
           checked={defaultChecked}
         />
         {error && (

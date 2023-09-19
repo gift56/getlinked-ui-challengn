@@ -2,6 +2,9 @@ import { CustomizeButton, CustomizeInput, CustomizeSelect } from "@/components";
 import Head from "next/head";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useFormik } from "formik";
+import { FormValue } from "@/types";
+import { registerSchema } from "@/schema";
 
 const Registerpage = () => {
   const navLinks = [
@@ -18,6 +21,38 @@ const Registerpage = () => {
       text: "FAQs",
     },
   ];
+
+  const initialValues: FormValue = {
+    team_name: "",
+    phone_number: "",
+    email: "",
+    project_topic: "",
+    category: "",
+    group_size: "",
+    privacy_poclicy_accepted: false,
+  };
+
+  const onSubmit = async (payload: FormValue) => {
+    console.log(payload);
+  };
+
+  const {
+    values,
+    handleChange,
+    handleBlur,
+    handleSubmit,
+    touched,
+    errors,
+    isSubmitting,
+  } = useFormik({
+    initialValues,
+    validationSchema: registerSchema,
+    onSubmit,
+  });
+
+  const getError = (key: keyof FormValue) => {
+    return touched[key] && errors[key];
+  };
 
   return (
     <>
@@ -108,10 +143,10 @@ const Registerpage = () => {
                     labelClassName="text-sm font-normal"
                     type="text"
                     name="team_name"
-                    // value={values.team_name}
-                    // onChange={handleChange}
-                    // onBlur={handleBlur}
-                    // error={getError("team_name")}
+                    value={values.team_name}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    error={getError("team_name")}
                     id="team_name"
                     placeholder="Enter the name of your group"
                     errorClass="hidden"
@@ -124,10 +159,10 @@ const Registerpage = () => {
                     labelClassName="text-sm font-normal"
                     type="text"
                     name="phone_number"
-                    // value={values.phone_number}
-                    // onChange={handleChange}
-                    // onBlur={handleBlur}
-                    // error={getError("phone_number")}
+                    value={values.phone_number}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    error={getError("phone_number")}
                     id="phone_number"
                     placeholder="Enter your phone number"
                     errorClass="hidden"
@@ -142,10 +177,10 @@ const Registerpage = () => {
                     labelClassName="text-sm font-normal"
                     type="email"
                     name="email"
-                    // value={values.email}
-                    // onChange={handleChange}
-                    // onBlur={handleBlur}
-                    // error={getError("email")}
+                    value={values.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    error={getError("email")}
                     id="email"
                     placeholder="Enter your email address"
                     errorClass="hidden"
@@ -158,10 +193,10 @@ const Registerpage = () => {
                     labelClassName="text-sm font-normal"
                     type="text"
                     name="project_topic"
-                    // value={values.project_topic}
-                    // onChange={handleChange}
-                    // onBlur={handleBlur}
-                    // error={getError("project_topic")}
+                    value={values.project_topic}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    error={getError("project_topic")}
                     id="project_topic"
                     placeholder="What is your group project topic"
                     errorClass="hidden"
@@ -174,10 +209,10 @@ const Registerpage = () => {
                     label="Category"
                     htmlFor="category"
                     labelClassName="text-sm font-medium text-darkColor"
-                    // value={values.category}
-                    // onChange={handleChange}
-                    // onBlur={handleBlur}
-                    // error={getError("category")}
+                    value={values.category}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    error={getError("category")}
                     errorClass="hidden"
                     name="category"
                     className="bg-[#ffffff08] appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
@@ -197,10 +232,10 @@ const Registerpage = () => {
                     label="Group Size"
                     htmlFor="group_size"
                     labelClassName="text-sm font-medium text-darkColor"
-                    // value={values.group_size}
-                    // onChange={handleChange}
-                    // onBlur={handleBlur}
-                    // error={getError("group_size")}
+                    value={values.group_size}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    error={getError("group_size")}
                     errorClass="hidden"
                     name="group_size"
                     className="bg-[#ffffff08] cursor-pointer appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border  border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad placeholder:text-borderColor focus:border-primary transition-all duration-300"
@@ -225,9 +260,8 @@ const Registerpage = () => {
                   <input
                     type="checkbox"
                     name="privacy_poclicy_accepted"
-                    // value={values.privacy_poclicy_accepted}
-                    // onChange={handleChange}
-                    // onBlur={handleBlur}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                     id="privacy_poclicy_accepted"
                     className="bg-red-500 outline-none border border-white"
                   />

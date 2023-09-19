@@ -13,6 +13,7 @@ interface CustomizeSelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   onChange: (event: ChangeEvent<HTMLSelectElement>) => void | any;
   onBlur: (event: FocusEvent<HTMLSelectElement>) => void;
   containerClass?: string;
+  value: string | any;
 }
 
 const CustomizeSelect = ({
@@ -28,6 +29,7 @@ const CustomizeSelect = ({
   onChange,
   onBlur,
   containerClass,
+  value,
   ...props
 }: CustomizeSelectProps) => {
   return (
@@ -44,6 +46,7 @@ const CustomizeSelect = ({
           id={id}
           onBlur={onBlur}
           onChange={onChange}
+          value={value}
         />
         {error && (
           <p className={`text-xs text-red-600 ${errorClass}`}>{error}</p>
