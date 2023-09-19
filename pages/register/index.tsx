@@ -42,14 +42,14 @@ const Registerpage = () => {
                 <Link
                   href={item.href}
                   key={i}
-                  className="text-base font-normal hover:text-primary transition-all"
+                  className="text-base font-medium hover:text-primary transition-all"
                 >
                   {item.text}
                 </Link>
               ))}
               <Link
                 href="/contact"
-                className="text-base font-normal bg-clip-text text-transparent bg-textgradient transition-all"
+                className="text-base font-medium bg-clip-text text-transparent bg-textgradient transition-all"
               >
                 Contact
               </Link>
@@ -76,7 +76,19 @@ const Registerpage = () => {
               />
             </div>
             <div className="w-full tab:bg-[#ffffff08] tab:shadow-registerShad tab:rounded-xl tab:p-10 text-white tab:h-[500px] tab:overflow-y-auto flex flex-col items-start justify-start gap-5">
-              <h2 className="hidden tab:block text-3xl font-semibold font-clash">Register</h2>
+              <h2 className="hidden tab:block text-3xl font-semibold font-clash text-primary">
+                Register
+              </h2>
+              <div className="flex flex-col items-start w-full gap-1">
+                <p className="text-sm font-normal flex items-end gap-1">
+                  <span>Be part of this movement!</span>
+                  <img src="" alt="walking_image" />
+                </p>
+                <h3 className="text-lg md:text-xl font-normal uppercase tab:text-2xl">CREATE YOUR ACCOUNT</h3>
+              </div>
+              <form className="w-full flex flex-col items-start justify-start gap-2">
+                
+              </form>
             </div>
           </div>
         </div>
