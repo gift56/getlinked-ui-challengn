@@ -40,7 +40,13 @@ const Privacy = () => {
               {`Below are our privacy & policy, which outline a lot of goodies.
                 it’s our aim to always take of our participant`}
             </motion.p>
-            <div className="w-full border border-primary bg-[#d9d9d908] rounded-[5px] flex flex-col items-center justify-center gap-6 tab:items-start tab:justify-start px-4 py-6 tab:p-12">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              className="w-full border border-primary bg-[#d9d9d908] rounded-[5px] flex flex-col items-center justify-center gap-6 tab:items-start tab:justify-start px-4 py-6 tab:p-12"
+            >
               <p className="text-center tab:text-start text-sm md:text-base font-normal">
                 At getlinked tech Hackathon 1.0, we value your privacy{" "}
                 <br className="hidden tab:block" /> and are committed to
@@ -88,7 +94,7 @@ const Privacy = () => {
                   </motion.div>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="w-full flex items-start justify-center">
             <motion.img
