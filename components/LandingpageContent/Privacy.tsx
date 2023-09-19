@@ -14,7 +14,7 @@ const Privacy = () => {
               viewport={{ once: true }}
               src="/img/privacyImg.png"
               alt="sponsors"
-              className="w-full object-contain"
+              className="w-full tab:w-[559px] object-contain"
             />
           </div>
         </div>
