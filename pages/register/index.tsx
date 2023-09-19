@@ -171,30 +171,30 @@ const Registerpage = () => {
                     name="category"
                     className="bg-[#ffffff08] appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
                   >
-                    <option id="category" value="">
+                    <option id="category" value="" className="bg-black/50">
                       Select your category
                     </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
+                    <option value="1" className="bg-black/50">1</option>
+                    <option value="2" className="bg-black/50">2</option>
                   </CustomizeSelect>
                   <CustomizeSelect
                     showLabel={false}
                     label="Group Size"
-                    htmlFor="category"
+                    htmlFor="group_size"
                     labelClassName="text-sm font-medium text-darkColor"
-                    // value={values.category}
+                    // value={values.group_size}
                     // onChange={handleChange}
                     // onBlur={handleBlur}
-                    // error={getError("category")}
+                    // error={getError("group_size")}
                     errorClass="hidden"
-                    name="category"
-                    className="bg-[#ffffff08] appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
+                    name="group_size"
+                    className="bg-[#ffffff08] cursor-pointer appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border  border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad placeholder:text-borderColor focus:border-primary transition-all duration-300"
                   >
-                    <option id="category" value="">
+                    <option id="group_size" value="" className="bg-black/50">
                       Select
                     </option>
-                    <option value="10">10</option>
-                    <option value="20">20</option>
+                    <option value="10" className="bg-black/50">10</option>
+                    <option value="20" className="bg-black/50">20</option>
                   </CustomizeSelect>
                 </div>
               </form>
