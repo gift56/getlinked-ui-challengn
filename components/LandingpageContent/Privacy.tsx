@@ -37,6 +37,7 @@ const Privacy = () => {
               {`Below are our privacy & policy, which outline a lot of goodies.
                 it’s our aim to always take of our participant`}
             </motion.p>
+            <div className="w-full border border-primary bg-[#d9d9d908] rounded-[5px] flex items-center justify-center gap-6 tab:items-start tab:justify-start p-4 tab:p-12">dhhdb</div>
           </div>
           <div className="w-full">
             <motion.img
