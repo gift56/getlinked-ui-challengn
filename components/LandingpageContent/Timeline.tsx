@@ -8,7 +8,7 @@ const Timeline = () => {
           <div className="flex flex-col gap-5">
             <motion.h2
               initial={{ opacity: 0, y: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
               className="text-xl font-bold md:text-2xl text-center tab:text-3xl font-clash"
@@ -16,15 +16,14 @@ const Timeline = () => {
               Timeline
             </motion.h2>
             <motion.p
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
-              className="text-center text-sm font-normal tab:text-start"
+              className="text-center text-sm font-normal"
             >
-              Here is the breakdown of the time we{" "}
-              <br className="hidden tab:block" /> anticipate using for the
-              upcoming event.
+              Here is the breakdown of the time we anticipate{" "}
+              <br className="hidden tab:block" /> using for the upcoming event.
             </motion.p>
           </div>
         </div>
