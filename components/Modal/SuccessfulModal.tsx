@@ -34,7 +34,7 @@ const SuccessfulModal = ({ show, setShow }: ModalProps) => {
   return (
     <div
       className={`fixed top-0 right-0 w-full h-full bg-[#150e28ed] z-40 place-items-center flex justify-center transition-all duration-500 overflow-auto ${
-        show ? "flex" : "flex"
+        show ? "flex" : "hidden"
       }`}
     >
       <img
@@ -46,7 +46,7 @@ const SuccessfulModal = ({ show, setShow }: ModalProps) => {
       />
       <motion.div
         ref={modalRef}
-        animate={show ? "open" : "open"}
+        animate={show ? "open" : "closed"}
         variants={variants}
         className="relative tab:w-[660px] w-[90%] bg-[#ffffff03] rounded-[5px] border border-primary flex flex-col items-center justify-center gap-3 transition-all duration-300 tab:h-[580px] overflow-y-auto overflow-x-hidden"
       >
