@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FocusEvent, InputHTMLAttributes } from "react";
+import { ChangeEvent, FocusEvent, InputHTMLAttributes } from "react";
 
 interface CustomizeInputProps extends InputHTMLAttributes<HTMLInputElement> {
   htmlFor?: string;
@@ -11,8 +11,8 @@ interface CustomizeInputProps extends InputHTMLAttributes<HTMLInputElement> {
   inputClassName?: string;
   errorClass?: string;
   error?: any;
-  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
-  onBlur?: (event: FocusEvent<HTMLInputElement>) => void;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  onBlur: (event: FocusEvent<HTMLInputElement>) => void;
   containerClass?: string;
 }
 

@@ -10,8 +10,8 @@ interface CustomizeSelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   inputClassName?: string;
   errorClass?: string;
   error?: any;
-  onChange?: (event: ChangeEvent<HTMLSelectElement>) => void | any;
-  onBlur?: (event: FocusEvent<HTMLSelectElement>) => void;
+  onChange: (event: ChangeEvent<HTMLSelectElement>) => void | any;
+  onBlur: (event: FocusEvent<HTMLSelectElement>) => void;
   containerClass?: string;
 }
 
