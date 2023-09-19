@@ -30,6 +30,7 @@ const config: Config = {
         phone: "400px",
         tab: "800px",
         monitor: "1380px",
+        minlp: "1300px",
       },
     },
   },
