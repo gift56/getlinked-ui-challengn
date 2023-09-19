@@ -1,4 +1,11 @@
-import { Faqs, Hero, Introduction, Judging, Rules } from "@/components";
+import {
+  Faqs,
+  Hero,
+  Introduction,
+  Judging,
+  Rules,
+  Timeline,
+} from "@/components";
 import MainLayout from "@/layout/MainLayout";
 
 const Homepage = () => {
@@ -9,6 +16,7 @@ const Homepage = () => {
       <Rules />
       <Judging />
       <Faqs />
+      <Timeline />
     </MainLayout>
   );
 };
