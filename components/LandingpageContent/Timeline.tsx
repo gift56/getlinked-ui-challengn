@@ -4,7 +4,7 @@ const Timeline = () => {
   return (
     <section className="w-full py-10">
       <div className="container overflow-hidden">
-        <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full flex flex-col items-center justify-center gap-8">
           <div className="flex flex-col gap-5">
             <motion.h2
               initial={{ opacity: 0, y: -50 }}
@@ -25,6 +25,9 @@ const Timeline = () => {
               Here is the breakdown of the time we anticipate{" "}
               <br className="hidden tab:block" /> using for the upcoming event.
             </motion.p>
+          </div>
+          <div className="w-full flex flex-col items-start justify-start gap-5">
+            <div></div>
           </div>
         </div>
       </div>

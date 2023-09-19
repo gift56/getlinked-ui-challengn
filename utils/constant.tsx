@@ -85,33 +85,72 @@ export const judgingCriteria = [
 
 export const faqData = [
   {
-    id:"01",
+    id: "01",
     question: "Can I work on a project I started before the hackathon?",
     answer: "You can, if only the company name and brand is been promoted.",
   },
   {
-    id:"02",
+    id: "02",
     question: "What happens if I need help during the hackathon?",
     answer: "You can, if only the company name and brand is been promoted.",
   },
   {
-    id:"03",
+    id: "03",
     question: "What happens if I don't have an idea for a project?",
     answer: "You can, if only the company name and brand is been promoted.",
   },
   {
-    id:"04",
+    id: "04",
     question: "Can I join a team or do I have to come with one?",
     answer: "You can, if only the company name and brand is been promoted.",
   },
   {
-    id:"05",
+    id: "05",
     question: "What happens after the hackathon ends",
     answer: "You can, if only the company name and brand is been promoted.",
   },
   {
-    id:"06",
+    id: "06",
     question: "Can I work on a project I started before the hackathon?",
     answer: "You can, if only the company name and brand is been promoted.",
+  },
+];
+
+export const timeline = [
+  {
+    topic: "Hackathon Announcement",
+    content:
+      "The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register",
+    data: "November 18, 2023",
+  },
+  {
+    topic: "Teams Registration begins",
+    content:
+      "Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register",
+    data: "November 18, 2023",
+  },
+  {
+    topic: "Teams Registration ends",
+    content:
+      "Interested Participants are no longer Allowed to register",
+    data: "November 18, 2023",
+  },
+  {
+    topic: "Announcement of the accepted teams and ideas",
+    content:
+      "All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are formally announced",
+    data: "November 18, 2023",
+  },
+  {
+    topic: "Getlinked Hackathon 1.0 Offically Begins",
+    content:
+      "Accepted teams can now proceed to build their ground breaking skill driven solutions",
+    data: "November 18, 2023",
+  },
+  {
+    topic: "Demo Day",
+    content:
+      "Teams get the opportunity to pitch their projects to judges. The winner of the hackathon will also be announced on this day",
+    data: "November 18, 2023",
   },
 ];
