@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Sponsors = () => {
   return (
-    <section className="w-full py-10">
+    <section className="w-full py-10 border-b border-borderColor">
       <div className="container overflow-hidden">
         <div className="w-full flex flex-col items-center justify-center gap-5">
           <div className="flex items-center justify-center flex-col">
@@ -33,7 +33,7 @@ const Sponsors = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
-              src="/img/sponsors.png"
+              src="/img/sponsorsImg.png"
               alt="sponsors"
               className="w-full tab:w-[500px] object-contain"
             />

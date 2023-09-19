@@ -5,6 +5,7 @@ import {
   Judging,
   Price,
   Rules,
+  Sponsors,
   Timeline,
 } from "@/components";
 import MainLayout from "@/layout/MainLayout";
@@ -19,6 +20,7 @@ const Homepage = () => {
       <Faqs />
       <Timeline />
       <Price />
+      <Sponsors />
     </MainLayout>
   );
 };
