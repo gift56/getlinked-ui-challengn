@@ -33,7 +33,7 @@ const SuccessfulModal = ({ show, setShow }: ModalProps) => {
 
   return (
     <div
-      className={`fixed top-0 right-0 w-full h-full bg-[#00000085] z-40 place-items-center flex justify-center transition-all duration-500 overflow-auto ${
+      className={`fixed top-0 right-0 w-full h-full bg-[#150e28ed] z-40 place-items-center flex justify-center transition-all duration-500 overflow-auto ${
         show ? "flex" : "hidden"
       }`}
     >
@@ -41,21 +41,28 @@ const SuccessfulModal = ({ show, setShow }: ModalProps) => {
         ref={modalRef}
         animate={show ? "open" : "closed"}
         variants={variants}
-        className="tab:w-[660px] w-[90%] bg-[#ffffff03] rounded-[5px] border border-primary flex flex-col items-center justify-center gap-3 transition-all duration-300 h-[550px] overflow-y-auto"
+        className="tab:w-[660px] w-[90%] bg-[#ffffff03] rounded-[5px] border border-primary flex flex-col items-center justify-center gap-3 transition-all duration-300 tab:h-[580px] overflow-y-auto"
       >
-        <img src="/img/sucessImg.png" alt="successfully" />
-        <h2 className="text-base text-center font-semibold md:text-xl">
+        <img
+          src="/img/sucessImg.png"
+          alt="successfully"
+          className="tab:w-[400px] object-cover"
+        />
+        <h2 className="text-base text-center font-semibold md:text-xl tab:text-2xl">
           Congratulations <br className="hidden tab:block" /> you have
           successfully Registered!
         </h2>
         <p className="text-sm text-center font-semibold">
-          Yes, it was easy and you did it! <br className="hidden tab:block" />{" "}
-          check your mail box for next step
+          <span>Yes, it was easy and you did it!</span>
+          <span className="flex items-center gap-1">
+            check your mail box for next step
+            <img src="/icon/emoji.png" alt="emoji" className="inline" />
+          </span>
         </p>
         <CustomizeButton
           text="Back"
           onClick={() => setShow(false)}
-          className="bg-btnlinear border-none rounded !px-10 !py-3 w-full my-4"
+          className="bg-btnlinear border-none rounded !px-10 !py-3 w-[70%] my-4"
           type="button"
         />
       </motion.div>
