@@ -1,3 +1,4 @@
+import { policyData } from "@/utils/constant";
 import { motion } from "framer-motion";
 
 const Privacy = () => {
@@ -54,7 +55,16 @@ const Privacy = () => {
                 <h4 className="text-sm md:text-base tab:text-lg font-bold text-primary">
                   Licensing Policy
                 </h4>
-                <p className="text-start text-sm font-bold leading-[216p%]">Here are terms of our Standard License:</p>
+                <p className="text-start text-sm font-bold leading-[216p%]">
+                  Here are terms of our Standard License:
+                </p>
+                <ul className="w-full flex flex-col gap-2 mt-4 items-start justify-start">
+                  {policyData.map((item, i) => (
+                    <li key={i} className="flex items-start justify-start gap-2">
+                      
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
