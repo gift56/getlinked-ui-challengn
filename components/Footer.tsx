@@ -20,7 +20,7 @@ const Footer = () => {
               young and talented individuals in the field of technology
             </p>
           </div>
-          <div className="w-full  tab:w-[50%] flex flex-col items-start justify-start gap-2">
+          <div className="w-full  md:w-[50%] flex flex-col items-start justify-start gap-2">
             <h2 className="text-primary text-sm md:text-base font-semibold">
               Useful Links
             </h2>
@@ -52,7 +52,7 @@ const Footer = () => {
               </div>
             </nav>
           </div>
-          <div className="w-full tab:w-[30%] flex flex-col items-start justify-start gap-2">
+          <div className="w-full md:w-[30%] flex flex-col items-start justify-start gap-2">
             <h2 className="text-primary text-sm md:text-base font-semibold">
               Contact Us
             </h2>
