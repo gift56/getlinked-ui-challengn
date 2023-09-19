@@ -28,29 +28,19 @@ const Price = () => {
             </motion.p>
           </div>
           <div className="flex items-center flex-col tab:flex-row justify-center gap-6 tab:items-end tab:justify-between w-full">
-            <div className="w-full lg:flex-1">
+            <div className="w-full">
               <img
                 src="/img/priceImg.png"
-                alt="price_rewardImg"
-                className="w-full tab:w-[480px] object-contain"
+                alt="price_img"
+                className="w-full tab:w-[500px] object-contain"
               />
             </div>
-            <div className="w-full lg:flex-1 grid grid-cols-3 gap-1 items-start justify-start">
-              <div className="w-full relative h-[296px] border-primary border bg-[#d434fe1f] rounded-lg flex-col p-3 items-center justify-center flex gap-3">
-                <img
-                  src="/img/secondPrize.png"
-                  alt="2nd_runner_position_image"
-                />
-
-                <div className="flex flex-col items-center w-full">
-                  <h2 className="text-sm md:text-base tab:text-2xl lg:text-3xl font-bold flex flex-col items-center">
-                    <span>2nd</span>
-                    <span className="tab:text-2xl font-semibold">
-                      Runner
-                    </span>
-                  </h2>
-                </div>
-              </div>
+            <div className="w-full">
+              <img
+                src="/img/rewardIcons.png"
+                alt="reward_Img"
+                className="w-full tab:w-[540px] object-contain"
+              />
             </div>
           </div>
         </div>
