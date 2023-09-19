@@ -1,4 +1,4 @@
-import { CustomizeButton, CustomizeInput } from "@/components";
+import { CustomizeButton, CustomizeInput, CustomizeSelect } from "@/components";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -156,6 +156,46 @@ const Registerpage = () => {
                     errorClass="hidden"
                     className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
                   />
+                </div>
+                <div className="w-full flex flex-col tab:flex-row items-start justify-between gap-3">
+                  <CustomizeSelect
+                    showLabel={false}
+                    label="Category"
+                    htmlFor="category"
+                    labelClassName="text-sm font-medium text-darkColor"
+                    // value={values.category}
+                    // onChange={handleChange}
+                    // onBlur={handleBlur}
+                    // error={getError("category")}
+                    errorClass="hidden"
+                    name="category"
+                    className="bg-[#ffffff08] appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
+                  >
+                    <option id="category" value="">
+                      Select your category
+                    </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </CustomizeSelect>
+                  <CustomizeSelect
+                    showLabel={false}
+                    label="Group Size"
+                    htmlFor="category"
+                    labelClassName="text-sm font-medium text-darkColor"
+                    // value={values.category}
+                    // onChange={handleChange}
+                    // onBlur={handleBlur}
+                    // error={getError("category")}
+                    errorClass="hidden"
+                    name="category"
+                    className="bg-[#ffffff08] appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
+                  >
+                    <option id="category" value="">
+                      Select
+                    </option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                  </CustomizeSelect>
                 </div>
               </form>
             </div>
