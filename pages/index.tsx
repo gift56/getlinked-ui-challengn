@@ -3,6 +3,7 @@ import {
   Hero,
   Introduction,
   Judging,
+  Price,
   Rules,
   Timeline,
 } from "@/components";
@@ -17,6 +18,7 @@ const Homepage = () => {
       <Judging />
       <Faqs />
       <Timeline />
+      <Price />
     </MainLayout>
   );
 };
