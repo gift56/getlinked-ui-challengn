@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Rules = () => {
   return (
-    <section className="w-full py-10 border-b border-borderColor relative overflow-x-hidden">
+    <section className="w-full py-10 border-b border-borderColor relative">
       <div className="container overflow-hidden">
         <div className="flex items-center justify-center tab:justify-between w-full gap-6 flex-col tab:flex-row-reverse">
           <div className="w-full tab:flex-1 relative">
@@ -51,7 +51,7 @@ const Rules = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="bg-btnlinear hidden lg:flex md:w-[200px] h-[200px]  blur-[125px] rounded-[50%] right-[-10%] bottom-[30%] absolute z-[-2]"
+        className="bg-btnlinear hidden lg:flex md:w-[80px] h-[200px]  blur-[120px]  rounded-[50%] right-[0%] bottom-[30%] absolute z-[-2]"
       ></motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
