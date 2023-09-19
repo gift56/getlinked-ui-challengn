@@ -7,4 +7,8 @@ export const registerSchema = yup.object().shape({
   project_topic: yup.string().required("Required"),
   category: yup.string().required("Required"),
   group_size: yup.string().required("Required"),
+  privacy_poclicy_accepted: yup
+    .boolean()
+    .oneOf([true], "Required")
+    .required("Required"),
 });

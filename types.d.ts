@@ -5,6 +5,7 @@ export interface FormValue {
   project_topic: String;
   category: String;
   group_size: String;
+  privacy_poclicy_accepted: boolean;
 }
 
 export interface ContactValue {
