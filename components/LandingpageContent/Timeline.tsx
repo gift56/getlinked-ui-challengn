@@ -5,7 +5,7 @@ const Timeline = () => {
   return (
     <section className="w-full py-10">
       <div className="container overflow-hidden">
-        <div className="w-full flex flex-col items-center justify-center gap-8">
+        <div className="w-full flex flex-col items-center justify-center gap-16">
           <div className="flex flex-col gap-4">
             <motion.h2
               initial={{ opacity: 0, y: -20 }}
