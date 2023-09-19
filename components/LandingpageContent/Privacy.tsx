@@ -37,7 +37,20 @@ const Privacy = () => {
               {`Below are our privacy & policy, which outline a lot of goodies.
                 it’s our aim to always take of our participant`}
             </motion.p>
-            <div className="w-full border border-primary bg-[#d9d9d908] rounded-[5px] flex items-center justify-center gap-6 tab:items-start tab:justify-start p-4 tab:p-12">dhhdb</div>
+            <div className="w-full border border-primary bg-[#d9d9d908] rounded-[5px] flex flex-col items-center justify-center gap-6 tab:items-start tab:justify-start p-4 tab:p-12">
+              <p className="text-center tab:text-start text-sm md:text-base font-normal leading-[216p%]">
+                At getlinked tech Hackathon 1.0, we value your privacy{" "}
+                <br className="hidden tab:block" /> and are committed to
+                protecting your personal information.{" "}
+                <br className="hidden tab:block" /> This Privacy Policy outlines
+                how we collect, use, disclose,{" "}
+                <br className="hidden tab:block" /> and safeguard your data when
+                you participate in our tech <br className="hidden tab:block" />{" "}
+                hackathon event. By participating in our event, you consent{" "}
+                <br className="hidden tab:block" /> to the practices described
+                in this policy.
+              </p>
+            </div>
           </div>
           <div className="w-full">
             <motion.img
