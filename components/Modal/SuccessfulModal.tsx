@@ -34,15 +34,36 @@ const SuccessfulModal = ({ show, setShow }: ModalProps) => {
   return (
     <div
       className={`fixed top-0 right-0 w-full h-full bg-[#150e28ed] z-40 place-items-center flex justify-center transition-all duration-500 overflow-auto ${
-        show ? "flex" : "hidden"
+        show ? "flex" : "flex"
       }`}
     >
+      <img
+        src="/icon/purplestarIcon.png"
+        alt="star"
+        className="absolute top-0 right-[24.5%] z-40"
+        width={20}
+        height={20}
+      />
       <motion.div
         ref={modalRef}
-        animate={show ? "open" : "closed"}
+        animate={show ? "open" : "open"}
         variants={variants}
-        className="tab:w-[660px] w-[90%] bg-[#ffffff03] rounded-[5px] border border-primary flex flex-col items-center justify-center gap-3 transition-all duration-300 tab:h-[580px] overflow-y-auto"
+        className="relative tab:w-[660px] w-[90%] bg-[#ffffff03] rounded-[5px] border border-primary flex flex-col items-center justify-center gap-3 transition-all duration-300 tab:h-[580px] overflow-y-auto overflow-x-hidden"
       >
+        <img
+          src="/icon/graystar.png"
+          alt="star"
+          className="absolute top-60 left-20"
+          width={20}
+          height={20}
+        />
+        <img
+          src="/icon/purplestarIcon.png"
+          alt="star"
+          className="absolute bottom-5 right-8"
+          width={20}
+          height={20}
+        />
         <img
           src="/img/sucessImg.png"
           alt="successfully"
@@ -62,7 +83,7 @@ const SuccessfulModal = ({ show, setShow }: ModalProps) => {
         <CustomizeButton
           text="Back"
           onClick={() => setShow(false)}
-          className="bg-btnlinear border-none rounded !px-10 !py-3 w-[70%] my-4"
+          className="bg-btnlinear border-none rounded !px-10 !py-3 w-[80%] my-4"
           type="button"
         />
       </motion.div>
