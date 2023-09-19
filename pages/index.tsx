@@ -1,4 +1,4 @@
-import { Hero, Introduction, Rules } from "@/components";
+import { Hero, Introduction, Judging, Rules } from "@/components";
 import MainLayout from "@/layout/MainLayout";
 
 const Homepage = () => {
@@ -7,6 +7,7 @@ const Homepage = () => {
       <Hero />
       <Introduction />
       <Rules />
+      <Judging />
     </MainLayout>
   );
 };
