@@ -1,6 +1,7 @@
 import { CustomizeButton, CustomizeInput, CustomizeSelect } from "@/components";
 import Head from "next/head";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Registerpage = () => {
   const navLinks = [
@@ -68,17 +69,24 @@ const Registerpage = () => {
           </div>
         </div>
       </header>
-      <section className="w-full pb-8 lg:pb-0 lg:h-screen lg:overflow-hidden">
+      <section className="w-full pb-8 lg:pb-0 lg:h-screen">
         <div className="container h-full">
-          <div className="w-full flex flex-col items-center justify-between lg:flex-row lg:justify-start gap-6">
-            <div className="w-full">
+          <div className="w-full relative flex flex-col items-center justify-between lg:flex-row lg:justify-start gap-6">
+            <div className="w-full relative">
               <img
                 src="/img/registerImg.png"
                 alt="registration_avatar"
-                className="lg:h-[650px] object-cover"
+                className="lg:h-[650px] object-cover relative"
               />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className="flex bg-btnlinear w-[90%] md:w-[70%] h-[250px] rounded-[50%] blur-[180px] -left-20 top-20 absolute z-[-2]"
+              ></motion.div>
             </div>
-            <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[500px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5">
+            <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[620px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
               <h2 className="hidden lg:block text-3xl font-semibold font-clash text-primary">
                 Register
               </h2>
@@ -245,6 +253,13 @@ const Registerpage = () => {
                 </div>
               </form>
             </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="bg-btnlinear hidden lg:flex md:w-[200px] h-[200px] blur-[150px] rounded-[50%] right-0 bottom-10 absolute z-[-2]"
+            ></motion.div>
           </div>
         </div>
       </section>
