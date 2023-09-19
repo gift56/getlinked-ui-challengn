@@ -27,7 +27,7 @@ const Timeline = () => {
             </motion.p>
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-3">
-            <div className="flex items-center justify-around gap-10 w-full">
+            <div className="flex items-end justify-evenly gap-10 w-full">
               <div className="flex items-start justify-start tab:items-end tab:justify-end flex-col gap-2">
                 <h2 className="text-sm font-bold text-primary md:text-lg tab:text-2xl tab:text-right">
                   Hackathon Announcement
@@ -39,7 +39,7 @@ const Timeline = () => {
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-1">
-                <img src="/icon/lineIcon.svg" alt="line_icon" />
+                <img src="/icon/lineIcon.svg" alt="line_icon" className="h-[77px] tab:h-[137px]" />
               </div>
               <p className="flex items-start justify-start text-sm font-bold text-primary md:text-lg tab:text-2xl">
                 November 18, 2023
