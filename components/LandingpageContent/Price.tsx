@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 const Price = () => {
   return (
-    <section className="w-full py-10 bg-pricebg bg-no-repeat bg-cover">
-      <div className="container">
+    <section className="w-full py-10 bg-gray-600">
+      <div className="container overflow-hidden">
         <div className="w-full flex flex-col items-center justify-center gap-8">
-          <div className="flex items-center justify-center tab:items-end tab:justify-end flex-col gap-3 tab:w-[50%]">
+          <div className="flex items-center justify-center tab:items-start tab:justify-start flex-col gap-3 tab:w-[45%] tab:ml-auto">
             <motion.h2
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
@@ -17,15 +17,14 @@ const Price = () => {
               <span className="font-clash text-primary block">Rewards</span>
             </motion.h2>
             <motion.p
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
               className="text-center text-sm font-normal tab:text-start"
             >
-              We got answers to the questions that you might{" "}
-              <br className="hidden tab:block" /> want to ask about{" "}
-              <b>getlinked Hackathon 1.0</b>
+              Highlight of the prizes or rewards for winners and <br className="hidden tab:block" /> for
+              participants.
             </motion.p>
           </div>
         </div>

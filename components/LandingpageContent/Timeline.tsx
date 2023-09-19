@@ -24,7 +24,7 @@ const Timeline = () => {
   };
 
   return (
-    <section className="w-full py-10">
+    <section className="w-full py-14">
       <div className="container overflow-hidden">
         <div className="w-full flex flex-col items-center justify-center gap-16">
           <div className="flex flex-col gap-4">
