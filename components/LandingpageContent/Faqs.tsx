@@ -1,7 +1,7 @@
 import { faqData } from "@/utils/constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FiMinus, FiPlus } from "react-icons/fi";
+// import { FiMinus, FiPlus } from "react-icons/fi";
 
 const Faqs = () => {
   const [opened, setOpened] = useState<String | null>(null);
@@ -51,16 +51,16 @@ const Faqs = () => {
               {faqData.map((item) => (
                 <div
                   key={item.question}
-                  onClick={() => toggle(item.question)}
+                  onClick={() => toggle(item.id)}
                   className="flex flex-col items-start justify-start w-full border-b border-primary cursor-pointer pb-2"
                 >
                   <div className="w-full flex items-center justify-between">
-                    <h2 className="text-sm font-normal text-white">
+                    <h2 className="text-sm font-normal">
                       {item.question}
                     </h2>
                     <span className=" text-primary">
                       {
-                        item.question === opened
+                        item.id === opened
                           ? "-"
                           : // `<FiMinus size={18} className="transition-all duration-300"
                             // />`
@@ -73,9 +73,9 @@ const Faqs = () => {
                     </span>
                   </div>
                   <div
-                    className={`w-full transition-all duration-300 ${
-                      item.question === opened ? "block" : "hidden"
-                    }`}
+                    className={`w-full text-sm font-normal ${
+                      item.id === opened ? "block" : "hidden"
+                    } transition-all duration-300`}
                   >
                     {item.answer}
                   </div>
