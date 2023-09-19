@@ -2,6 +2,27 @@ import { timelineData } from "@/utils/constant";
 import { motion } from "framer-motion";
 
 const Timeline = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.4,
+        duration: 0.4,
+      },
+    },
+  };
+
+  const itemdisplay = {
+    hidden: { opacity: 0, y: 60 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      duration: 0.5,
+    },
+  };
+
   return (
     <section className="w-full py-10">
       <div className="container overflow-hidden">
@@ -27,10 +48,17 @@ const Timeline = () => {
               <br className="hidden tab:block" /> using for the upcoming event.
             </motion.p>
           </div>
-          <div className="w-full flex flex-col items-center justify-center gap-3">
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="w-full flex flex-col items-center justify-center gap-3"
+          >
             {/* DESKTOP */}
             {timelineData.map((item, i) => (
-              <div
+              <motion.div
+                variants={itemdisplay}
                 key={i}
                 className={`hidden tab:flex items-end justify-center gap-20 w-full ${
                   item.row === false ? "flex-row-reverse" : "flex-row"
@@ -77,7 +105,7 @@ const Timeline = () => {
                 >
                   {item.date}
                 </p>
-              </div>
+              </motion.div>
             ))}
             {/* MOBILE */}
             <div className="tab:hidden flex items-start justify-start w-full gap-4">
@@ -104,7 +132,7 @@ const Timeline = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
