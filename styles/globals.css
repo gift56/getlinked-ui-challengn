@@ -8,7 +8,7 @@
 }
 
 body {
-  @apply bg-dark text-white bg-bodybg bg-no-repeat;
+  @apply bg-dark text-white;
 }
 
 .container {
