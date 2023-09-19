@@ -102,7 +102,8 @@ export const faqData = [
   {
     id: "04",
     question: "Can I join a team or do I have to come with one?",
-    answer: "You can, if only the company name and brand is been promoted.",
+    answer:
+      "Absolutely! Joining a team is like adding the secret spice to your hackathon recipe. Think of it as a culinary adventure where master chefs collaborate to create a gourmet dish. At our hackathon, we encourage collaboration and the fusion of unique talents and ideas. If you don't have a team yet, no worries! We'll play matchmaker and help you find the perfect teammates with complementary skills. Together, you'll embark on a gastronomic journey of innovation, and who knows, you might just whip up the winning recipe for success! 🍳🔥",
   },
   {
     id: "05",

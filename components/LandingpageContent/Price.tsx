@@ -27,12 +27,14 @@ const Price = () => {
               <br className="hidden tab:block" /> for participants.
             </motion.p>
           </div>
-          <div className="flex items-center justify-center gap-6 tab:items-start tab:justify-between w-full">
+          <div className="flex items-center justify-center gap-6 tab:items-end tab:justify-between w-full">
             <div className="w-full lg:flex-1">
-              <img src="/img/priceImg.png" alt="price_rewardImg" />
+              <img src="/img/priceImg.png" alt="price_rewardImg" className="w-full tab:w-[480px] object-contain" />
             </div>
             <div className="w-full lg:flex-1 grid grid-cols-3 gap-1 items-start justify-start">
-              
+              <div className="w-full relative h-[296px] border-primary bg-[#d434fe1f] rounded-lg flex-col p-3 items-center justify-center flex gap-3">
+
+              </div>
             </div>
           </div>
         </div>
