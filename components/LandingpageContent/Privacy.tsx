@@ -38,7 +38,7 @@ const Privacy = () => {
                 it’s our aim to always take of our participant`}
             </motion.p>
             <div className="w-full border border-primary bg-[#d9d9d908] rounded-[5px] flex flex-col items-center justify-center gap-6 tab:items-start tab:justify-start p-4 tab:p-12">
-              <p className="text-center tab:text-start text-sm md:text-base font-normal leading-[216p%]">
+              <p className="text-center tab:text-start text-sm md:text-base font-normal">
                 At getlinked tech Hackathon 1.0, we value your privacy{" "}
                 <br className="hidden tab:block" /> and are committed to
                 protecting your personal information.{" "}
@@ -50,7 +50,12 @@ const Privacy = () => {
                 <br className="hidden tab:block" /> to the practices described
                 in this policy.
               </p>
-              <div className=""></div>
+              <div className="w-full flex flex-col items-start justify-start gap-1">
+                <h4 className="text-sm md:text-base tab:text-lg font-bold text-primary">
+                  Licensing Policy
+                </h4>
+                <p className="text-start text-sm font-bold leading-[216p%]">Here are terms of our Standard License:</p>
+              </div>
             </div>
           </div>
           <div className="w-full">
