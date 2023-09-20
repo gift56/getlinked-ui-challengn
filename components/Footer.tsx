@@ -2,10 +2,11 @@ import { footerLinks, socialIcons } from "@/utils/constant";
 import { CgPhone } from "react-icons/cg";
 import { HiLocationMarker } from "react-icons/hi";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-14 bg-footerBg">
+    <footer className="w-full py-14 bg-footerBg relative">
       <div className="container">
         <div className="w-full flex items-start justify-start tab:justify-between gap-6 flex-col tab:flex-row">
           <div className="w-full flex flex-col items-start justify-start gap-2">
@@ -94,6 +95,42 @@ const Footer = () => {
           All rights reserved. © getlinked Ltd.
         </p>
       </div>
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/lightstarIcon.png"
+        alt="star"
+        className="absolute flex left-[3%] top-[23%] w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/lightstarIcon.png"
+        alt="star"
+        className="absolute flex right-[3%] bottom-[23%] w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/purplestarIcon.png"
+        alt="star"
+        className="absolute flex right-[50%] bottom-[10%] tab:bottom-[23%] w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/graystar.png"
+        alt="star"
+        className="absolute flex right-[25%] top-[50%] tab:top-[23%] w-3"
+      />
     </footer>
   );
 };
