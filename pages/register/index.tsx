@@ -244,7 +244,7 @@ const Registerpage = () => {
                     className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-[#ffffff40] focus:border-primary transition-all duration-300"
                   />
                 </div>
-                <div className="w-full flex flex-col tab:flex-row items-start justify-between gap-3">
+                <div className="w-full flex items-start justify-between gap-3">
                   <CustomizeSelect
                     showLabel={false}
                     label="Category"
@@ -279,6 +279,7 @@ const Registerpage = () => {
                     error={getError("group_size")}
                     errorClass="hidden"
                     name="group_size"
+                    containerClass="!w-[50%] md:!w-full"
                     className="bg-[#ffffff08] cursor-pointer appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border  border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad placeholder:text-borderColor focus:border-primary transition-all duration-300"
                   >
                     <option id="group_size" value="" className="bg-black/50">
