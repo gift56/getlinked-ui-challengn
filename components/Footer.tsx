@@ -3,6 +3,7 @@ import { CgPhone } from "react-icons/cg";
 import { HiLocationMarker } from "react-icons/hi";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Star } from ".";
 
 const Footer = () => {
   return (
@@ -95,41 +96,21 @@ const Footer = () => {
           All rights reserved. © getlinked Ltd.
         </p>
       </div>
-      <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/lightstarIcon.png"
-        alt="star"
-        className="absolute flex left-[3%] top-[23%] w-3 animate-pulse duration-500"
+        className="flex left-[3%] top-[23%]"
       />
-      <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/lightstarIcon.png"
-        alt="star"
-        className="absolute flex right-[3%] bottom-[23%] w-3 animate-pulse duration-500"
+        className="flex right-[3%] bottom-[23%]"
       />
-      <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/purplestarIcon.png"
-        alt="star"
-        className="absolute flex right-[50%] bottom-[10%] tab:bottom-[23%] w-3 animate-pulse duration-500"
+        className="flex right-[50%] bottom-[10%] tab:bottom-[23%]"
       />
-      <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/graystar.png"
-        alt="star"
-        className="absolute flex right-[25%] top-[50%] tab:top-[23%] w-3 animate-pulse duration-500"
+        className="flex right-[25%] top-[50%] tab:top-[23%]"
       />
     </footer>
   );

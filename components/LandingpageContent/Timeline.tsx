@@ -1,5 +1,6 @@
 import { timelineData } from "@/utils/constant";
 import { motion } from "framer-motion";
+import { Star } from "..";
 
 const Timeline = () => {
   const container = {
@@ -138,33 +139,15 @@ const Timeline = () => {
           </motion.div>
         </div>
       </div>
-      <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/purplestarIcon.png"
-        alt="star"
-        className="absolute flex left-[20%] top-[15%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+        className="flex left-[20%] top-[15%]"
       />
-      <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/lightstarIcon.png"
-        alt="star"
-        className="absolute flex right-[20%] top-[50%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+        className="flex right-[20%] top-[50%]"
       />
-      <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
-        src="/icon/graystar.png"
-        alt="star"
-        className="absolute flex left-[5%] top-[96%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
-      />
+      <Star src="/icon/graystar.png" className="flex left-[5%] top-[96%]" />
     </section>
   );
 };

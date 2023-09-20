@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Star } from "..";
 
 const Sponsors = () => {
   return (
@@ -37,32 +38,17 @@ const Sponsors = () => {
               alt="sponsors"
               className="w-full tab:h-[500px] object-contain"
             />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
+            <Star
               src="/icon/purplestarIcon.png"
-              alt="star"
-              className="absolute flex left-[12%] tab:left-[55%] top-[2%] tab:top-[15%] w-3 animate-pulse duration-500"
+              className="flex left-[12%] tab:left-[55%] top-[2%] tab:top-[15%]"
             />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
+            <Star
               src="/icon/lightstarIcon.png"
-              alt="star"
-              className="absolute flex left-[12%] tab:left-[55%] bottom-[2%] tab:bottom-[15%] tab:w-5 w-3 animate-pulse duration-500"
+              className="flex left-[12%] tab:left-[55%] bottom-[2%] tab:bottom-[15%]"
             />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
+            <Star
               src="/icon/purplestarIcon.png"
-              alt="star"
-              className="absolute flex right-[12%] tab:right-[90%] top-[-4%] tab:top-[-5%] tab:w-5 w-3 animate-pulse duration-500"
+              className="flex right-[12%] tab:right-[90%] top-[-4%] tab:top-[-5%]"
             />
           </div>
         </div>
