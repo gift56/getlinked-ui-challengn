@@ -313,9 +313,9 @@ const Registerpage = () => {
                     Please review your registration details before submitting
                   </i>
                 </p>
-                <div className="flex items-center justify-start gap-2">
+                <div className="flex items-center justify-center tab:justify-start gap-2">
                   <div
-                    className={`bg-transparent w-4 h-4 flex items-center justify-center rounded ${
+                    className={`bg-transparent w-fit tab:w-4 tab:h-4 flex items-center justify-center rounded ${
                       errors.privacy_poclicy_accepted && "border border-red-500"
                     }`}
                   >
@@ -331,19 +331,19 @@ const Registerpage = () => {
                       className={`rounded ${
                         checkbox === false &&
                         values.privacy_poclicy_accepted === false
-                          ? "border-white border w-4 h-4"
+                          ? "border-white border w-[20px] h-[20px] tab:w-4 tab:h-4 ml-4 tab:ml-0"
                           : "border-none"
                       } transform transition-transform ease-in-out duration-300 absolute pointer-events-none`}
                     >
                       {values.privacy_poclicy_accepted === true && (
-                        <BiCheckSquare size={20} />
+                        <BiCheckSquare className="w-6 h-6 rounded ml-4" />
                       )}
                     </div>
                   </div>
                   <label
                     onClick={() => setCheckbox((prev) => !prev)}
                     htmlFor="privacy_poclicy_accepted"
-                    className={`text-sm font-normal cursor-pointer ${
+                    className={`text-sm font-normal cursor-pointer translate-x-6 tab:translate-x-2 ${
                       errors.privacy_poclicy_accepted && "text-red-500"
                     }`}
                   >
