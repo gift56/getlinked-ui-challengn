@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 
 const Price = () => {
   return (
-    <section className="w-full py-10 relative bg-footerBg">
+    <section className="w-full py-16 relative bg-footerBg">
       <div className="container overflow-hidden">
         <div className="w-full flex flex-col items-center justify-center gap-5">
-          <div className="flex items-center justify-center tab:items-start tab:justify-start flex-col gap-3 tab:w-[45%] tab:ml-auto">
+          <div className="flex items-center justify-center tab:items-start tab:justify-start flex-col gap-3 tab:w-[42%] tab:ml-auto">
             <motion.h2
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -67,6 +67,42 @@ const Price = () => {
         viewport={{ once: true }}
         className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[80px] md:blur-[125px] rounded-[50%] tab:left-[20%] top-[20%] tab:top-[30%] absolute"
       ></motion.div>
+       <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/graystar.png"
+        alt="star"
+        className="absolute flex right-[21.5%] top-[91%] tab:w-5 tab:h-5 w-3"
+      />
+       <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/lightstarIcon.png"
+        alt="star"
+        className="absolute flex right-[8.6%] top-[51%] tab:w-5 tab:h-5 w-3"
+      />
+       <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/lightstarIcon.png"
+        alt="star"
+        className="absolute flex right-[44%] top-[38%] tab:w-5 tab:h-5 w-3"
+      />
+       <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/lightstarIcon.png"
+        alt="star"
+        className="absolute flex left-[20%] bottom-[4%] tab:w-5 tab:h-5 w-3"
+      />
     </section>
   );
 };
