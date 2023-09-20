@@ -1,8 +1,10 @@
+import { useState } from "react";
 import Link from "next/link";
 import { CustomizeButton } from "..";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const [countdown, setCountdown] = useState(null);
   return (
     <section className="w-full  border-b border-borderColor">
       <div className="container">
