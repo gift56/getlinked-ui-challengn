@@ -1,6 +1,6 @@
 ## Getlinked Challenge
 
-![Finished project](/img/readme.png "Getlinked Challenge")
+![Finished project](/public/img/readme.png "Getlinked Challenge")
 
 [live demo](http://getlinkedchallenge-efegift.netlify.app)
 

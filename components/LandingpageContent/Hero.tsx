@@ -10,7 +10,7 @@ const Hero = () => {
     const calculateTimeRemaining = () => {
       // Getting the current time
       const currentTime = new Date().getTime();
-      const targetTime = new Date("2023-09-23T21:12:14").getTime();
+      const targetTime = new Date("2023-09-30T21:12:14").getTime();
 
       // Calculate the remaining time by subtracting the current time from the target time
       const remainingTime = Math.max(targetTime - currentTime, 0);
@@ -54,7 +54,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
-              className="flex flex-col items-center text-center tab:text-start gap-1 justify-center md:items-start md:justify-start w-full"
+              className="flex flex-col items-center text-center tab:text-start gap-1 justify-center tab:items-start tab:justify-start w-full"
             >
               <span className="relative font-bold text-3xl tab:text-5xl lg:text-6xl !text-white monitor:text-7xl font-clash">
                 getlinked Tech
@@ -64,7 +64,7 @@ const Hero = () => {
                   className="w-5 h-5 absolute -top-3 right-3 tab:w-14 tab:h-[73px] z-10 md:-top-16"
                 />
               </span>
-              <span className="flex items-center">
+              <span className="flex items-center flex-wrap">
                 <span className="font-bold text-3xl tab:text-5xl xl:text-6xl monitor:text-7xl font-clash">
                   Hackathon <span className="font-clash text-primary">1.0</span>
                 </span>
