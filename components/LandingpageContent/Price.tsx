@@ -103,6 +103,24 @@ const Price = () => {
         alt="star"
         className="absolute flex left-[20%] bottom-[4%] tab:w-5 tab:h-5 w-3"
       />
+       <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/purplestarIcon.png"
+        alt="star"
+        className="absolute flex left-[20%] top-[10%] tab:w-5 tab:h-5 w-3"
+      />
+       <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/purplestarIcon.png"
+        alt="star"
+        className="absolute flex right-[23%] top-[20%] tab:w-5 tab:h-5 w-3"
+      />
     </section>
   );
 };
