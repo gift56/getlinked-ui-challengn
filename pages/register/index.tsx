@@ -316,12 +316,16 @@ const Registerpage = () => {
                     />
                     <div
                       className={`rounded ${
-                        checkbox === false
+                        checkbox === false &&
+                        values.privacy_poclicy_accepted === false
                           ? "border-white border w-4 h-4"
                           : "border-none"
                       } transform transition-transform ease-in-out duration-300 absolute pointer-events-none`}
                     >
-                      {checkbox && <BiCheckSquare size={20} />}
+                      {checkbox === true ||
+                        values.privacy_poclicy_accepted === true && (
+                          <BiCheckSquare size={20} />
+                        )}
                     </div>
                   </div>
                   <label
