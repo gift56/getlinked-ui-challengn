@@ -231,7 +231,7 @@ const Contactpage = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   error={getError("email")}
-                  placeholder="Email address"
+                  placeholder="Mail"
                   errorClass="hidden"
                   className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
                 />
