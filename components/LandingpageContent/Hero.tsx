@@ -47,7 +47,7 @@ const Hero = () => {
             className="max-w-full w-[115px] md:w-[250px]"
           />
         </div>
-        <div className="w-full flex items-center justify-between gap-6 flex-col tab:flex-row">
+        <div className="w-full flex items-center justify-between gap-6 flex-col tab:flex-row pt-6">
           <div className="w-full relative tab:flex-1 h-full flex flex-col gap-6 items-center justify-center tab:items-start tab:justify-start  py-10 md:pt-28">
             <motion.h2
               initial={{ opacity: 0, x: -50 }}
