@@ -163,7 +163,7 @@ const Timeline = () => {
         viewport={{ once: true }}
         src="/icon/graystar.png"
         alt="star"
-        className="absolute flex left-[10%] top-[95%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex left-[5%] top-[96%] tab:w-5 tab:h-5 w-3"
       />
     </section>
   );

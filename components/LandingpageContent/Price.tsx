@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Price = () => {
   return (
-    <section className="w-full py-10">
+    <section className="w-full py-10 relative bg-footerBg">
       <div className="container overflow-hidden">
         <div className="w-full flex flex-col items-center justify-center gap-5">
           <div className="flex items-center justify-center tab:items-start tab:justify-start flex-col gap-3 tab:w-[45%] tab:ml-auto">
@@ -53,6 +53,20 @@ const Price = () => {
           </div>
         </div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] blur-[80px] md:blur-[130px] rounded-[50%] right-[0%] bottom-[10%] absolute"
+      ></motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[80px] md:blur-[125px] rounded-[50%] tab:left-[20%] top-[20%] tab:top-[30%] absolute"
+      ></motion.div>
     </section>
   );
 };
