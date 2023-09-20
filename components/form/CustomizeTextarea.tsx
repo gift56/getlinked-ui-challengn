@@ -14,7 +14,7 @@ interface CustomizeTextareaProps
   onChange?: (event: ChangeEvent<HTMLTextAreaElement>) => void;
   onBlur?: (event: FocusEvent<HTMLTextAreaElement>) => void;
   containerClass?: string;
-  value: string | undefined | number;
+  value: string | undefined | number | any;
 }
 
 const CustomizeTextarea = ({

@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { CustomizeButton, CustomizeInput, SuccessfulModal } from "@/components";
+import {
+  CustomizeButton,
+  CustomizeInput,
+  CustomizeTextarea,
+  SuccessfulModal,
+} from "@/components";
 import Head from "next/head";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -204,6 +209,18 @@ const Contactpage = () => {
                   placeholder="Email address"
                   errorClass="hidden"
                   className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
+                />
+                <CustomizeTextarea
+                  showLabel={true}
+                  name="message"
+                  value={values.message}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  error={getError("message")}
+                  errorClass="hidden"
+                  placeholder="Message"
+                  id="message"
+                  className="bg-[#ffffff08] border pt-3 border-white h-[114px] resize-none w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
                 />
 
                 <CustomizeButton
