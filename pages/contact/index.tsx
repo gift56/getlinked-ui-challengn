@@ -132,30 +132,22 @@ const Contactpage = () => {
         <img
           src="/icon/purplestarIcon.png"
           alt="star"
-          className="absolute flex tab:top-[25%] tab:left-[15%] z-40"
-          width={20}
-          height={20}
+          className="absolute flex tab:top-[25%] tab:left-[15%] w-3 tab:w-6 z-40"
         />
         <img
           src="/icon/lightstarIcon.png"
           alt="star"
-          className="absolute right-0 bottom-[40%] tab:bottom-[-20%] tab:right-[10%] z-40"
-          width={20}
-          height={20}
+          className="absolute bottom-[-20%] w-3 tab:w-6 right-[10%] z-40"
         />
         <img
           src="/icon/graystar.png"
           alt="star"
-          className="absolute tab:top-[20%] tab:right-[15%] z-40"
-          width={20}
-          height={20}
+          className="absolute top-[20%] w-3 tab:w-6 right-[15%] z-40"
         />
         <img
           src="/icon/purplestarIcon.png"
           alt="star"
-          className="absolute tab:bottom-[5%] tab:right-[50%] z-40"
-          width={20}
-          height={20}
+          className="absolute bottom-[-25%] right-[80%] tab:bottom-[5%] w-3 tab:w-6 tab:right-[50%] z-40"
         />
         <div className="container h-full">
           <div className="w-full relative flex h-full flex-col items-center justify-between lg:flex-row lg:w-[80%] lg:mx-auto  gap-6">
