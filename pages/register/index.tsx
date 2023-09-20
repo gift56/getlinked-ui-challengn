@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import { useFormik } from "formik";
 import { FormValue } from "@/types";
 import { registerSchema } from "@/schema";
-import { BiCheckSquare, BiCheck } from "react-icons/bi";
+import { CgCheckR } from "react-icons/cg";
 import { baseUrl } from "@/config";
 import { request } from "@/lib/request";
 import { toast } from "react-toastify";
@@ -336,7 +336,7 @@ const Registerpage = () => {
                       } transform transition-transform ease-in-out duration-300 absolute pointer-events-none`}
                     >
                       {values.privacy_poclicy_accepted === true && (
-                        <BiCheckSquare className="w-6 h-6 rounded ml-4" />
+                        <CgCheckR className="w-6 h-6 rounded ml-4 tab:ml-0 tab:w-5 tab:h-5" />
                       )}
                     </div>
                   </div>
