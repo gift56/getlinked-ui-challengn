@@ -149,7 +149,7 @@ const Registerpage = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className="flex bg-btnlinear w-[90%] md:w-[70%] h-[250px] rounded-[50%] blur-[180px] -left-20 top-20 absolute z-[-2]"
+                className="flex bg-purple1 w-[90%] md:w-[70%] h-[250px] rounded-[50%] blur-[180px] -left-20 top-20 absolute z-[-2]"
               ></motion.div>
             </div>
             <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[620px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
@@ -345,7 +345,7 @@ const Registerpage = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="bg-btnlinear hidden lg:flex md:w-[200px] h-[200px] blur-[150px] rounded-[50%] right-0 bottom-10 absolute z-[-2]"
+              className="bg-purple1 hidden lg:flex md:w-[200px] h-[200px] blur-[150px] rounded-[50%] right-0 bottom-10 absolute z-[-2]"
             ></motion.div>
           </div>
         </div>
