@@ -108,7 +108,39 @@ const Contactpage = () => {
       </header>
       <section className="w-full pb-8 lg:pb-0 lg:h-screen">
         <div className="container h-full">
-          
+          <div className="w-full relative flex h-full flex-col items-center justify-between lg:flex-row  gap-6">
+            <div className="hidden lg:flex items-center w-full relative h-full">
+              <div className="flex flex-col items-start justify-start gap-5">
+                <h2 className="text-3xl font-semibold font-clash text-primary">
+                  Get in touch
+                </h2>
+                <p className="text-base font-normal text-start">
+                  Contact <br /> Information
+                </p>
+                <p className="text-base font-normal text-start">
+                  27,Alara Street <br /> Yaba 100012
+                  <br /> Lagos State
+                </p>
+                <p className="text-base font-normal text-start">
+                  Call Us : 07067981819
+                </p>
+              </div>
+              <img
+                src="/icon/purplestarIcon.png"
+                alt="star"
+                className="absolute hidden tab:flex tab:top-[5%] tab:left-[10%] z-40"
+                width={20}
+                height={20}
+              />
+              <img
+                src="/icon/graystar.png"
+                alt="star"
+                className="absolute right-0 bottom-[40%] tab:bottom-[20%] tab:right-[10%] z-40"
+                width={20}
+                height={20}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>
