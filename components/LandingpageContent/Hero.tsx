@@ -119,17 +119,19 @@ const Hero = () => {
             </Link>
             <div className="flex items-center tab:justify-start gap-6">
               <span className="font-unica text-3xl font-normal md:text-4xl uppercase">
-                00<span className="text-sm font-normal">h</span>
+                {formatTime(hours)}
+                <span className="text-sm font-normal">h</span>
               </span>
               <span className="font-unica text-3xl font-normal md:text-4xl uppercase">
-                00<span className="text-sm font-normal">m</span>
+                {formatTime(minutes)}
+                <span className="text-sm font-normal">m</span>
               </span>
               <span className="font-unica text-3xl font-normal md:text-4xl uppercase">
-                00<span className="text-sm font-normal">s</span>
+                {formatTime(seconds)}
+                <span className="text-sm font-normal">s</span>
               </span>
             </div>
           </div>
-
 
           <div className="w-full tab:flex-1 h-full flex relative items-center justify-center">
             <motion.img
@@ -150,7 +152,6 @@ const Hero = () => {
           </div>
         </div>
 
-        
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
