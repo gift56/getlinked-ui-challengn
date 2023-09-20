@@ -157,7 +157,63 @@ const Contactpage = () => {
                 height={20}
               />
             </div>
-            
+            <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[520px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
+              <h2 className="text-xl font-semibold font-clash text-primary">
+                <span className="font-clash">
+                  Questions or need assistance?
+                </span>
+                <span className="font-clash block">Let us know about it!</span>
+              </h2>
+
+              <form
+                onSubmit={handleSubmit}
+                className="w-full flex flex-col items-center justify-center gap-4"
+              >
+                <CustomizeInput
+                  showLabel={true}
+                  type="text"
+                  name="first_name"
+                  value={values.first_name}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  error={getError("first_name")}
+                  placeholder="First Name"
+                  errorClass="hidden"
+                  className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
+                />
+                <CustomizeInput
+                  showLabel={true}
+                  type="text"
+                  name="phone_number"
+                  value={values.phone_number}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  error={getError("phone_number")}
+                  placeholder="Phone number"
+                  errorClass="hidden"
+                  className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
+                />
+                <CustomizeInput
+                  showLabel={true}
+                  type="email"
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  error={getError("email")}
+                  placeholder="Email address"
+                  errorClass="hidden"
+                  className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
+                />
+
+                <CustomizeButton
+                  text="Submit"
+                  className="bg-btnlinear border-none rounded !px-10 w-fit my-4 flex"
+                  type="submit"
+                  disabled={isSubmitting}
+                />
+              </form>
+            </div>
           </div>
         </div>
       </section>
