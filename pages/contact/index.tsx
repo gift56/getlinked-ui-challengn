@@ -114,7 +114,7 @@ const Contactpage = () => {
       </header>
       <section className="w-full pb-8 lg:pb-0 lg:h-screen">
         <div className="container h-full">
-          <div className="w-full relative flex h-full flex-col items-center justify-between lg:flex-row  gap-6">
+          <div className="w-full relative flex h-full flex-col items-center justify-between lg:flex-row lg:w-[80%] lg:mx-auto  gap-6">
             <div className="hidden lg:flex items-center w-full relative h-full">
               <div className="flex flex-col items-start justify-start gap-5">
                 <h2 className="text-3xl font-semibold font-clash text-primary">
@@ -162,7 +162,7 @@ const Contactpage = () => {
                 height={20}
               />
             </div>
-            <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[520px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
+            <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[550px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
               <h2 className="text-xl font-semibold font-clash text-primary">
                 <span className="font-clash">
                   Questions or need assistance?
@@ -230,6 +230,19 @@ const Contactpage = () => {
                   disabled={isSubmitting}
                 />
               </form>
+              <div className="lg:hidden flex-col items-center justify-center gap-3 text-center w-full">
+                <p className="text-primary text-sm font-normal">Share on</p>
+                <nav
+                  aria-label="footer_social"
+                  className="flex items-center justify-center gap-3"
+                >
+                  {socialIcons.map((item, i) => (
+                    <Link key={i} href={item.href}>
+                      <img src={item.icon} alt={item.href} />
+                    </Link>
+                  ))}
+                </nav>
+              </div>
             </div>
           </div>
         </div>
