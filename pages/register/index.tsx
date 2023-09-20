@@ -11,8 +11,10 @@ import { motion } from "framer-motion";
 import { useFormik } from "formik";
 import { FormValue } from "@/types";
 import { registerSchema } from "@/schema";
+import { BiCheckSquare, BiCheck } from "react-icons/bi";
 
 const Registerpage = () => {
+  const [checkbox, setCheckbox] = useState(false);
   const [success, setSuccess] = useState(false);
   const navLinks = [
     {
@@ -310,10 +312,20 @@ const Registerpage = () => {
                       onChange={handleChange}
                       onBlur={handleBlur}
                       id="privacy_poclicy_accepted"
-                      className="outline-none border rounded w-full h-full"
+                      className="sr-only"
                     />
+                    <div
+                      className={`rounded ${
+                        checkbox === false
+                          ? "border-white border w-4 h-4"
+                          : "border-none"
+                      } transform transition-transform ease-in-out duration-300 absolute pointer-events-none`}
+                    >
+                      {checkbox && <BiCheckSquare size={20} />}
+                    </div>
                   </div>
                   <label
+                    onClick={() => setCheckbox((prev) => !prev)}
                     htmlFor="privacy_poclicy_accepted"
                     className={`text-sm font-normal cursor-pointer ${
                       errors.privacy_poclicy_accepted && "text-red-500"
