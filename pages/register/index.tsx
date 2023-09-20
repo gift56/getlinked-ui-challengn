@@ -3,6 +3,7 @@ import {
   CustomizeButton,
   CustomizeInput,
   CustomizeSelect,
+  Star,
   SuccessfulModal,
 } from "@/components";
 import Head from "next/head";
@@ -149,26 +150,17 @@ const Registerpage = () => {
                 alt="registration_avatar"
                 className="lg:h-[650px] object-cover relative"
               />
-              <img
+              <Star
                 src="/icon/purplestarIcon.png"
-                alt="star"
-                className="absolute hidden tab:flex tab:top-[5%] tab:left-[10%] z-40"
-                width={20}
-                height={20}
+                className="hidden tab:flex tab:top-[5%] tab:left-[10%] z-40"
               />
-              <img
+              <Star
                 src="/icon/purplestarIcon.png"
-                alt="star"
-                className="absolute right-0 bottom-[40%] tab:bottom-[20%] tab:right-[10%] z-40"
-                width={20}
-                height={20}
+                className="right-0 bottom-[40%] tab:bottom-[20%] tab:right-[10%] z-40"
               />
-              <img
+              <Star
                 src="/icon/graystar.png"
-                alt="star"
-                className="absolute left-0 tab:bottom-[2%] tab:left-20"
-                width={20}
-                height={20}
+                className="left-0 tab:bottom-[2%] tab:left-20"
               />
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -179,12 +171,9 @@ const Registerpage = () => {
               ></motion.div>
             </div>
             <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[630px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
-              <img
+              <Star
                 src="/icon/graystar.png"
-                alt="star"
-                className="absolute right-0 tab:top-[2%] tab:right-[20%]"
-                width={20}
-                height={20}
+                className="right-0 tab:top-[2%] tab:right-[20%]"
               />
               <h2 className="hidden lg:block text-3xl font-semibold font-clash text-primary">
                 Register

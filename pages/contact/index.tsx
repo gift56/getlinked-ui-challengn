@@ -3,6 +3,7 @@ import {
   CustomizeButton,
   CustomizeInput,
   CustomizeTextarea,
+  Star,
   SuccessfulModal,
 } from "@/components";
 import Head from "next/head";
@@ -153,25 +154,18 @@ const Contactpage = () => {
         </div>
       </header>
       <section className="w-full pb-8 lg:pb-0 lg:h-screen">
-        <img
+        <Star
           src="/icon/purplestarIcon.png"
-          alt="star"
-          className="absolute flex top-[15%] left-[50%] tab:top-[25%] tab:left-[15%] w-3 tab:w-6 z-40"
+          className="flex top-[15%] left-[50%] tab:top-[25%] tab:left-[15%] z-40"
         />
-        <img
+        <Star
           src="/icon/lightstarIcon.png"
-          alt="star"
-          className="absolute bottom-[-20%] w-3 tab:w-6 right-[10%] z-40"
+          className="bottom-[-20%]  right-[10%] z-40"
         />
-        <img
-          src="/icon/graystar.png"
-          alt="star"
-          className="absolute top-[20%] w-3 tab:w-6 right-[15%] z-40"
-        />
-        <img
+        <Star src="/icon/graystar.png" className="top-[20%] right-[15%] z-40" />
+        <Star
           src="/icon/purplestarIcon.png"
-          alt="star"
-          className="absolute bottom-[-25%] right-[80%] tab:bottom-[5%] w-3 tab:w-6 tab:right-[50%] z-40"
+          className="bottom-[-25%] right-[80%] tab:bottom-[5%]tab:right-[50%] z-40"
         />
         <div className="container h-full">
           <div className="w-full relative flex h-full flex-col items-center justify-between lg:flex-row lg:w-[80%] lg:mx-auto  gap-6">
