@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useFormik } from "formik";
 import { ContactValue } from "@/types";
 import { contactSchema } from "@/schema";
+import { socialIcons } from "@/utils/constant";
 
 const Contactpage = () => {
   const [success, setSuccess] = useState(false);
@@ -127,6 +128,19 @@ const Contactpage = () => {
                 <p className="text-base font-normal text-start">
                   we are open from Monday-Friday <br /> 08:00am - 05:00pm
                 </p>
+                <div className="flex flex-col items-start justify-start gap-3">
+                  <p className="text-primary text-base font-normal">Share on</p>
+                  <nav
+                    aria-label="footer_social"
+                    className="flex items-center justify-start gap-3"
+                  >
+                    {socialIcons.map((item, i) => (
+                      <Link key={i} href={item.href}>
+                        <img src={item.icon} alt={item.href} />
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
               </div>
               <img
                 src="/icon/purplestarIcon.png"
