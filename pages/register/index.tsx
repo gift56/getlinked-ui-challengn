@@ -152,7 +152,7 @@ const Registerpage = () => {
                 className="flex bg-purple1 w-[90%] md:w-[70%] h-[250px] rounded-[50%] blur-[180px] -left-20 top-20 absolute z-[-2]"
               ></motion.div>
             </div>
-            <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[620px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
+            <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[630px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
               <img
                 src="/icon/graystar.png"
                 alt="star"
@@ -164,9 +164,9 @@ const Registerpage = () => {
                 Register
               </h2>
               <div className="flex flex-col items-start w-full gap-1">
-                <p className="text-sm font-normal flex items-end gap-1">
+                <p className="text-xs sm:text-sm font-normal flex items-end gap-1">
                   <span>Be part of this movement!</span>
-                  <img src="" alt="walking_image" />
+                  <img src="/icon/register.png" alt="walking_image" />
                 </p>
                 <h3 className="text-lg md:text-xl font-normal uppercase tab:text-2xl">
                   CREATE YOUR ACCOUNT
