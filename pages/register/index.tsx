@@ -12,6 +12,9 @@ import { useFormik } from "formik";
 import { FormValue } from "@/types";
 import { registerSchema } from "@/schema";
 import { BiCheckSquare, BiCheck } from "react-icons/bi";
+import { baseUrl } from "@/config";
+import { request } from "@/lib/request";
+import { toast } from "react-toastify";
 
 const Registerpage = () => {
   const [checkbox, setCheckbox] = useState(false);
@@ -41,9 +44,30 @@ const Registerpage = () => {
     privacy_poclicy_accepted: false,
   };
 
+  const registerRequest = async (data: FormValue) => {
+    try {
+      const res = await baseUrl.post(request.registration, data);
+      setSuccess(true);
+      return res.data;
+    } catch (error: any) {
+      if (error.message === "Network Error") {
+        toast.error(error.message, {
+          position: "top-center",
+          toastId: 1,
+          autoClose: 1500,
+        });
+      } else {
+        toast.error(error.response.data.email[0], {
+          position: "top-center",
+          toastId: 1,
+          autoClose: 1500,
+        });
+      }
+    }
+  };
+
   const onSubmit = async (payload: FormValue, actions: any) => {
-    console.log(payload);
-    setSuccess(true);
+    registerRequest(payload);
     await new Promise((res) => setTimeout(res, 1000));
     actions.resetForm();
   };
@@ -322,10 +346,9 @@ const Registerpage = () => {
                           : "border-none"
                       } transform transition-transform ease-in-out duration-300 absolute pointer-events-none`}
                     >
-                      {checkbox === true ||
-                        values.privacy_poclicy_accepted === true && (
-                          <BiCheckSquare size={20} />
-                        )}
+                      {values.privacy_poclicy_accepted === true && (
+                        <BiCheckSquare size={20} />
+                      )}
                     </div>
                   </div>
                   <label
