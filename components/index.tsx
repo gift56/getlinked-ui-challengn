@@ -11,6 +11,7 @@ import Sponsors from "./LandingpageContent/Sponsors";
 import Timeline from "./LandingpageContent/Timeline";
 import SuccessfulModal from "./Modal/SuccessfulModal";
 import Navbar from "./Navbar";
+import Star from "./Star";
 import CustomizeInput from "./form/CustomizeInput";
 import CustomizeSelect from "./form/CustomizeSelect";
 import CustomizeTextarea from "./form/CustomizeTextarea";
@@ -32,4 +33,5 @@ export {
   CustomizeSelect,
   SuccessfulModal,
   CustomizeTextarea,
+  Star,
 };
