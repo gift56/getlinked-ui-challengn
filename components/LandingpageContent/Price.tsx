@@ -74,7 +74,7 @@ const Price = () => {
         viewport={{ once: true }}
         src="/icon/graystar.png"
         alt="star"
-        className="absolute flex right-[21.5%] top-[91%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex right-[21.5%] top-[91%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
        <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -83,7 +83,7 @@ const Price = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex right-[8.6%] top-[51%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex right-[8.6%] top-[51%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
        <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -92,7 +92,7 @@ const Price = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex right-[44%] top-[38%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex right-[44%] top-[38%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
        <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -101,7 +101,7 @@ const Price = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex left-[20%] bottom-[4%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex left-[20%] bottom-[4%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
        <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -110,7 +110,7 @@ const Price = () => {
         viewport={{ once: true }}
         src="/icon/purplestarIcon.png"
         alt="star"
-        className="absolute flex left-[20%] top-[10%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex left-[20%] top-[10%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
        <motion.img
         initial={{ opacity: 0, scale: 0.5 }}

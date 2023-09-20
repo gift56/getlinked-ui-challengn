@@ -46,7 +46,7 @@ const Judging = () => {
               viewport={{ once: true }}
               src="/icon/lightstarIcon.png"
               alt="star"
-              className="absolute flex right-[2%] bottom-[-360%] tab:bottom-[-6%] tab:w-5 w-3 animate-pulse duration-500"
+              className="absolute flex right-[2%] bottom-[-360%] phone:bottom-[-200%] tab:bottom-[-6%] tab:w-5 w-3 animate-pulse duration-500"
             />
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}

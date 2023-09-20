@@ -27,7 +27,7 @@ const Sponsors = () => {
               companies as its partners and sponsors
             </motion.p>
           </div>
-          <div className="w-full">
+          <div className="w-full relative">
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -36,6 +36,33 @@ const Sponsors = () => {
               src="/img/sponsorsImg.png"
               alt="sponsors"
               className="w-full tab:h-[500px] object-contain"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/purplestarIcon.png"
+              alt="star"
+              className="absolute flex left-[12%] tab:left-[55%] top-[2%] tab:top-[15%] w-3 animate-pulse duration-500"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/lightstarIcon.png"
+              alt="star"
+              className="absolute flex left-[12%] tab:left-[55%] bottom-[2%] tab:bottom-[15%] tab:w-5 w-3 animate-pulse duration-500"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/purplestarIcon.png"
+              alt="star"
+              className="absolute flex right-[12%] tab:right-[90%] top-[-4%] tab:top-[-5%] tab:w-5 w-3 animate-pulse duration-500"
             />
           </div>
         </div>

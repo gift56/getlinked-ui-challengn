@@ -145,7 +145,7 @@ const Timeline = () => {
         viewport={{ once: true }}
         src="/icon/purplestarIcon.png"
         alt="star"
-        className="absolute flex left-[20%] top-[15%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex left-[20%] top-[15%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -154,7 +154,7 @@ const Timeline = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex right-[20%] top-[50%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex right-[20%] top-[50%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -163,7 +163,7 @@ const Timeline = () => {
         viewport={{ once: true }}
         src="/icon/graystar.png"
         alt="star"
-        className="absolute flex left-[5%] top-[96%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex left-[5%] top-[96%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
     </section>
   );
