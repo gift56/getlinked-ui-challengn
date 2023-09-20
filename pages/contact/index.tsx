@@ -226,7 +226,7 @@ const Contactpage = () => {
                   onBlur={handleBlur}
                   error={getError("first_name")}
                   placeholder="First Name"
-                  errorClass="hidden"
+                  errorClass="block"
                   className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
                 />
                 <CustomizeInput
@@ -238,7 +238,7 @@ const Contactpage = () => {
                   onBlur={handleBlur}
                   error={getError("phone_number")}
                   placeholder="Phone number"
-                  errorClass="hidden"
+                  errorClass="block"
                   className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
                 />
                 <CustomizeInput
@@ -250,7 +250,7 @@ const Contactpage = () => {
                   onBlur={handleBlur}
                   error={getError("email")}
                   placeholder="Mail"
-                  errorClass="hidden"
+                  errorClass="block"
                   className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
                 />
                 <CustomizeTextarea
@@ -260,7 +260,7 @@ const Contactpage = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   error={getError("message")}
-                  errorClass="hidden"
+                  errorClass="block"
                   placeholder="Message"
                   id="message"
                   className="bg-[#ffffff08] border pt-3 border-white h-[114px] resize-none w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-white focus:border-primary transition-all duration-300"
@@ -268,7 +268,7 @@ const Contactpage = () => {
 
                 <CustomizeButton
                   text="Submit"
-                  className="bg-btnlinear border-none rounded !px-10 w-fit my-4 flex"
+                  className="bg-btnlinear border-none rounded !px-10 w-fit my-4 flex disabled:cursor-not-allowed disabled:opacity-70"
                   type="submit"
                   disabled={isSubmitting}
                 />

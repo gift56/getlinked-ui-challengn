@@ -51,7 +51,7 @@ const Registerpage = () => {
       setSuccess(true);
       return res.data;
     } catch (error: any) {
-      console.log(error)
+      console.log(error);
       if (error.message === "Network Error") {
         toast.error(error.message, {
           position: "top-center",
@@ -206,7 +206,7 @@ const Registerpage = () => {
                     error={getError("team_name")}
                     id="team_name"
                     placeholder="Enter the name of your group"
-                    errorClass="hidden"
+                    errorClass="block"
                     className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-[#ffffff40] focus:border-primary transition-all duration-300"
                   />
                   <CustomizeInput
@@ -222,7 +222,7 @@ const Registerpage = () => {
                     error={getError("phone_number")}
                     id="phone_number"
                     placeholder="Enter your phone number"
-                    errorClass="hidden"
+                    errorClass="block"
                     className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-[#ffffff40] focus:border-primary transition-all duration-300"
                   />
                 </div>
@@ -240,7 +240,7 @@ const Registerpage = () => {
                     error={getError("email")}
                     id="email"
                     placeholder="Enter your email address"
-                    errorClass="hidden"
+                    errorClass="block"
                     className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-[#ffffff40] focus:border-primary transition-all duration-300"
                   />
                   <CustomizeInput
@@ -256,7 +256,7 @@ const Registerpage = () => {
                     error={getError("project_topic")}
                     id="project_topic"
                     placeholder="What is your group project topic"
-                    errorClass="hidden"
+                    errorClass="block"
                     className="bg-[#ffffff08] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-[#ffffff40] focus:border-primary transition-all duration-300"
                   />
                 </div>
@@ -270,7 +270,7 @@ const Registerpage = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     error={getError("category")}
-                    errorClass="hidden"
+                    errorClass="block"
                     name="category"
                     className="bg-[#ffffff08] appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad text-white placeholder:text-borderColor focus:border-primary transition-all duration-300"
                   >
@@ -293,7 +293,7 @@ const Registerpage = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     error={getError("group_size")}
-                    errorClass="hidden"
+                    errorClass="block"
                     name="group_size"
                     containerClass="!w-[50%] md:!w-full"
                     className="bg-[#ffffff08] cursor-pointer appearance-none bg-[url(/icon/downIcon.svg)] bg-no-repeat bg-[center_right_0.3rem] lg:bg-[center_right_1.2rem] border  border-white h-[44px] w-full rounded px-4 outline-none text-sm shadow-registerShad placeholder:text-borderColor focus:border-primary transition-all duration-300"
@@ -355,14 +355,14 @@ const Registerpage = () => {
                 </div>
                 <CustomizeButton
                   text="Register"
-                  className="bg-btnlinear border-none rounded !px-10 !py-3 w-full my-4 hidden tab:flex"
+                  className="bg-btnlinear border-none rounded !px-10 !py-3 w-full my-4 hidden tab:flex disabled:cursor-not-allowed disabled:opacity-70"
                   type="submit"
                   disabled={isSubmitting}
                 />
                 <div className="w-full flex tab:hidden items-center justify-center">
                   <CustomizeButton
                     text="Submit"
-                    className="bg-btnlinear border-none rounded !px-10 w-fit my-4 flex"
+                    className="bg-btnlinear border-none rounded !px-10 w-fit my-4 flex disabled:cursor-not-allowed disabled:opacity-70"
                     type="submit"
                     disabled={isSubmitting}
                   />
