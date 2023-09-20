@@ -39,6 +39,33 @@ const Judging = () => {
               alt="judginimg"
               className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/lightstarIcon.png"
+              alt="star"
+              className="absolute flex right-[2%] bottom-[-6%] tab:w-5 w-3 animate-pulse duration-500"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/graystar.png"
+              alt="star"
+              className="absolute flex right-[40%] top-[50%] tab:w-5 w-3 animate-pulse duration-500"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/purplestarIcon.png"
+              alt="star"
+              className="absolute flex left-[30%] top-[-15%] tab:w-5 w-3 animate-pulse duration-500"
+            />
             <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute -top-5 left-14 xl:left-[20%] p-5"></div>
           </div>
           <div className="w-full tab:flex-1 flex flex-col items-center justify-center tab:items-start tab:justify-start gap-5">
