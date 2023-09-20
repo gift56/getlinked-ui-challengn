@@ -132,7 +132,7 @@ const Contactpage = () => {
         <img
           src="/icon/purplestarIcon.png"
           alt="star"
-          className="absolute flex tab:top-[25%] tab:left-[15%] w-3 tab:w-6 z-40"
+          className="absolute flex top-[15%] left-[50%] tab:top-[25%] tab:left-[15%] w-3 tab:w-6 z-40"
         />
         <img
           src="/icon/lightstarIcon.png"
