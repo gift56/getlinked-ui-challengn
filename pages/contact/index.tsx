@@ -117,7 +117,7 @@ const Contactpage = () => {
                 <Link
                   href={item.href}
                   key={i}
-                  className="text-base font-medium hover:text-primary transition-all"
+                  className="text-base font-normal hover:text-transparent hover:bg-btnlinear hover:bg-clip-text transition-all"
                 >
                   {item.text}
                 </Link>
