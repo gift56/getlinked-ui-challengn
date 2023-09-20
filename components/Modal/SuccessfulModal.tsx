@@ -9,7 +9,7 @@ interface ModalProps {
   title: string | ReactNode;
 }
 
-const SuccessfulModal = ({ show, setShow }: ModalProps) => {
+const SuccessfulModal = ({ show, setShow, title }: ModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
@@ -78,8 +78,7 @@ const SuccessfulModal = ({ show, setShow }: ModalProps) => {
           className="tab:w-[400px] object-cover"
         />
         <h2 className="text-base text-center font-semibold md:text-xl tab:text-2xl">
-          Congratulations <br className="hidden tab:block" /> you have
-          successfully Registered!
+          {title}
         </h2>
         <p className="text-sm text-center font-semibold">
           <span>Yes, it was easy and you did it!</span>

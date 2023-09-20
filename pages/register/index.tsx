@@ -349,7 +349,16 @@ const Registerpage = () => {
           </div>
         </div>
       </section>
-      <SuccessfulModal show={success} setShow={setSuccess} />
+      <SuccessfulModal
+        show={success}
+        setShow={setSuccess}
+        title={
+          <span className="text-center">
+            Congratulations <br className="hidden tab:block" /> you have
+            successfully Registered!
+          </span>
+        }
+      />
     </>
   );
 };
