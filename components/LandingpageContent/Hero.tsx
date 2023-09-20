@@ -81,7 +81,7 @@ const Hero = () => {
                 viewport={{ once: true }}
                 src="/icon/lightstarIcon.png"
                 alt="star"
-                className="absolute left-[25%] top-[2%] tab:left-[8%] tab:w-5 tab:h-5 w-3"
+                className="absolute left-[25%] top-[2%] tab:left-[8%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
               />
               <motion.img
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -90,7 +90,7 @@ const Hero = () => {
                 viewport={{ once: true }}
                 src="/icon/graystar.png"
                 alt="star"
-                className="absolute left-[65%] bottom-[20%] tab:w-5 tab:h-5 w-3"
+                className="absolute left-[65%] bottom-[20%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
               />
             </motion.h2>
             <motion.p
@@ -141,7 +141,7 @@ const Hero = () => {
               viewport={{ once: true }}
               src="/icon/graystar.png"
               alt="star"
-              className="absolute hidden tab:flex left-[15%] top-[5%] tab:w-5 tab:h-5 w-3"
+              className="absolute hidden tab:flex left-[15%] top-[5%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
             />
             <img
               src="/img/heroBall.png"
