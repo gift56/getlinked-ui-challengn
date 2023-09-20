@@ -64,7 +64,7 @@ const Judging = () => {
               viewport={{ once: true }}
               src="/icon/purplestarIcon.png"
               alt="star"
-              className="absolute flex left-[30%] top-[-15%] tab:w-5 w-3 animate-pulse duration-500"
+              className="absolute flex left-[26%] top-[-15%] tab:w-5 w-3 animate-pulse duration-500"
             />
             <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute -top-5 left-14 xl:left-[20%] p-5"></div>
           </div>
