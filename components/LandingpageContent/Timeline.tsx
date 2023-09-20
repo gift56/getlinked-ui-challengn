@@ -24,7 +24,7 @@ const Timeline = () => {
   };
 
   return (
-    <section id="timeline" className="w-full py-14">
+    <section id="timeline" className="w-full py-14 relative">
       <div className="container overflow-hidden">
         <div className="w-full flex flex-col items-center justify-center gap-16">
           <div className="flex flex-col gap-4">
@@ -138,6 +138,33 @@ const Timeline = () => {
           </motion.div>
         </div>
       </div>
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/purplestarIcon.png"
+        alt="star"
+        className="absolute flex left-[20%] top-[15%] tab:w-5 tab:h-5 w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/lightstarIcon.png"
+        alt="star"
+        className="absolute flex right-[20%] top-[50%] tab:w-5 tab:h-5 w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/graystar.png"
+        alt="star"
+        className="absolute flex left-[10%] top-[95%] tab:w-5 tab:h-5 w-3"
+      />
     </section>
   );
 };

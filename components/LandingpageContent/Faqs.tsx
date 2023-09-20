@@ -13,7 +13,7 @@ const Faqs = () => {
   return (
     <section id="faqs" className="w-full py-10 border-b border-borderColor">
       <div className="container overflow-hidden">
-        <div className="flex items-center justify-center tab:justify-between w-full gap-6 flex-col tab:flex-row-reverse">
+        <div className="flex items-center justify-center tab:justify-between w-full gap-6 flex-col-reverse tab:flex-row-reverse">
           <div className="w-full tab:flex-1 relative">
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
