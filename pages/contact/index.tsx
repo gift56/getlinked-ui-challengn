@@ -59,7 +59,7 @@ const Contactpage = () => {
   return (
     <>
       <Head>
-        <title>Getlinked - Get in touch</title>
+        <title>Getlinked - Contact Us</title>
         <meta
           name="description"
           content="Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize"
