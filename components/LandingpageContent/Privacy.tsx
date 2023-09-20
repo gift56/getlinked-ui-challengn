@@ -5,7 +5,7 @@ import { CustomizeButton } from "..";
 
 const Privacy = () => {
   return (
-    <section id="privacy" className="w-full py-14">
+    <section id="privacy" className="w-full py-14 relative">
       <div className="container">
         <div className="w-full flex flex-col items-center justify-center gap-8 tab:flex-row tab:justify-between tab:items-start">
           <div className="w-full flex flex-col items-center tab:items-start tab:justify-start gap-6">
@@ -35,7 +35,7 @@ const Privacy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
-              className="text-center tab:text-start text-sm font-normal mt-5"
+              className="text-center tab:text-start text-sm font-normal mt-5 lg:max-w-[380px]"
             >
               {`Below are our privacy & policy, which outline a lot of goodies.
                 it’s our aim to always take of our participant`}
@@ -109,6 +109,76 @@ const Privacy = () => {
           </div>
         </div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] blur-[60px] md:blur-[120px] rounded-[50%] left-[0%] bottom-[50%] tab:bottom-[5%] absolute"
+      ></motion.div>
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/graystar.png"
+        alt="star"
+        className="absolute flex right-[8%] bottom-[24%] tab:w-5 tab:h-5 w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/lightstarIcon.png"
+        alt="star"
+        className="absolute flex right-[38%] bottom-[28%] tab:w-5 tab:h-5 w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/purplestarIcon.png"
+        alt="star"
+        className="absolute flex right-[32%] bottom-[35%] w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/lightstarIcon.png"
+        alt="star"
+        className="absolute flex right-[15%] top-[23%] w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/purplestarIcon.png"
+        alt="star"
+        className="absolute flex right-[50%] top-[20%] tab:w-5 w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/graystar.png"
+        alt="star"
+        className="absolute flex left-[26%] top-[5%] tab:w-5 w-3"
+      />
+      <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 2 }}
+        viewport={{ once: true }}
+        src="/icon/purplestarIcon.png"
+        alt="star"
+        className="absolute flex left-[2%] bottom-[33%] tab:w-5 w-3"
+      />
     </section>
   );
 };
