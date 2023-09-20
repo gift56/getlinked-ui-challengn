@@ -91,8 +91,8 @@ const Navbar = () => {
       {/* MOBILE NAV */}
       <div
         className={`${
-          mobileNav ? "top-0" : "-top-[800vh]"
-        } md:hidden flex flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all`}
+          mobileNav ? "top-0 flex" : "-top-[800vh] hidden"
+        } md:hidden flex-col h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all`}
       >
         <div
           ref={modalRef}
