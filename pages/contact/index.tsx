@@ -47,7 +47,7 @@ const Contactpage = () => {
     message: "",
   };
 
-  const registerUser = async (data: ContactValue) => {
+  const contactUsRequest = async (data: ContactValue) => {
     try {
       const res = await baseUrl.post(request.contact, data);
       setSuccess(true);
@@ -70,7 +70,7 @@ const Contactpage = () => {
   };
 
   const onSubmit = async (payload: ContactValue, actions: any) => {
-    console.log(payload);
+    contactUsRequest(payload);
     await new Promise((res) => setTimeout(res, 1000));
     actions.resetForm();
   };
