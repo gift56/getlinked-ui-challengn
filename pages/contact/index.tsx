@@ -14,6 +14,9 @@ import { contactSchema } from "@/schema";
 import { socialIcons } from "@/utils/constant";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { baseUrl } from "@/config";
+import { request } from "@/lib/request";
+import { toast } from "react-toastify";
 
 const Contactpage = () => {
   const [success, setSuccess] = useState(false);
@@ -44,9 +47,30 @@ const Contactpage = () => {
     message: "",
   };
 
+  const registerUser = async (data: ContactValue) => {
+    try {
+      const res = await baseUrl.post(request.contact, data);
+      setSuccess(true);
+      return res.data;
+    } catch (error: any) {
+      if (error.message === "Network Error") {
+        toast.error(error.message, {
+          position: "top-center",
+          toastId: 1,
+          autoClose: 1500,
+        });
+      } else {
+        toast.error(error.response.data.email[0], {
+          position: "top-center",
+          toastId: 1,
+          autoClose: 1500,
+        });
+      }
+    }
+  };
+
   const onSubmit = async (payload: ContactValue, actions: any) => {
     console.log(payload);
-    setSuccess(true);
     await new Promise((res) => setTimeout(res, 1000));
     actions.resetForm();
   };
