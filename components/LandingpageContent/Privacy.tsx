@@ -123,7 +123,7 @@ const Privacy = () => {
         viewport={{ once: true }}
         src="/icon/graystar.png"
         alt="star"
-        className="absolute flex right-[8%] bottom-[24%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex right-[8%] bottom-[24%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -132,7 +132,7 @@ const Privacy = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex right-[38%] bottom-[28%] tab:w-5 tab:h-5 w-3"
+        className="absolute flex right-[38%] bottom-[28%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -141,7 +141,7 @@ const Privacy = () => {
         viewport={{ once: true }}
         src="/icon/purplestarIcon.png"
         alt="star"
-        className="absolute flex right-[32%] bottom-[35%] w-3"
+        className="absolute flex right-[32%] bottom-[35%] w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -150,7 +150,7 @@ const Privacy = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex right-[15%] top-[23%] w-3"
+        className="absolute flex right-[15%] top-[23%] w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -159,7 +159,7 @@ const Privacy = () => {
         viewport={{ once: true }}
         src="/icon/purplestarIcon.png"
         alt="star"
-        className="absolute flex right-[50%] top-[20%] tab:w-5 w-3"
+        className="absolute flex right-[50%] top-[20%] tab:w-5 w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -168,7 +168,7 @@ const Privacy = () => {
         viewport={{ once: true }}
         src="/icon/graystar.png"
         alt="star"
-        className="absolute flex left-[26%] top-[5%] tab:w-5 w-3"
+        className="absolute flex left-[26%] top-[5%] tab:w-5 w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -177,7 +177,7 @@ const Privacy = () => {
         viewport={{ once: true }}
         src="/icon/purplestarIcon.png"
         alt="star"
-        className="absolute flex left-[2%] bottom-[33%] tab:w-5 w-3"
+        className="absolute flex left-[2%] bottom-[33%] tab:w-5 w-3 animate-pulse duration-500"
       />
     </section>
   );

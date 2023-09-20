@@ -102,7 +102,7 @@ const Footer = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex left-[3%] top-[23%] w-3"
+        className="absolute flex left-[3%] top-[23%] w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -111,7 +111,7 @@ const Footer = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex right-[3%] bottom-[23%] w-3"
+        className="absolute flex right-[3%] bottom-[23%] w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -120,7 +120,7 @@ const Footer = () => {
         viewport={{ once: true }}
         src="/icon/purplestarIcon.png"
         alt="star"
-        className="absolute flex right-[50%] bottom-[10%] tab:bottom-[23%] w-3"
+        className="absolute flex right-[50%] bottom-[10%] tab:bottom-[23%] w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -129,7 +129,7 @@ const Footer = () => {
         viewport={{ once: true }}
         src="/icon/graystar.png"
         alt="star"
-        className="absolute flex right-[25%] top-[50%] tab:top-[23%] w-3"
+        className="absolute flex right-[25%] top-[50%] tab:top-[23%] w-3 animate-pulse duration-500"
       />
     </footer>
   );
