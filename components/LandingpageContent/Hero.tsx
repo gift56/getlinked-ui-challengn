@@ -1,10 +1,39 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { CustomizeButton } from "..";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const [countdown, setCountdown] = useState(null);
+  const [countdown, setCountdown] = useState<number | null | any>(null);
+
+  useEffect(() => {
+    const calculateTimeRemaining = () => {
+      // Getting the current time
+      const currentTime = new Date().getTime();
+      const targetTime = new Date("2023-09-23T21:12:14").getTime();
+
+      // Calculate the remaining time by subtracting the current time from the target time
+      const remainingTime = Math.max(targetTime - currentTime, 0);
+
+      // Update the state variable with the remaining time
+      setCountdown(remainingTime);
+    };
+
+    // Start the countdown interval
+    const interval = setInterval(calculateTimeRemaining, 1000);
+
+    // Clean up the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, []);
+
+  const formatTime = (value: any) => {
+    return value.toString().padStart(2, "0");
+  };
+
+  const hours = Math.floor((countdown / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((countdown / (1000 * 60)) % 60);
+  const seconds = Math.floor((countdown / 1000) % 60);
+
   return (
     <section className="w-full  border-b border-borderColor">
       <div className="container">
