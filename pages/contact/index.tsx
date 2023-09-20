@@ -12,9 +12,16 @@ import { useFormik } from "formik";
 import { ContactValue } from "@/types";
 import { contactSchema } from "@/schema";
 import { socialIcons } from "@/utils/constant";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Contactpage = () => {
   const [success, setSuccess] = useState(false);
+  const router = useRouter();
+
+  const handleBack = () => {
+    router.push("/");
+  };
   const navLinks = [
     {
       href: "/#timeline",
@@ -106,13 +113,50 @@ const Contactpage = () => {
                 />
               </Link>
             </nav>
-            <h2 className="tab:hidden text-lg font-semibold font-clash text-primary">
-              Register
-            </h2>
+            <span
+              className="w-7 h-7 bg-btnlinear rounded-full flex md:hidden items-center relative justify-center before:absolute before:inset-[1px] before:bg-dark before:rounded-full before:transition-all before:duration-300 hover:before:opacity-90"
+              onClick={handleBack}
+            >
+              <Image
+                src="/icon/downIcon.svg"
+                alt="bar-icon"
+                width={12}
+                height={12}
+                className="relative rotate-90"
+              />
+            </span>
           </div>
         </div>
       </header>
       <section className="w-full pb-8 lg:pb-0 lg:h-screen">
+        <img
+          src="/icon/purplestarIcon.png"
+          alt="star"
+          className="absolute flex tab:top-[25%] tab:left-[15%] z-40"
+          width={20}
+          height={20}
+        />
+        <img
+          src="/icon/lightstarIcon.png"
+          alt="star"
+          className="absolute right-0 bottom-[40%] tab:bottom-[-20%] tab:right-[10%] z-40"
+          width={20}
+          height={20}
+        />
+        <img
+          src="/icon/graystar.png"
+          alt="star"
+          className="absolute tab:top-[20%] tab:right-[15%] z-40"
+          width={20}
+          height={20}
+        />
+        <img
+          src="/icon/purplestarIcon.png"
+          alt="star"
+          className="absolute tab:bottom-[5%] tab:right-[50%] z-40"
+          width={20}
+          height={20}
+        />
         <div className="container h-full">
           <div className="w-full relative flex h-full flex-col items-center justify-between lg:flex-row lg:w-[80%] lg:mx-auto  gap-6">
             <div className="hidden lg:flex items-center w-full relative h-full">
@@ -147,20 +191,6 @@ const Contactpage = () => {
                   </nav>
                 </div>
               </div>
-              <img
-                src="/icon/purplestarIcon.png"
-                alt="star"
-                className="absolute hidden tab:flex tab:top-[5%] tab:left-[10%] z-40"
-                width={20}
-                height={20}
-              />
-              <img
-                src="/icon/lightstarIcon.png"
-                alt="star"
-                className="absolute right-0 bottom-[40%] tab:bottom-[20%] tab:right-[10%] z-40"
-                width={20}
-                height={20}
-              />
             </div>
             <div className="w-full lg:bg-[#ffffff08] lg:shadow-registerShad lg:rounded-xl lg:p-10 text-white lg:h-[550px] lg:overflow-y-auto flex flex-col items-start justify-start gap-5 relative">
               <h2 className="text-xl font-semibold font-clash text-primary">
@@ -169,7 +199,9 @@ const Contactpage = () => {
                 </span>
                 <span className="font-clash block">Let us know about it!</span>
               </h2>
-              <p className="text-sm font-normal lg:hidden">Email us below to any question related to our event</p>
+              <p className="text-sm font-normal lg:hidden">
+                Email us below to any question related to our event
+              </p>
 
               <form
                 onSubmit={handleSubmit}
@@ -252,14 +284,14 @@ const Contactpage = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="flex bg-btnlinear w-[100px] h-[100px] lg:w-[250px] lg:h-[250px] rounded-[50%] blur-[80px] lg:blur-[120px] top-[40%] left-[5%] lg:left-20 lg:top-[24%] absolute z-[-2]"
+          className="flex bg-purple1 w-[100px] h-[100px] lg:w-[250px] lg:h-[250px] rounded-[50%] blur-[80px] lg:blur-[120px] top-[40%] left-[5%] lg:left-20 lg:top-[24%] absolute z-[-2]"
         ></motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="bg-btnlinear hidden lg:flex md:w-[200px] h-[200px] blur-[150px] rounded-[50%] right-0 bottom-0 absolute z-[-2]"
+          className="bg-purple1 hidden lg:flex md:w-[200px] h-[200px] blur-[150px] rounded-[50%] right-0 bottom-0 absolute z-[-2]"
         ></motion.div>
       </section>
       <SuccessfulModal
