@@ -95,7 +95,7 @@ const Faqs = () => {
             <div className="w-full flex items-start flex-col gap-5 mt-6">
               {faqData.map((item) => (
                 <div
-                  key={item.question}
+                  key={item.id}
                   onClick={() => toggle(item.id)}
                   className="flex flex-col items-start justify-start w-full border-b border-primary cursor-pointer pb-2 transition-all duration-300"
                 >
