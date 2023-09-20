@@ -67,7 +67,7 @@ const Rules = () => {
         viewport={{ once: true }}
         src="/icon/graystar.png"
         alt="star"
-        className="absolute flex tab:left-[26%] left-[90%] top-[60%] tab:top-[15%] tab:w-5 w-3"
+        className="absolute flex tab:left-[26%] left-[90%] top-[60%] tab:top-[15%] tab:w-5 w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -76,7 +76,7 @@ const Rules = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex left-[12%] tab:left-[50%] bottom-[2%] tab:bottom-[15%] tab:w-5 w-3"
+        className="absolute flex left-[12%] tab:left-[50%] bottom-[2%] tab:bottom-[15%] tab:w-5 w-3 animate-pulse duration-500"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
@@ -85,7 +85,7 @@ const Rules = () => {
         viewport={{ once: true }}
         src="/icon/lightstarIcon.png"
         alt="star"
-        className="absolute flex tab:hidden left-[12%] top-[25%] tab:w-5 w-3"
+        className="absolute flex tab:hidden left-[12%] top-[25%] tab:w-5 w-3 animate-pulse duration-500"
       />
     </section>
   );

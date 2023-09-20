@@ -22,7 +22,7 @@ const Introduction = () => {
               viewport={{ once: true }}
               src="/icon/purplestarIcon.png"
               alt="star"
-              className="absolute flex left-[5%] top-[25%] tab:w-5 tab:h-5 w-3"
+              className="absolute flex left-[5%] top-[25%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
             />
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
@@ -42,7 +42,7 @@ const Introduction = () => {
               viewport={{ once: true }}
               src="/icon/purplestarIcon.png"
               alt="star"
-              className="absolute hidden tab:flex right-[15%] top-[5%] tab:w-5 tab:h-5 w-3"
+              className="absolute hidden tab:flex right-[15%] top-[5%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
             />
             <motion.h2
               initial={{ opacity: 0, x: 50 }}
