@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { CustomizeButton } from "..";
+import { CustomizeButton, Star } from "..";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -74,23 +74,13 @@ const Hero = () => {
                   className="w-16 tab:w-24 h-auto"
                 />
               </span>
-              <motion.img
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ type: "spring", duration: 2 }}
-                viewport={{ once: true }}
+              <Star
                 src="/icon/lightstarIcon.png"
-                alt="star"
-                className="absolute left-[25%] top-[2%] tab:left-[8%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+                className="left-[25%] top-[2%] tab:left-[8%]"
               />
-              <motion.img
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ type: "spring", duration: 2 }}
-                viewport={{ once: true }}
+              <Star
                 src="/icon/graystar.png"
-                alt="star"
-                className="absolute left-[65%] bottom-[20%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+                className="left-[65%] bottom-[20%]"
               />
             </motion.h2>
             <motion.p
@@ -134,14 +124,9 @@ const Hero = () => {
           </div>
 
           <div className="w-full tab:flex-1 h-full flex relative items-center justify-center">
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
+            <Star
               src="/icon/graystar.png"
-              alt="star"
-              className="absolute hidden tab:flex left-[15%] top-[5%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+              className="hidden tab:flex left-[15%] top-[5%]"
             />
             <img
               src="/img/heroBall.png"

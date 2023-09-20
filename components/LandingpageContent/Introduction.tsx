@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Star } from "..";
 
 const Introduction = () => {
   return (
@@ -15,14 +16,9 @@ const Introduction = () => {
               alt="ideaImg"
               className="tab:w-[490px] w-[264px] mx-auto"
             />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
+            <Star
               src="/icon/purplestarIcon.png"
-              alt="star"
-              className="absolute flex left-[5%] top-[25%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+              className="flex left-[5%] top-[25%]"
             />
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
@@ -35,14 +31,9 @@ const Introduction = () => {
             />
           </div>
           <div className="w-full relative tab:flex-1 flex flex-col gap-5">
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
+            <Star
               src="/icon/purplestarIcon.png"
-              alt="star"
-              className="absolute hidden tab:flex right-[15%] top-[5%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+              className="hidden tab:flex right-[15%] top-[5%]"
             />
             <motion.h2
               initial={{ opacity: 0, x: 50 }}

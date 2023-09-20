@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Star } from "..";
 
 const Price = () => {
   return (
@@ -67,59 +68,26 @@ const Price = () => {
         viewport={{ once: true }}
         className="bg-purple1 flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[80px] md:blur-[125px] rounded-[50%] tab:left-[20%] top-[20%] tab:top-[30%] absolute"
       ></motion.div>
-       <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
-        src="/icon/graystar.png"
-        alt="star"
-        className="absolute flex right-[21.5%] top-[91%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
-      />
-       <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star src="/icon/graystar.png" className="flex right-[21.5%] top-[91%]" />
+      <Star
         src="/icon/lightstarIcon.png"
-        alt="star"
-        className="absolute flex right-[8.6%] top-[51%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+        className="flex right-[8.6%] top-[51%]"
       />
-       <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/lightstarIcon.png"
-        alt="star"
-        className="absolute flex right-[44%] top-[38%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+        className="flex right-[44%] top-[38%]"
       />
-       <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/lightstarIcon.png"
-        alt="star"
-        className="absolute flex left-[20%] bottom-[4%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+        className="flex left-[20%] bottom-[4%]"
       />
-       <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/purplestarIcon.png"
-        alt="star"
-        className="absolute flex left-[20%] top-[10%] tab:w-5 tab:h-5 w-3 animate-pulse duration-500"
+        className="flex left-[20%] top-[10%]"
       />
-       <motion.img
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 2 }}
-        viewport={{ once: true }}
+      <Star
         src="/icon/purplestarIcon.png"
-        alt="star"
-        className="absolute flex right-[23%] top-[20%] tab:w-5 tab:h-5 w-3"
+        className="flex right-[23%] top-[20%]"
       />
     </section>
   );

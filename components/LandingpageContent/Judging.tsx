@@ -1,7 +1,7 @@
 import { judgingCriteria } from "@/utils/constant";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { CustomizeButton } from "..";
+import { CustomizeButton, Star } from "..";
 
 const Judging = () => {
   const container = {
@@ -39,32 +39,17 @@ const Judging = () => {
               alt="judginimg"
               className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
+            <Star
               src="/icon/lightstarIcon.png"
-              alt="star"
-              className="absolute flex right-[2%] bottom-[-360%] phone:bottom-[-200%] tab:bottom-[-6%] tab:w-5 w-3 animate-pulse duration-500"
+              className="flex right-[2%] bottom-[-360%] phone:bottom-[-200%] tab:bottom-[-6%]"
             />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
+            <Star
               src="/icon/graystar.png"
-              alt="star"
-              className="absolute flex right-[40%] top-[50%] tab:w-5 w-3 animate-pulse duration-500"
+              className="flex right-[40%] top-[50%]"
             />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
+            <Star
               src="/icon/purplestarIcon.png"
-              alt="star"
-              className="absolute flex left-[50%] tab:left-[26%] top-0 tab:top-[-15%] tab:w-5 w-3 animate-pulse duration-500"
+              className="flex left-[50%] tab:left-[26%] top-0 tab:top-[-15%]"
             />
             <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute -top-5 left-14 xl:left-[20%] p-5"></div>
           </div>
