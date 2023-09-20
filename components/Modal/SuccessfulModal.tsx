@@ -1,14 +1,22 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, ReactNode } from "react";
 import { motion } from "framer-motion";
 import { CustomizeButton } from "..";
+import { useRouter } from "next/router";
 
 interface ModalProps {
   show: boolean;
   setShow: (e: any) => void;
+  title: string | ReactNode;
 }
 
 const SuccessfulModal = ({ show, setShow }: ModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+
+  const handleBack = () => {
+    setShow(false);
+    router.push("/");
+  };
 
   useEffect(() => {
     const handleClickOutside: EventListener = (event) => {
@@ -82,7 +90,7 @@ const SuccessfulModal = ({ show, setShow }: ModalProps) => {
         </p>
         <CustomizeButton
           text="Back"
-          onClick={() => setShow(false)}
+          onClick={handleBack}
           className="bg-btnlinear border-none rounded !px-10 !py-3 w-[80%] my-4"
           type="button"
         />
