@@ -26,7 +26,7 @@ const Judging = () => {
   };
 
   return (
-    <section className="w-full py-10 border-b border-borderColor">
+    <section className="w-full py-10 border-b relative border-borderColor">
       <div className="container overflow-hidden">
         <div className="flex items-center justify-center tab:justify-between w-full gap-6 flex-col tab:flex-row">
           <div className="w-full tab:flex-1 relative">
@@ -84,6 +84,20 @@ const Judging = () => {
           </div>
         </div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] blur-[80px] md:blur-[120px] rounded-[50%] right-[0%] bottom-[10%] md:bottom-[-10%] absolute z-[-2]"
+      ></motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[80px] md:blur-[120px] rounded-[50%] tab:left-[10%] top-[20%] tab:top-[50%] absolute z-[-2]"
+      ></motion.div>
     </section>
   );
 };

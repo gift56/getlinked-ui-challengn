@@ -128,7 +128,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="bg-btnlinear flex w-[200px] h-[200px] left-[5%] blur-[150px]  rounded-[50%] tab:left-[20%] top-[20%] absolute z-[-2]"
+          className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[80px] md:blur-[150px]  rounded-[50%] tab:left-[20%] top-[20%] absolute z-[-2]"
         ></motion.div>
       </div>
     </section>
