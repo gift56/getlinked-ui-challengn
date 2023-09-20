@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Sponsors = () => {
   return (
-    <section className="w-full py-14 border-b border-borderColor">
+    <section className="w-full py-14 border-b border-borderColor relative">
       <div className="container">
         <div className="w-full flex flex-col items-center justify-center gap-8">
           <div className="flex items-center justify-center flex-col">
@@ -40,6 +40,20 @@ const Sponsors = () => {
           </div>
         </div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] blur-[60px] md:blur-[120px] rounded-[50%] right-[0%] bottom-[-10%] absolute z-[-2]"
+      ></motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[60px] md:blur-[120px] rounded-[50%] top-[10%] absolute z-[-2]"
+      ></motion.div>
     </section>
   );
 };
