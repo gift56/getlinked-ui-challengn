@@ -124,6 +124,9 @@ const Contactpage = () => {
                 <p className="text-base font-normal text-start">
                   Call Us : 07067981819
                 </p>
+                <p className="text-base font-normal text-start">
+                  we are open from Monday-Friday <br /> 08:00am - 05:00pm
+                </p>
               </div>
               <img
                 src="/icon/purplestarIcon.png"
@@ -133,7 +136,7 @@ const Contactpage = () => {
                 height={20}
               />
               <img
-                src="/icon/graystar.png"
+                src="/icon/lightstarIcon.png"
                 alt="star"
                 className="absolute right-0 bottom-[40%] tab:bottom-[20%] tab:right-[10%] z-40"
                 width={20}
