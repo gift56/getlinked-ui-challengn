@@ -129,6 +129,8 @@ const Hero = () => {
               </span>
             </div>
           </div>
+
+          
           <div className="w-full tab:flex-1 h-full flex relative items-center justify-center">
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
