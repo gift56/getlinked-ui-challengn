@@ -56,7 +56,17 @@ const Contactpage = () => {
     return touched[key] && errors[key];
   };
 
-  return <div>Contactpage</div>;
+  return (
+    <>
+      <Head>
+        <title>Getlinked - Register</title>
+        <meta
+          name="description"
+          content="Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize"
+        />
+      </Head>
+    </>
+  );
 };
 
 export default Contactpage;
