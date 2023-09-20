@@ -13,6 +13,7 @@ import SuccessfulModal from "./Modal/SuccessfulModal";
 import Navbar from "./Navbar";
 import CustomizeInput from "./form/CustomizeInput";
 import CustomizeSelect from "./form/CustomizeSelect";
+import CustomizeTextarea from "./form/CustomizeTextarea";
 
 export {
   CustomizeButton,
@@ -30,4 +31,5 @@ export {
   CustomizeInput,
   CustomizeSelect,
   SuccessfulModal,
+  CustomizeTextarea,
 };
