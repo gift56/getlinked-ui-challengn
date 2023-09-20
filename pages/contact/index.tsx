@@ -169,6 +169,7 @@ const Contactpage = () => {
                 </span>
                 <span className="font-clash block">Let us know about it!</span>
               </h2>
+              <p className="text-sm font-normal lg:hidden">Email us below to any question related to our event</p>
 
               <form
                 onSubmit={handleSubmit}
@@ -246,7 +247,26 @@ const Contactpage = () => {
             </div>
           </div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="flex bg-btnlinear w-[100px] h-[100px] lg:w-[250px] lg:h-[250px] rounded-[50%] blur-[80px] lg:blur-[120px] top-[40%] left-[5%] lg:left-20 lg:top-[24%] absolute z-[-2]"
+        ></motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="bg-btnlinear hidden lg:flex md:w-[200px] h-[200px] blur-[150px] rounded-[50%] right-0 bottom-0 absolute z-[-2]"
+        ></motion.div>
       </section>
+      <SuccessfulModal
+        show={success}
+        setShow={setSuccess}
+        title={<span className="text-center">Submitted successfully!</span>}
+      />
     </>
   );
 };
