@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useFormik } from "formik";
 import { ContactValue } from "@/types";
+import { contactSchema } from "@/schema";
 
 const Contactpage = () => {
   const [success, setSuccess] = useState(false);
@@ -22,6 +23,38 @@ const Contactpage = () => {
       text: "FAQs",
     },
   ];
+
+  const initialValues: ContactValue = {
+    first_name: "",
+    phone_number: "",
+    email: "",
+    message: "",
+  };
+
+  const onSubmit = async (payload: ContactValue, actions: any) => {
+    console.log(payload);
+    setSuccess(true);
+    await new Promise((res) => setTimeout(res, 1000));
+    actions.resetForm();
+  };
+
+  const {
+    values,
+    handleChange,
+    handleBlur,
+    handleSubmit,
+    touched,
+    errors,
+    isSubmitting,
+  } = useFormik({
+    initialValues,
+    validationSchema: contactSchema,
+    onSubmit,
+  });
+
+  const getError = (key: keyof ContactValue) => {
+    return touched[key] && errors[key];
+  };
 
   return <div>Contactpage</div>;
 };
