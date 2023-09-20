@@ -24,8 +24,53 @@ const Faqs = () => {
               alt="faq"
               className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/lightstarIcon.png"
+              alt="star"
+              className="absolute flex right-[24%] bottom-0 tab:w-5 w-3"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/purplestarIcon.png"
+              alt="star"
+              className="absolute flex left-[24%] top-[24%] tab:w-5 w-3"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/purplestarIcon.png"
+              alt="star"
+              className="absolute flex left-[48%] top-[4%] tab:w-5 w-3"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/graystar.png"
+              alt="star"
+              className="absolute flex left-[17%] top-[54%] tab:w-5 w-3"
+            />
           </div>
-          <div className="w-full tab:flex-1 flex flex-col gap-5">
+          <div className="w-full tab:flex-1 flex flex-col gap-5 relative">
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              src="/icon/purplestarIcon.png"
+              alt="star"
+              className="absolute flex left-0 top-0 tab:top-[-9%] tab:w-5 w-3"
+            />
             <motion.h2
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}

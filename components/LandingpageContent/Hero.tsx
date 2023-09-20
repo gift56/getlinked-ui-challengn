@@ -121,14 +121,14 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="bg-btnlinear hidden lg:flex md:w-[200px] h-[200px]  blur-[150px]  rounded-[50%] right-[15%] top-[30%] absolute z-[-2]"
+          className="bg-purple1 hidden lg:flex md:w-[200px] h-[200px]  blur-[150px]  rounded-[50%] right-[15%] top-[30%] absolute z-[-2]"
         ></motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[80px] md:blur-[150px]  rounded-[50%] tab:left-[20%] top-[20%] absolute z-[-2]"
+          className="bg-purple1 flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[80px] md:blur-[150px]  rounded-[50%] tab:left-[20%] top-[20%] absolute z-[-2]"
         ></motion.div>
       </div>
     </section>

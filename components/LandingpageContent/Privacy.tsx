@@ -114,7 +114,7 @@ const Privacy = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] blur-[60px] md:blur-[120px] rounded-[50%] left-[0%] bottom-[50%] tab:bottom-[5%] absolute"
+        className="bg-purple1 flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] blur-[60px] md:blur-[120px] rounded-[50%] left-[0%] bottom-[50%] tab:bottom-[5%] absolute"
       ></motion.div>
       <motion.img
         initial={{ opacity: 0, scale: 0.5 }}

@@ -58,14 +58,14 @@ const Price = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] blur-[80px] md:blur-[130px] rounded-[50%] right-[0%] bottom-[10%] absolute"
+        className="bg-purple1 flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] blur-[80px] md:blur-[130px] rounded-[50%] right-[0%] bottom-[10%] absolute"
       ></motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="bg-btnlinear flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[80px] md:blur-[125px] rounded-[50%] tab:left-[20%] top-[20%] tab:top-[30%] absolute"
+        className="bg-purple1 flex w-[100px] h-[100px] md:w-[200px] md:h-[200px] left-[5%] blur-[80px] md:blur-[125px] rounded-[50%] tab:left-[20%] top-[20%] tab:top-[30%] absolute"
       ></motion.div>
        <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
