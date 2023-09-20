@@ -51,6 +51,7 @@ const Registerpage = () => {
       setSuccess(true);
       return res.data;
     } catch (error: any) {
+      console.log(error)
       if (error.message === "Network Error") {
         toast.error(error.message, {
           position: "top-center",
@@ -58,7 +59,7 @@ const Registerpage = () => {
           autoClose: 1500,
         });
       } else {
-        toast.error(error.response.data.email[0], {
+        toast.error(error.response.data.message, {
           position: "top-center",
           toastId: 1,
           autoClose: 1500,
@@ -215,7 +216,7 @@ const Registerpage = () => {
                     labelClassName="text-sm font-normal"
                     type="text"
                     name="phone_number"
-                    value={values.phone_number}
+                    value={values.phone_number.trim()}
                     onChange={handleChange}
                     onBlur={handleBlur}
                     error={getError("phone_number")}
@@ -315,7 +316,7 @@ const Registerpage = () => {
                 </p>
                 <div className="flex items-center justify-center tab:justify-start gap-2">
                   <div
-                    className={`bg-transparent w-fit tab:w-4 tab:h-4 flex items-center justify-center rounded ${
+                    className={`bg-transparent w-fit flex items-center justify-center rounded ${
                       errors.privacy_poclicy_accepted && "border border-red-500"
                     }`}
                   >
@@ -331,7 +332,7 @@ const Registerpage = () => {
                       className={`rounded ${
                         checkbox === false &&
                         values.privacy_poclicy_accepted === false
-                          ? "border-white border w-[20px] h-[20px] tab:w-4 tab:h-4 ml-4 tab:ml-0"
+                          ? "border-white border w-[20px] h-[20px] ml-4 tab:ml-0"
                           : "border-none"
                       } transform transition-transform ease-in-out duration-300 absolute pointer-events-none`}
                     >

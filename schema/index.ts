@@ -18,8 +18,10 @@ export const contactSchema = yup.object().shape({
   email: yup.string().email("Invalid Email Address").required("Required"),
   phone_number: yup
     .string()
+    .min(2, "Phone number provided is not complete")
+    .max(13, "Phone number Characters should not be greater than 15 digit")
     .matches(
-      /^(?:\+?\d{1,4}[-.\s]?)?(?:\(\d{1,4}\)[-.\s]?)?\d{1,15}$/g,
+      /^(?:\+?\d{1,4}[-.\s]?)?(?:\(\d{1,4}\)[-.\s]?)?\d{1,13}$/g,
       "Invalid phone number"
     )
     .required("Required"),
