@@ -1,6 +1,6 @@
 ## Getlinked Challenge
 
-![Finished project](/public/img/readme.png "Getlinked Challenge")
+<img src="/public/img/readme.png" alt="Prject image" width={500}/>
 
 [live demo](http://getlinkedchallenge-efegift.netlify.app)
 
