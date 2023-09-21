@@ -85,7 +85,7 @@ const Judging = () => {
                   key={i}
                   className="text-sm font-normal"
                 >
-                  <span className="text-primary font-bold tab:text-base">
+                  <span className="text-[#FF26B9] font-bold tab:text-base">
                     {item.headline}
                   </span>
                   <span>{item.content}</span>
