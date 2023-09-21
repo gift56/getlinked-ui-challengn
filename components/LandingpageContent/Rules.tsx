@@ -16,7 +16,13 @@ const Rules = () => {
               alt="ruleImg"
               className="tab:w-[490px] w-[264px] mx-auto relative z-10"
             />
-            <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-14 xl:top-[15%] right-14 xl:right-[25%] p-5"></div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute top-14 xl:top-[15%] right-14 xl:right-[25%] p-5"
+            ></motion.div>
           </div>
           <div className="w-full tab:flex-1 flex flex-col gap-5">
             <motion.h2

@@ -128,12 +128,24 @@ const Hero = () => {
               src="/icon/graystar.png"
               className="hidden tab:flex left-[15%] top-[5%]"
             />
-            <img
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 2.5 }}
+              viewport={{ once: true }}
               src="/img/heroBall.png"
               alt="ball"
               className="absolute z-40 animate-pulse duration-300"
             />
-            <img src="/img/heroBg.png" alt="heroImg" className="grayscale" />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              src="/img/heroBg.png"
+              alt="heroImg"
+              className="grayscale"
+            />
           </div>
         </div>
 

@@ -51,7 +51,13 @@ const Judging = () => {
               src="/icon/purplestarIcon.png"
               className="flex left-[50%] tab:left-[26%] top-0 tab:top-[-15%]"
             />
-            <div className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute -top-5 left-14 xl:left-[20%] p-5"></div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="hidden tab:block w-[100px] h-[100px] bg-btnlinear rounded-full absolute -top-5 left-14 xl:left-[20%] p-5"
+            ></motion.div>
           </div>
           <div className="w-full tab:flex-1 flex flex-col items-center justify-center tab:items-start tab:justify-start gap-5">
             <motion.h2
