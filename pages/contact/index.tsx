@@ -21,6 +21,7 @@ import { toast } from "react-toastify";
 
 const Contactpage = () => {
   const [success, setSuccess] = useState(false);
+  const [submittingData, setSubmittingData] = useState(false);
   const router = useRouter();
 
   const handleBack = () => {
@@ -49,11 +50,14 @@ const Contactpage = () => {
   };
 
   const contactUsRequest = async (data: ContactValue) => {
+    setSubmittingData(true);
     try {
       const res = await baseUrl.post(request.contact, data);
       setSuccess(true);
+      setSubmittingData(false);
       return res.data;
     } catch (error: any) {
+      setSubmittingData(false);
       if (error.message === "Network Error") {
         toast.error(error.message, {
           position: "top-center",
@@ -76,19 +80,12 @@ const Contactpage = () => {
     actions.resetForm();
   };
 
-  const {
-    values,
-    handleChange,
-    handleBlur,
-    handleSubmit,
-    touched,
-    errors,
-    isSubmitting,
-  } = useFormik({
-    initialValues,
-    validationSchema: contactSchema,
-    onSubmit,
-  });
+  const { values, handleChange, handleBlur, handleSubmit, touched, errors } =
+    useFormik({
+      initialValues,
+      validationSchema: contactSchema,
+      onSubmit,
+    });
 
   const getError = (key: keyof ContactValue) => {
     return touched[key] && errors[key];
@@ -270,7 +267,7 @@ const Contactpage = () => {
                   text="Submit"
                   className="bg-btnlinear border-none rounded !px-10 w-fit my-4 flex disabled:cursor-not-allowed disabled:opacity-70"
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={submittingData}
                 />
               </form>
               <div className="lg:hidden flex-col items-center justify-center gap-3 text-center w-full">
