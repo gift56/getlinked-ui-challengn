@@ -328,9 +328,9 @@ const Registerpage = () => {
                     />
                     <div
                       className={`rounded ${
-                        checkbox === false &&
+                        checkbox === false ||
                         values.privacy_poclicy_accepted === false
-                          ? "border-white border w-[20px] h-[20px] ml-4 tab:ml-0"
+                          ? "border-white border w-[19.5px] h-[19.5px] ml-4 tab:ml-0"
                           : "border-none"
                       } transform transition-transform ease-in-out duration-300 absolute pointer-events-none`}
                     >
