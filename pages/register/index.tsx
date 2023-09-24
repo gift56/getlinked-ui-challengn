@@ -20,6 +20,7 @@ import { toast } from "react-toastify";
 const Registerpage = () => {
   const [checkbox, setCheckbox] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [submittingData, setSubmittingData] = useState(false);
   const navLinks = [
     {
       href: "/#timeline",
@@ -46,12 +47,16 @@ const Registerpage = () => {
   };
 
   const registerRequest = async (data: FormValue) => {
+    setSubmittingData(true);
     try {
       const res = await baseUrl.post(request.registration, data);
       setSuccess(true);
+      setCheckbox(false);
+      setSubmittingData(false);
       return res.data;
     } catch (error: any) {
       console.log(error);
+      setSubmittingData(false);
       if (error.message === "Network Error") {
         toast.error(error.message, {
           position: "top-center",
@@ -74,19 +79,12 @@ const Registerpage = () => {
     actions.resetForm();
   };
 
-  const {
-    values,
-    handleChange,
-    handleBlur,
-    handleSubmit,
-    touched,
-    errors,
-    isSubmitting,
-  } = useFormik({
-    initialValues,
-    validationSchema: registerSchema,
-    onSubmit,
-  });
+  const { values, handleChange, handleBlur, handleSubmit, touched, errors } =
+    useFormik({
+      initialValues,
+      validationSchema: registerSchema,
+      onSubmit,
+    });
 
   const getError = (key: keyof FormValue) => {
     return touched[key] && errors[key];
@@ -357,14 +355,14 @@ const Registerpage = () => {
                   text="Register"
                   className="bg-btnlinear border-none rounded !px-10 !py-3 w-full my-4 hidden tab:flex disabled:cursor-not-allowed disabled:opacity-70"
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={submittingData}
                 />
                 <div className="w-full flex tab:hidden items-center justify-center">
                   <CustomizeButton
                     text="Submit"
                     className="bg-btnlinear border-none rounded !px-10 w-fit my-4 flex disabled:cursor-not-allowed disabled:opacity-70"
                     type="submit"
-                    disabled={isSubmitting}
+                    disabled={submittingData}
                   />
                 </div>
               </form>
